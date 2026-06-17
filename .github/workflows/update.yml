@@ -1,0 +1,38 @@
+name: Dashboard Update
+
+on:
+  schedule:
+    # UTC 06:30 = KST 15:30 (한국 장 마감) — 월~금
+    - cron: '30 6 * * 1-5'
+  workflow_dispatch: # GitHub에서 수동 실행 버튼
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run dashboard update
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python main.py
+
+      - name: Commit & Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html data/data.json
+          git diff --staged --quiet || git commit -m "auto: dashboard update $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
