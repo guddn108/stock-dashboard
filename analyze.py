@@ -37,26 +37,34 @@ else:
 
 def call_gemini(prompt: str, retries: int = 3) -> str:
     """Gemini API 호출 — 실패 시 재시도"""
-    # import는 키 있을 때만
     import urllib.request
     import urllib.error
 
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent?key={GEMINI_API_KEY}"
     body = json.dumps({
         "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.3, "maxOutputTokens": 2048},
+        "generationConfig": {"temperature": 0.3, "maxOutputTokens": 8192},
     }).encode("utf-8")
 
     for attempt in range(retries):
         try:
             req = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json"})
-            with urllib.request.urlopen(req, timeout=30) as resp:
+            with urllib.request.urlopen(req, timeout=60) as resp:
                 result = json.loads(resp.read())
-                return result["candidates"][0]["content"]["parts"][0]["text"]
-        except Exception as e:
-            print(f"  ⚠ Gemini 호출 오류 (시도 {attempt+1}/{retries}): {e}")
+                text = result["candidates"][0]["content"]["parts"][0]["text"]
+                print(f"  Gemini 응답 길이: {len(text)}자")
+                return text
+        except urllib.error.HTTPError as e:
+            body_err = e.read().decode("utf-8", errors="ignore")[:300]
+            print(f"  ⚠ Gemini HTTP {e.code} (시도 {attempt+1}/{retries}): {body_err}")
             if attempt < retries - 1:
-                time.sleep(2)
+                wait = 65 if e.code == 429 else 5
+                print(f"  {wait}초 대기 후 재시도...")
+                time.sleep(wait)
+        except Exception as e:
+            print(f"  ⚠ Gemini 오류 (시도 {attempt+1}/{retries}): {type(e).__name__}: {e}")
+            if attempt < retries - 1:
+                time.sleep(5)
     return ""
 
 
@@ -198,6 +206,8 @@ ROE: {s(fin.get('roe'), '%')}
 {news_block}
 """
 
+    ctx = f"종목: {name} ({ticker})\n{data_summary}"
+
     prompt = f"""당신은 20년 경력의 기관투자자 수석 애널리스트입니다.
 아래 종목의 실제 데이터를 바탕으로 분석하고, 반드시 JSON 형식으로만 답하세요.
 절대 필드명을 값으로 복사하지 마세요. 모든 값은 실제 분석 내용이어야 합니다.
@@ -208,29 +218,29 @@ ROE: {s(fin.get('roe'), '%')}
 JSON 형식으로만 답하세요 (```json 코드블록 없이 순수 JSON):
 
 {{
-  "businessModel": "{name}의 실제 핵심 사업 구조와 주요 수익원을 2~3문장으로 설명",
-  "industryOutlook": "{name}이 속한 산업의 향후 2~3년 전망, 성장 촉매와 리스크 2~3문장",
-  "recentNews": "위 최근 뉴스 헤드라인을 기반으로 현재 {name}에 미치는 영향 2~3문장",
-  "competitors": "{name}의 실제 주요 경쟁사 2~3곳 나열 후 {name}만의 차별점 설명",
-  "moat": "{name}의 구체적인 경제적 해자 — 전환비용/네트워크효과/브랜드/원가우위 중 해당하는 것과 이유",
-  "aiBenefit": "AI 트렌드가 {name}에 직접/간접 수혜를 주는 구체적 메커니즘 설명",
-  "recentEarnings": "가장 최근 분기 EPS {s(fin.get('eps'))} 기준 실적 흐름과 전년비 비교",
-  "financials": "PER {s(fin.get('pe_ratio'))}x, PBR {s(fin.get('pb_ratio'))}x, ROE {s(fin.get('roe'))}, 부채비율 {s(fin.get('debt_to_equity'))} — 이 수치들의 의미와 재무 건전성 판단",
-  "valuation": "현재 PER/PBR을 업종 평균 및 과거 밴드와 비교해 고평가/저평가 여부 판단",
-  "institutionalFlow": "기관 보유 비중 변화 추이와 최근 순매수/순매도 방향",
-  "insiderTrading": "내부자 최근 거래 내역 — 매수/매도 여부와 그 해석",
-  "options": "Call/Put 비율과 주요 행사가 분포로 본 시장 기대 방향 (한국주식이면 '해당없음')",
-  "shortRatio": "공매도 비율 {s(fin.get('short_ratio'))}% — 이 수준이 높은지 낮은지, 숏스퀴즈 가능성",
+  "businessModel": "{name}의 핵심 사업 구조와 주요 수익원 2~3문장",
+  "industryOutlook": "{name}이 속한 산업의 향후 2~3년 전망 2~3문장",
+  "recentNews": "위 최근 뉴스 헤드라인을 기반으로 {name}에 미치는 영향 2~3문장",
+  "competitors": "{name}의 주요 경쟁사 2~3곳과 {name}만의 차별점",
+  "moat": "{name}의 경제적 해자 — 전환비용/네트워크효과/브랜드/원가우위 중 해당 항목과 이유",
+  "aiBenefit": "AI 트렌드가 {name}에 직접/간접 수혜를 주는 메커니즘",
+  "recentEarnings": "최근 분기 EPS {s(fin.get('eps'))} 기준 실적 흐름과 전년비 비교",
+  "financials": "PER {s(fin.get('pe_ratio'))}x, PBR {s(fin.get('pb_ratio'))}x, ROE {s(fin.get('roe'))}, 부채비율 {s(fin.get('debt_to_equity'))} — 재무 건전성 판단",
+  "valuation": "현재 PER/PBR을 업종 평균과 비교해 고평가/저평가 여부 판단",
+  "institutionalFlow": "기관 보유 비중 변화와 최근 순매수/순매도 방향",
+  "insiderTrading": "내부자 최근 거래 내역과 해석",
+  "options": "Call/Put 비율과 주요 행사가 분포 분석 (한국주식이면 '해당없음')",
+  "shortRatio": "공매도 비율 {s(fin.get('short_ratio'))}% — 높은지 낮은지, 숏스퀴즈 가능성",
   "earningsDate": "다음 실적 발표 예정일과 시장 컨센서스 EPS 예상치",
-  "events": "향후 3~6개월 내 주가에 영향 줄 주요 이벤트 (제품 출시, 규제, 컨퍼런스 등)",
-  "dailyChart": "RSI {s(stock_data.get('rsi'))}, MA20={s(ma.get('ma20'))} 기준 일봉 기술적 상태 — 추세/모멘텀 판단",
-  "weeklyChart": "MA60={s(ma.get('ma60'))} 기준 주봉 중기 추세 방향과 강도",
-  "monthlyChart": "MA200={s(ma.get('ma200'))} 기준 장기 추세 — 강세장/약세장 판단",
-  "support": "기술적 분석 기반 주요 지지선 2~3개 (가격만, 예: $410, $395)",
-  "resistance": "기술적 분석 기반 주요 저항선 2~3개 (가격만)",
-  "fairValue": "DCF 또는 PER 배수 기반 적정가 범위",
-  "buyZone": "1차 매수 구간 / 2차 매수 구간 (구체적 가격대)",
-  "stopLoss": "이 수준 이탈 시 손절해야 하는 가격과 이유",
+  "events": "향후 3~6개월 내 주가에 영향 줄 주요 이벤트",
+  "dailyChart": "RSI {s(stock_data.get('rsi'))}, MA20={s(ma.get('ma20'))} 기준 일봉 기술적 상태",
+  "weeklyChart": "MA60={s(ma.get('ma60'))} 기준 주봉 중기 추세",
+  "monthlyChart": "MA200={s(ma.get('ma200'))} 기준 장기 추세",
+  "support": "주요 지지선 2~3개 가격",
+  "resistance": "주요 저항선 2~3개 가격",
+  "fairValue": "DCF 또는 PER 기반 적정가 범위",
+  "buyZone": "1차 매수 구간 / 2차 매수 구간 가격대",
+  "stopLoss": "손절가와 이유",
   "target6m": "6개월 목표가와 근거",
   "target1y": "1년 목표가와 근거",
   "bullCase": "상승 시나리오 — 실현 조건, 목표가, 확률(%) 명시",
@@ -238,13 +248,12 @@ JSON 형식으로만 답하세요 (```json 코드블록 없이 순수 JSON):
   "opinion": "매수 또는 보유 또는 매도",
   "opinionClass": "op-buy 또는 op-hold 또는 op-sell",
   "opinionProb": 확신도 숫자만 (0~100),
-  "opinionSummary": "왜 지금 매수/보유/매도인지 핵심 근거 1~2문장 — RSI/이평선/밸류에이션/이벤트 중 가장 중요한 이유"
+  "opinionSummary": "왜 지금 매수/보유/매도인지 핵심 근거 1~2문장"
 }}
 """
     response = call_gemini(prompt)
     result = parse_json_response(response, STOCK_FALLBACK.copy())
 
-    # opinionProb 숫자 보정
     try:
         result["opinionProb"] = int(result["opinionProb"])
     except Exception:
@@ -345,7 +354,7 @@ def run(data: dict) -> dict:
             print(f"  {region.upper()} 뉴스 {i+1}/{len(articles)}: {article['title'][:40]}...")
             article["analysis"] = analyze_news(article["title"], article.get("summary", ""))
             if not USE_MOCK:
-                time.sleep(1)  # API rate limit
+                time.sleep(5)  # 15 RPM 한도 = 최소 4초 간격
 
     # ── 종목 분석
     print("\n종목 분석 중...")
@@ -364,7 +373,7 @@ def run(data: dict) -> dict:
                 print(f"  ✗ {ticker} 분석 실패: {e}")
                 stock_data["analysis"] = STOCK_FALLBACK.copy()
             if not USE_MOCK:
-                time.sleep(1.5)  # API rate limit
+                time.sleep(5)  # 15 RPM 한도 = 최소 4초 간격
 
     print("\n✅ 분석 완료")
     return data
