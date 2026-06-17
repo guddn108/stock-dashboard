@@ -30,8 +30,8 @@ _api_keys = [k for k in [
 ] if k]
 _key_idx = 0
 
-GEMINI_API_KEY = _api_keys[0] if _api_keys else ""
 USE_MOCK = not _api_keys
+_key_idx = 0
 
 if USE_MOCK:
     print("[analyze] GEMINI_API_KEY 없음 → Mock 모드")
@@ -41,26 +41,22 @@ else:
     for i, k in enumerate(_api_keys, 1):
         print(f"  키{i}: {k[:8]}...{k[-4:]}")
 
-# 연속 429 카운터 — 현재 키가 한도 초과이면 다음 키로 전환
-_consecutive_429 = 0
-_MAX_429 = 3
-
 
 # ══════════════════════════════════════════
 # Gemini API 호출 (키 있을 때만 실행)
 # ══════════════════════════════════════════
 
 def call_gemini(prompt: str) -> str:
-    """Gemini API 호출 — 429시 다음 키로 로테이션"""
-    global _consecutive_429, _key_idx, GEMINI_API_KEY
+    """Gemini API 호출 — 오류 발생 시 다음 키로 순서대로 전환"""
+    global _key_idx
     import urllib.request
     import urllib.error
 
     if not _api_keys:
         return ""
 
-    # 현재 키로 시도, 429이면 다음 키로 전환
-    for attempt in range(2):
+    # 5개 키를 순서대로 시도
+    for _ in range(len(_api_keys)):
         key = _api_keys[_key_idx]
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent?key={key}"
         body = json.dumps({
@@ -74,36 +70,16 @@ def call_gemini(prompt: str) -> str:
                 result = json.loads(resp.read())
                 text = result["candidates"][0]["content"]["parts"][0]["text"]
                 print(f"  Gemini 응답 길이: {len(text)}자 (키{_key_idx+1})")
-                _consecutive_429 = 0
                 return text
-        except urllib.error.HTTPError as e:
-            body_err = e.read().decode("utf-8", errors="ignore")[:150]
-            print(f"  ⚠ Gemini HTTP {e.code} 키{_key_idx+1}: {body_err}")
-            if e.code == 429:
-                _consecutive_429 += 1
-                # 다음 키로 전환
-                next_idx = _key_idx + 1
-                if next_idx < len(_api_keys):
-                    print(f"  🔄 키{_key_idx+1} 한도 초과 → 키{next_idx+1}로 전환")
-                    _key_idx = next_idx
-                    GEMINI_API_KEY = _api_keys[_key_idx]
-                    time.sleep(2)
-                    # attempt 루프 재시작 (같은 attempt 번호로 새 키 시도)
-                    continue
-                else:
-                    print(f"  ⛔ 모든 키({len(_api_keys)}개) 한도 초과 → 나머지 분석 건너뜀")
-                    _consecutive_429 = _MAX_429
-                    return ""
-            else:
-                if attempt == 0:
-                    time.sleep(5)
         except Exception as e:
-            print(f"  ⚠ Gemini 오류 키{_key_idx+1}: {type(e).__name__}: {e}")
-            if attempt == 0:
-                time.sleep(5)
-
-        if _consecutive_429 >= _MAX_429:
-            return ""
+            code = getattr(e, "code", "?")
+            print(f"  ⚠ Gemini 오류 키{_key_idx+1} [{code}]: {e}")
+            if _key_idx + 1 < len(_api_keys):
+                _key_idx += 1
+                print(f"  🔄 키{_key_idx+1}로 전환")
+            else:
+                print(f"  ⛔ 모든 키({len(_api_keys)}개) 소진 → 건너뜀")
+                return ""
 
     return ""
 
