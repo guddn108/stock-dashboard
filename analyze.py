@@ -23,6 +23,10 @@ USE_MOCK = not GEMINI_API_KEY
 
 MODEL = "gemini-2.0-flash"
 
+# 연속 429 카운터 — 5번 연속이면 일일 한도 초과로 판단하고 전체 스킵
+_consecutive_429 = 0
+_MAX_429 = 5
+
 if USE_MOCK:
     print("[analyze] GEMINI_API_KEY 환경변수 없음 → Mock 모드")
     print("[analyze] GitHub Secret 'GEMINI_API_KEY' 가 설정되어 있는지 확인하세요")
@@ -35,10 +39,15 @@ else:
 # Gemini API 호출 (키 있을 때만 실행)
 # ══════════════════════════════════════════
 
-def call_gemini(prompt: str, retries: int = 3) -> str:
-    """Gemini API 호출 — 실패 시 재시도"""
+def call_gemini(prompt: str) -> str:
+    """Gemini API 호출 — 429 연속 5회면 일일 한도 초과로 판단하고 즉시 포기"""
+    global _consecutive_429
     import urllib.request
     import urllib.error
+
+    # 이미 한도 초과로 판단된 경우 바로 스킵
+    if _consecutive_429 >= _MAX_429:
+        return ""
 
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent?key={GEMINI_API_KEY}"
     body = json.dumps({
@@ -46,24 +55,34 @@ def call_gemini(prompt: str, retries: int = 3) -> str:
         "generationConfig": {"temperature": 0.3, "maxOutputTokens": 8192},
     }).encode("utf-8")
 
-    for attempt in range(retries):
+    for attempt in range(2):  # 최대 2번 시도
         try:
             req = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json"})
             with urllib.request.urlopen(req, timeout=60) as resp:
                 result = json.loads(resp.read())
                 text = result["candidates"][0]["content"]["parts"][0]["text"]
                 print(f"  Gemini 응답 길이: {len(text)}자")
+                _consecutive_429 = 0  # 성공 시 리셋
                 return text
         except urllib.error.HTTPError as e:
-            body_err = e.read().decode("utf-8", errors="ignore")[:300]
-            print(f"  ⚠ Gemini HTTP {e.code} (시도 {attempt+1}/{retries}): {body_err}")
-            if attempt < retries - 1:
-                wait = 65 if e.code == 429 else 5
-                print(f"  {wait}초 대기 후 재시도...")
-                time.sleep(wait)
+            body_err = e.read().decode("utf-8", errors="ignore")[:200]
+            print(f"  ⚠ Gemini HTTP {e.code} (시도 {attempt+1}/2): {body_err}")
+            if e.code == 429:
+                _consecutive_429 += 1
+                if _consecutive_429 >= _MAX_429:
+                    print(f"  ⛔ 429 연속 {_consecutive_429}회 — Gemini 일일 한도 초과. 나머지 분석 건너뜀.")
+                    return ""
+                if attempt == 0:
+                    print(f"  ⏳ 20초 대기 후 1회 재시도...")
+                    time.sleep(20)
+                else:
+                    return ""
+            else:
+                if attempt == 0:
+                    time.sleep(5)
         except Exception as e:
-            print(f"  ⚠ Gemini 오류 (시도 {attempt+1}/{retries}): {type(e).__name__}: {e}")
-            if attempt < retries - 1:
+            print(f"  ⚠ Gemini 오류 (시도 {attempt+1}/2): {type(e).__name__}: {e}")
+            if attempt == 0:
                 time.sleep(5)
     return ""
 
