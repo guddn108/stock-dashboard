@@ -147,6 +147,21 @@ STOCK_FALLBACK = {k: "(분석 준비 중)" for k in STOCK_ANALYSIS_KEYS}
 STOCK_FALLBACK.update({"opinion": "보유", "opinionClass": "op-hold", "opinionProb": 50, "opinionSummary": "데이터 수집 중"})
 
 
+def _safe(v, suffix=""):
+    """None/NaN 안전 포맷"""
+    if v is None:
+        return "N/A"
+    try:
+        f = float(v)
+        if f != f:
+            return "N/A"
+        if suffix:
+            return f"{f:.2f}{suffix}"
+        return str(v)
+    except (TypeError, ValueError):
+        return str(v) if v else "N/A"
+
+
 def analyze_stock(ticker: str, name: str, stock_data: dict) -> dict:
     """종목 1개 → 28개 항목 분석"""
     if USE_MOCK:
@@ -159,30 +174,25 @@ def analyze_stock(ticker: str, name: str, stock_data: dict) -> dict:
     recent_news_titles = stock_data.get("recent_news_titles", [])
     news_block = "\n".join(f"- {t}" for t in recent_news_titles[:5]) if recent_news_titles else "없음"
 
-    def safe(v, suffix=""):
-        if v is None or (isinstance(v, float) and v != v):
-            return "N/A"
-        if suffix and isinstance(v, float):
-            return f"{v:.2f}{suffix}"
-        return str(v)
+    s = _safe
 
     data_summary = f"""
-현재가: {safe(stock_data.get('price'))}
-전일 대비: {safe(stock_data.get('change_pct'), '%')}
-52주 고/저: {safe(stock_data.get('high_52w'))} / {safe(stock_data.get('low_52w'))}
-RSI(14): {safe(stock_data.get('rsi'))}
-이동평균: MA20={safe(ma.get('ma20'))}, MA60={safe(ma.get('ma60'))}, MA200={safe(ma.get('ma200'))}
+현재가: {s(stock_data.get('price'))}
+전일 대비: {s(stock_data.get('change_pct'), '%')}
+52주 고/저: {s(stock_data.get('high_52w'))} / {s(stock_data.get('low_52w'))}
+RSI(14): {s(stock_data.get('rsi'))}
+이동평균: MA20={s(ma.get('ma20'))}, MA60={s(ma.get('ma60'))}, MA200={s(ma.get('ma200'))}
 지지선: {stock_data.get('support', [])}
 저항선: {stock_data.get('resistance', [])}
-시가총액: {safe(fin.get('market_cap'))}
-PER: {safe(fin.get('pe_ratio'))} / Forward PER: {safe(fin.get('forward_pe'))}
-PBR: {safe(fin.get('pb_ratio'))}
-EPS: {safe(fin.get('eps'))}
-영업이익률: {safe(fin.get('operating_margin'), '%')}
-ROE: {safe(fin.get('roe'), '%')}
-부채비율: {safe(fin.get('debt_to_equity'))}
-공매도 비율: {safe(fin.get('short_ratio'), '%')}
-애널리스트 컨센서스 목표가: {safe(fin.get('analyst_target'))}
+시가총액: {s(fin.get('market_cap'))}
+PER: {s(fin.get('pe_ratio'))} / Forward PER: {s(fin.get('forward_pe'))}
+PBR: {s(fin.get('pb_ratio'))}
+EPS: {s(fin.get('eps'))}
+영업이익률: {s(fin.get('operating_margin'), '%')}
+ROE: {s(fin.get('roe'), '%')}
+부채비율: {s(fin.get('debt_to_equity'))}
+공매도 비율: {s(fin.get('short_ratio'), '%')}
+애널리스트 컨센서스 목표가: {s(fin.get('analyst_target'))}
 실적 발표 예정일: {stock_data.get('earnings_dates', 'N/A')}
 최근 관련 뉴스:
 {news_block}
@@ -204,18 +214,18 @@ JSON 형식으로만 답하세요 (```json 코드블록 없이 순수 JSON):
   "competitors": "{name}의 실제 주요 경쟁사 2~3곳 나열 후 {name}만의 차별점 설명",
   "moat": "{name}의 구체적인 경제적 해자 — 전환비용/네트워크효과/브랜드/원가우위 중 해당하는 것과 이유",
   "aiBenefit": "AI 트렌드가 {name}에 직접/간접 수혜를 주는 구체적 메커니즘 설명",
-  "recentEarnings": "가장 최근 분기 EPS {safe(fin.get('eps'))} 기준 실적 흐름과 전년비 비교",
-  "financials": "PER {safe(fin.get('pe_ratio'))}x, PBR {safe(fin.get('pb_ratio'))}x, ROE {safe(fin.get('roe'))}, 부채비율 {safe(fin.get('debt_to_equity'))} — 이 수치들의 의미와 재무 건전성 판단",
+  "recentEarnings": "가장 최근 분기 EPS {s(fin.get('eps'))} 기준 실적 흐름과 전년비 비교",
+  "financials": "PER {s(fin.get('pe_ratio'))}x, PBR {s(fin.get('pb_ratio'))}x, ROE {s(fin.get('roe'))}, 부채비율 {s(fin.get('debt_to_equity'))} — 이 수치들의 의미와 재무 건전성 판단",
   "valuation": "현재 PER/PBR을 업종 평균 및 과거 밴드와 비교해 고평가/저평가 여부 판단",
   "institutionalFlow": "기관 보유 비중 변화 추이와 최근 순매수/순매도 방향",
   "insiderTrading": "내부자 최근 거래 내역 — 매수/매도 여부와 그 해석",
   "options": "Call/Put 비율과 주요 행사가 분포로 본 시장 기대 방향 (한국주식이면 '해당없음')",
-  "shortRatio": "공매도 비율 {safe(fin.get('short_ratio'))}% — 이 수준이 높은지 낮은지, 숏스퀴즈 가능성",
+  "shortRatio": "공매도 비율 {s(fin.get('short_ratio'))}% — 이 수준이 높은지 낮은지, 숏스퀴즈 가능성",
   "earningsDate": "다음 실적 발표 예정일과 시장 컨센서스 EPS 예상치",
   "events": "향후 3~6개월 내 주가에 영향 줄 주요 이벤트 (제품 출시, 규제, 컨퍼런스 등)",
-  "dailyChart": "RSI {safe(stock_data.get('rsi'))}, MA20={safe(ma.get('ma20'))} 기준 일봉 기술적 상태 — 추세/모멘텀 판단",
-  "weeklyChart": "MA60={safe(ma.get('ma60'))} 기준 주봉 중기 추세 방향과 강도",
-  "monthlyChart": "MA200={safe(ma.get('ma200'))} 기준 장기 추세 — 강세장/약세장 판단",
+  "dailyChart": "RSI {s(stock_data.get('rsi'))}, MA20={s(ma.get('ma20'))} 기준 일봉 기술적 상태 — 추세/모멘텀 판단",
+  "weeklyChart": "MA60={s(ma.get('ma60'))} 기준 주봉 중기 추세 방향과 강도",
+  "monthlyChart": "MA200={s(ma.get('ma200'))} 기준 장기 추세 — 강세장/약세장 판단",
   "support": "기술적 분석 기반 주요 지지선 2~3개 (가격만, 예: $410, $395)",
   "resistance": "기술적 분석 기반 주요 저항선 2~3개 (가격만)",
   "fairValue": "DCF 또는 PER 배수 기반 적정가 범위",
@@ -348,7 +358,11 @@ def run(data: dict) -> dict:
                 print(f"  [{idx}/{total}] {ticker} 건너뜀 (데이터 오류)")
                 continue
             print(f"  [{idx}/{total}] {ticker} ({name}) 분석 중...")
-            stock_data["analysis"] = analyze_stock(ticker, name, stock_data)
+            try:
+                stock_data["analysis"] = analyze_stock(ticker, name, stock_data)
+            except Exception as e:
+                print(f"  ✗ {ticker} 분석 실패: {e}")
+                stock_data["analysis"] = STOCK_FALLBACK.copy()
             if not USE_MOCK:
                 time.sleep(1.5)  # API rate limit
 
