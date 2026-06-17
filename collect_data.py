@@ -134,7 +134,10 @@ def fetch_stock(ticker: str, name: str) -> dict:
             print(f"  ⚠ {ticker}: 데이터 없음")
             return {"ticker": ticker, "name": name, "error": "데이터 없음"}
 
-        close = hist["Close"]
+        close = hist["Close"].dropna()
+        if close.empty:
+            print(f"  ⚠ {ticker}: Close 데이터 없음")
+            return {"ticker": ticker, "name": name, "error": "Close 데이터 없음"}
         current_price = round(float(close.iloc[-1]), 4)
         prev_close    = round(float(close.iloc[-2]), 4) if len(close) > 1 else current_price
 

@@ -24,9 +24,11 @@ USE_MOCK = not GEMINI_API_KEY
 MODEL = "gemini-2.0-flash"
 
 if USE_MOCK:
-    print("[analyze] Gemini API 키 없음 → Mock 모드로 실행")
+    print("[analyze] GEMINI_API_KEY 환경변수 없음 → Mock 모드")
+    print("[analyze] GitHub Secret 'GEMINI_API_KEY' 가 설정되어 있는지 확인하세요")
 else:
-    print(f"[analyze] Gemini API 연결됨 (모델: {MODEL})")
+    key_preview = GEMINI_API_KEY[:8] + "..." + GEMINI_API_KEY[-4:]
+    print(f"[analyze] Gemini API 연결됨 (모델: {MODEL}, 키: {key_preview})")
 
 
 # ══════════════════════════════════════════
@@ -60,14 +62,25 @@ def call_gemini(prompt: str, retries: int = 3) -> str:
 
 def parse_json_response(text: str, fallback: dict) -> dict:
     """AI 응답에서 JSON 파싱 — 실패 시 fallback 반환"""
+    if not text:
+        print("  ⚠ Gemini 응답 비어있음 → fallback")
+        return fallback
     try:
-        start = text.find("{")
-        end   = text.rfind("}") + 1
+        # ```json ... ``` 코드블록 제거
+        cleaned = text.strip()
+        if cleaned.startswith("```"):
+            cleaned = cleaned.split("```")[1]
+            if cleaned.startswith("json"):
+                cleaned = cleaned[4:]
+            cleaned = cleaned.strip()
+
+        start = cleaned.find("{")
+        end   = cleaned.rfind("}") + 1
         if start != -1 and end > start:
-            return json.loads(text[start:end])
-    except Exception:
-        pass
-    print("  ⚠ JSON 파싱 실패, fallback 사용")
+            return json.loads(cleaned[start:end])
+    except Exception as e:
+        print(f"  ⚠ JSON 파싱 실패: {e}")
+        print(f"  응답 앞부분: {text[:200]}")
     return fallback
 
 
