@@ -179,14 +179,32 @@
       overflow: hidden;
     }
     .stock-card-header {
-      padding: 14px 18px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      padding: 14px 18px 12px;
       cursor: pointer;
       user-select: none;
     }
     .stock-card-header:hover { background: #1c2128; }
+    .stock-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .opinion-summary {
+      font-size: 12px;
+      color: #8b949e;
+      margin-top: 7px;
+      padding-top: 7px;
+      border-top: 1px solid #21262d;
+      line-height: 1.5;
+    }
+    .opinion-summary .badge-inline {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 1px 7px;
+      border-radius: 10px;
+      margin-right: 5px;
+    }
 
     .stock-name-wrap { display: flex; align-items: center; gap: 10px; }
     .stock-ticker {
@@ -424,19 +442,25 @@
       container.innerHTML = stocks.map(s => `
         <div class="stock-card" onclick="toggleStock(this)">
           <div class="stock-card-header">
-            <div class="stock-name-wrap">
-              <span class="stock-ticker">${s.ticker}</span>
-              <span class="stock-name">${s.name}</span>
-            </div>
-            <div style="display:flex; align-items:center;">
-              <div class="stock-price-wrap">
-                <div class="stock-price">${s.price}</div>
-                <div class="stock-change ${s.changeVal >= 0 ? 'change-up' : 'change-down'}">
-                  ${s.changeVal >= 0 ? '▲' : '▼'} ${Math.abs(s.changeVal)}%
-                </div>
+            <div class="stock-card-top">
+              <div class="stock-name-wrap">
+                <span class="stock-ticker">${s.ticker}</span>
+                <span class="stock-name">${s.name}</span>
               </div>
-              <span class="chevron">▼</span>
+              <div style="display:flex; align-items:center;">
+                <div class="stock-price-wrap">
+                  <div class="stock-price">${s.price}</div>
+                  <div class="stock-change ${s.changeVal >= 0 ? 'change-up' : 'change-down'}">
+                    ${s.changeVal >= 0 ? '▲' : '▼'} ${Math.abs(s.changeVal)}%
+                  </div>
+                </div>
+                <span class="chevron">▼</span>
+              </div>
             </div>
+            ${s.opinionSummary ? `
+            <div class="opinion-summary">
+              <span class="badge-inline ${s.opinionClass}">${s.opinion} ${s.opinionProb}%</span>${s.opinionSummary}
+            </div>` : ''}
           </div>
           <div class="stock-detail">
             <div class="detail-grid">

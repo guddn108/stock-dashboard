@@ -127,11 +127,11 @@ STOCK_ANALYSIS_KEYS = [
     "earningsDate", "events", "dailyChart", "weeklyChart", "monthlyChart",
     "support", "resistance", "fairValue", "buyZone", "stopLoss",
     "target6m", "target1y", "bullCase", "bearCase",
-    "opinion", "opinionClass", "opinionProb"
+    "opinion", "opinionClass", "opinionProb", "opinionSummary"
 ]
 
 STOCK_FALLBACK = {k: "(분석 준비 중)" for k in STOCK_ANALYSIS_KEYS}
-STOCK_FALLBACK.update({"opinion": "보유", "opinionClass": "op-hold", "opinionProb": 50})
+STOCK_FALLBACK.update({"opinion": "보유", "opinionClass": "op-hold", "opinionProb": 50, "opinionSummary": "데이터 수집 중"})
 
 
 def analyze_stock(ticker: str, name: str, stock_data: dict) -> dict:
@@ -139,71 +139,83 @@ def analyze_stock(ticker: str, name: str, stock_data: dict) -> dict:
     if USE_MOCK:
         return _mock_stock_analysis(ticker, name, stock_data)
 
-    # 핵심 수치 요약 (프롬프트 길이 절약)
     fin  = stock_data.get("financials", {})
     ma   = stock_data.get("moving_averages", {})
+
+    # 종목별 최근 뉴스 헤드라인 (yfinance)
+    recent_news_titles = stock_data.get("recent_news_titles", [])
+    news_block = "\n".join(f"- {t}" for t in recent_news_titles[:5]) if recent_news_titles else "없음"
+
+    def safe(v, suffix=""):
+        if v is None or (isinstance(v, float) and v != v):
+            return "N/A"
+        if suffix and isinstance(v, float):
+            return f"{v:.2f}{suffix}"
+        return str(v)
+
     data_summary = f"""
-현재가: {stock_data.get('price')}
-전일 대비: {stock_data.get('change_pct')}%
-52주 고/저: {stock_data.get('high_52w')} / {stock_data.get('low_52w')}
-RSI(14): {stock_data.get('rsi')}
-MACD: {stock_data.get('macd')}
-이동평균: MA20={ma.get('ma20')}, MA60={ma.get('ma60')}, MA200={ma.get('ma200')}
-지지선: {stock_data.get('support')}
-저항선: {stock_data.get('resistance')}
-시가총액: {fin.get('market_cap')}
-PER: {fin.get('pe_ratio')} / Forward PER: {fin.get('forward_pe')}
-PBR: {fin.get('pb_ratio')}
-EPS: {fin.get('eps')}
-영업이익률: {fin.get('operating_margin')}
-ROE: {fin.get('roe')}
-부채비율: {fin.get('debt_to_equity')}
-공매도 비율: {fin.get('short_ratio')}
-애널리스트 목표가: {fin.get('analyst_target')}
-실적 발표: {stock_data.get('earnings_dates')}
+현재가: {safe(stock_data.get('price'))}
+전일 대비: {safe(stock_data.get('change_pct'), '%')}
+52주 고/저: {safe(stock_data.get('high_52w'))} / {safe(stock_data.get('low_52w'))}
+RSI(14): {safe(stock_data.get('rsi'))}
+이동평균: MA20={safe(ma.get('ma20'))}, MA60={safe(ma.get('ma60'))}, MA200={safe(ma.get('ma200'))}
+지지선: {stock_data.get('support', [])}
+저항선: {stock_data.get('resistance', [])}
+시가총액: {safe(fin.get('market_cap'))}
+PER: {safe(fin.get('pe_ratio'))} / Forward PER: {safe(fin.get('forward_pe'))}
+PBR: {safe(fin.get('pb_ratio'))}
+EPS: {safe(fin.get('eps'))}
+영업이익률: {safe(fin.get('operating_margin'), '%')}
+ROE: {safe(fin.get('roe'), '%')}
+부채비율: {safe(fin.get('debt_to_equity'))}
+공매도 비율: {safe(fin.get('short_ratio'), '%')}
+애널리스트 컨센서스 목표가: {safe(fin.get('analyst_target'))}
+실적 발표 예정일: {stock_data.get('earnings_dates', 'N/A')}
+최근 관련 뉴스:
+{news_block}
 """
 
-    prompt = f"""
-당신은 20년 경력의 기관투자자 애널리스트입니다. 다음 종목을 분석하고 반드시 JSON 형식으로만 답하세요.
-오늘 날짜 기준으로 분석하며 모든 수치에 확률(%)을 포함하세요.
+    prompt = f"""당신은 20년 경력의 기관투자자 수석 애널리스트입니다.
+아래 종목의 실제 데이터를 바탕으로 분석하고, 반드시 JSON 형식으로만 답하세요.
+절대 필드명을 값으로 복사하지 마세요. 모든 값은 실제 분석 내용이어야 합니다.
 
 종목: {name} ({ticker})
-데이터:
 {data_summary}
 
-아래 JSON 형식을 정확히 지켜서 답하세요. 한국어로 작성하세요.
+JSON 형식으로만 답하세요 (```json 코드블록 없이 순수 JSON):
 
 {{
-  "businessModel": "사업 모델 요약 (2~3문장)",
-  "industryOutlook": "산업 전망 (2~3문장)",
-  "recentNews": "최근 뉴스 영향 (2~3문장)",
-  "competitors": "경쟁사 비교 (2~3문장)",
-  "moat": "경제적 해자 분석 (2~3문장)",
-  "aiBenefit": "AI 수혜 여부 및 정도 (2~3문장)",
-  "recentEarnings": "최근 실적 분석 (2~3문장)",
-  "financials": "재무제표 분석 — PER/PBR/ROE/부채비율 포함 (3~4문장)",
-  "valuation": "밸류에이션 분석 — 고평가/저평가 여부 (2~3문장)",
-  "institutionalFlow": "기관 매수/매도 동향 (1~2문장)",
-  "insiderTrading": "내부자 매수/매도 동향 (1~2문장)",
-  "options": "옵션 시장 분석 — Call/Put 비율 포함 (1~2문장, 한국주식은 해당없음)",
-  "shortRatio": "공매도 비율 및 해석 (1~2문장)",
-  "earningsDate": "실적 발표 일정",
-  "events": "주요 이벤트 일정 (컨퍼런스, 신제품, 규제 등)",
-  "dailyChart": "일봉 분석 — 이평선, RSI, MACD 기반 (2문장)",
-  "weeklyChart": "주봉 분석 — 추세 방향성 (2문장)",
-  "monthlyChart": "월봉 분석 — 장기 추세 (2문장)",
-  "support": "주요 지지선 2~3개 (가격만 나열, 예: $410, $395)",
-  "resistance": "주요 저항선 2~3개 (가격만 나열)",
-  "fairValue": "적정가 계산 범위 (예: $415~440)",
-  "buyZone": "분할매수 구간 (1차/2차)",
-  "stopLoss": "손절가",
-  "target6m": "6개월 목표가",
-  "target1y": "1년 목표가",
-  "bullCase": "상승 시나리오 — 조건과 목표가, 확률(%) 포함",
-  "bearCase": "하락 시나리오 — 조건과 목표가, 확률(%) 포함",
-  "opinion": "매수 또는 보유 또는 매도 (셋 중 하나만)",
-  "opinionClass": "op-buy 또는 op-hold 또는 op-sell (opinion과 일치)",
-  "opinionProb": 현재 시점 의견에 대한 확신도 0~100 사이 숫자
+  "businessModel": "{name}의 실제 핵심 사업 구조와 주요 수익원을 2~3문장으로 설명",
+  "industryOutlook": "{name}이 속한 산업의 향후 2~3년 전망, 성장 촉매와 리스크 2~3문장",
+  "recentNews": "위 최근 뉴스 헤드라인을 기반으로 현재 {name}에 미치는 영향 2~3문장",
+  "competitors": "{name}의 실제 주요 경쟁사 2~3곳 나열 후 {name}만의 차별점 설명",
+  "moat": "{name}의 구체적인 경제적 해자 — 전환비용/네트워크효과/브랜드/원가우위 중 해당하는 것과 이유",
+  "aiBenefit": "AI 트렌드가 {name}에 직접/간접 수혜를 주는 구체적 메커니즘 설명",
+  "recentEarnings": "가장 최근 분기 EPS {safe(fin.get('eps'))} 기준 실적 흐름과 전년비 비교",
+  "financials": "PER {safe(fin.get('pe_ratio'))}x, PBR {safe(fin.get('pb_ratio'))}x, ROE {safe(fin.get('roe'))}, 부채비율 {safe(fin.get('debt_to_equity'))} — 이 수치들의 의미와 재무 건전성 판단",
+  "valuation": "현재 PER/PBR을 업종 평균 및 과거 밴드와 비교해 고평가/저평가 여부 판단",
+  "institutionalFlow": "기관 보유 비중 변화 추이와 최근 순매수/순매도 방향",
+  "insiderTrading": "내부자 최근 거래 내역 — 매수/매도 여부와 그 해석",
+  "options": "Call/Put 비율과 주요 행사가 분포로 본 시장 기대 방향 (한국주식이면 '해당없음')",
+  "shortRatio": "공매도 비율 {safe(fin.get('short_ratio'))}% — 이 수준이 높은지 낮은지, 숏스퀴즈 가능성",
+  "earningsDate": "다음 실적 발표 예정일과 시장 컨센서스 EPS 예상치",
+  "events": "향후 3~6개월 내 주가에 영향 줄 주요 이벤트 (제품 출시, 규제, 컨퍼런스 등)",
+  "dailyChart": "RSI {safe(stock_data.get('rsi'))}, MA20={safe(ma.get('ma20'))} 기준 일봉 기술적 상태 — 추세/모멘텀 판단",
+  "weeklyChart": "MA60={safe(ma.get('ma60'))} 기준 주봉 중기 추세 방향과 강도",
+  "monthlyChart": "MA200={safe(ma.get('ma200'))} 기준 장기 추세 — 강세장/약세장 판단",
+  "support": "기술적 분석 기반 주요 지지선 2~3개 (가격만, 예: $410, $395)",
+  "resistance": "기술적 분석 기반 주요 저항선 2~3개 (가격만)",
+  "fairValue": "DCF 또는 PER 배수 기반 적정가 범위",
+  "buyZone": "1차 매수 구간 / 2차 매수 구간 (구체적 가격대)",
+  "stopLoss": "이 수준 이탈 시 손절해야 하는 가격과 이유",
+  "target6m": "6개월 목표가와 근거",
+  "target1y": "1년 목표가와 근거",
+  "bullCase": "상승 시나리오 — 실현 조건, 목표가, 확률(%) 명시",
+  "bearCase": "하락 시나리오 — 실현 조건, 목표가, 확률(%) 명시",
+  "opinion": "매수 또는 보유 또는 매도",
+  "opinionClass": "op-buy 또는 op-hold 또는 op-sell",
+  "opinionProb": 확신도 숫자만 (0~100),
+  "opinionSummary": "왜 지금 매수/보유/매도인지 핵심 근거 1~2문장 — RSI/이평선/밸류에이션/이벤트 중 가장 중요한 이유"
 }}
 """
     response = call_gemini(prompt)
@@ -290,6 +302,7 @@ def _mock_stock_analysis(ticker: str, name: str, data: dict) -> dict:
         "opinion":          opinion,
         "opinionClass":     opinion_cls,
         "opinionProb":      opinion_prob,
+        "opinionSummary":   f"RSI {rsi} ({rsi_comment}), MA20 대비 {'위' if price > (ma20 or 0) else '아래'} — {opinion} 구간 판단",
     }
 
 

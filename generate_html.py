@@ -62,13 +62,21 @@ def build_stock_list(raw_stocks: dict) -> list:
 
         an = s.get("analysis", {})
         price_str  = fmt_price(s.get("price"), ticker)
-        change_val = s.get("change_pct", 0) or 0
+
+        # NaN 안전 처리
+        raw_chg = s.get("change_pct", 0)
+        try:
+            change_val = float(raw_chg)
+            if change_val != change_val:  # NaN
+                change_val = 0.0
+        except (TypeError, ValueError):
+            change_val = 0.0
 
         item = {
             "ticker":    ticker.replace(".KS", ""),
             "name":      s.get("name", ticker),
             "price":     price_str,
-            "changeVal": round(float(change_val), 2),
+            "changeVal": round(change_val, 2),
             # 28개 분석 항목
             "businessModel":    an.get("businessModel",    "수집 중"),
             "industryOutlook":  an.get("industryOutlook",  "수집 중"),
@@ -100,6 +108,7 @@ def build_stock_list(raw_stocks: dict) -> list:
             "opinion":          an.get("opinion",          "보유"),
             "opinionClass":     an.get("opinionClass",     "op-hold"),
             "opinionProb":      an.get("opinionProb",      50),
+            "opinionSummary":   an.get("opinionSummary",   ""),
         }
         result.append(item)
     return result

@@ -250,6 +250,18 @@ def fetch_stock(ticker: str, name: str) -> dict:
         except Exception:
             pass
 
+        # 종목별 최근 뉴스 헤드라인 (yfinance)
+        recent_news_titles = []
+        try:
+            news = tk.news or []
+            recent_news_titles = [
+                n.get("content", {}).get("title") or n.get("title", "")
+                for n in news[:5]
+                if n.get("content", {}).get("title") or n.get("title")
+            ]
+        except Exception:
+            pass
+
         return {
             "ticker":          ticker,
             "name":            name,
@@ -271,7 +283,8 @@ def fetch_stock(ticker: str, name: str) -> dict:
             "institutional":   institutional,
             "insider":         insider,
             "options":         options_summary,
-            "earnings_dates":  earnings_dates,
+            "earnings_dates":       earnings_dates,
+            "recent_news_titles":   recent_news_titles,
             "collected_at":    datetime.now().isoformat(),
         }
 
