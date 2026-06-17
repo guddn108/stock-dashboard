@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-06-17T17:32:10.052135",
+  "generated_at": "2026-06-17T17:42:08.839055",
   "stocks": {
     "watchlist": {
       "MSFT": {
         "ticker": "MSFT",
         "name": "Microsoft",
-        "price": 384.675,
+        "price": 385.04,
         "prev_close": 393.83,
-        "change": -9.155,
-        "change_pct": -2.32,
+        "change": -8.79,
+        "change_pct": -2.23,
         "high_52w": 538.6585,
         "low_52w": 355.9989,
-        "volume_avg5": 32916835.0,
-        "rsi": 33.7,
+        "volume_avg5": 32990767.0,
+        "rsi": 33.8,
         "macd": {
-          "macd": -6.6648,
-          "signal": -1.999,
-          "hist": -4.6657
+          "macd": -6.6356,
+          "signal": -1.9932,
+          "hist": -4.6425
         },
         "moving_averages": {
-          "ma5": 391.869,
-          "ma20": 415.4742,
-          "ma60": 404.9599,
-          "ma120": 416.3958,
-          "ma200": 450.1969
+          "ma5": 391.942,
+          "ma20": 415.4925,
+          "ma60": 404.966,
+          "ma120": 416.3988,
+          "ma200": 450.1988
         },
         "support": [
           356.0
@@ -31,13 +31,13 @@
         "resistance": [
           431.98
         ],
-        "weekly_ma20": 401.2475,
-        "monthly_ma12": 455.3981,
+        "weekly_ma20": 401.2658,
+        "monthly_ma12": 455.4285,
         "financials": {
-          "market_cap": 2857533177856,
-          "pe_ratio": 22.92461,
-          "forward_pe": 19.884058,
-          "pb_ratio": 6.89666,
+          "market_cap": 2860244533248,
+          "pe_ratio": 22.946363,
+          "forward_pe": 19.902925,
+          "pb_ratio": 6.903204,
           "eps": 16.78,
           "dividend_yield": 0.92,
           "revenue": 318272995328,
@@ -93,9 +93,9 @@
           }
         ],
         "options": {
-          "call_volume": 103758,
-          "put_volume": 71225,
-          "call_put_ratio": 1.46,
+          "call_volume": 106997,
+          "put_volume": 74221,
+          "call_put_ratio": 1.44,
           "expiry": "2026-06-17"
         },
         "earnings_dates": [],
@@ -104,9 +104,9 @@
           "SpaceX's hot debut sheds more light on Microsoft's dreadful stock price",
           "SpaceX extends historic rally, rockets to No. 4 by market value",
           "Microsoft reveals new Surface laptops starting at $1,499",
-          "SpaceX stock falls as post-IPO rally loses steam"
+          "Microsoft CoPilot Flirts with DeepSeek Squeezing Out Frontier Labs"
         ],
-        "collected_at": "2026-06-17T17:31:46.531898",
+        "collected_at": "2026-06-17T17:41:44.988020",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -144,25 +144,25 @@
       "NVDA": {
         "ticker": "NVDA",
         "name": "Nvidia",
-        "price": 207.14,
+        "price": 207.385,
         "prev_close": 207.41,
-        "change": -0.27,
-        "change_pct": -0.13,
+        "change": -0.025,
+        "change_pct": -0.01,
         "high_52w": 235.4656,
         "low_52w": 143.6587,
-        "volume_avg5": 120146099.0,
-        "rsi": 45.3,
+        "volume_avg5": 120368228.0,
+        "rsi": 45.4,
         "macd": {
-          "macd": -1.035,
-          "signal": 0.2203,
-          "hist": -1.2553
+          "macd": -1.0154,
+          "signal": 0.2242,
+          "hist": -1.2396
         },
         "moving_averages": {
-          "ma5": 207.412,
-          "ma20": 212.4315,
-          "ma60": 202.813,
-          "ma120": 193.7977,
-          "ma200": 189.4962
+          "ma5": 207.461,
+          "ma20": 212.4438,
+          "ma60": 202.8171,
+          "ma120": 193.7997,
+          "ma200": 189.4974
         },
         "support": [
           164.98
@@ -170,13 +170,13 @@
         "resistance": [
           235.47
         ],
-        "weekly_ma20": 194.4249,
-        "monthly_ma12": 188.5536,
+        "weekly_ma20": 194.4372,
+        "monthly_ma12": 188.5741,
         "financials": {
-          "market_cap": 5016653398016,
-          "pe_ratio": 31.718222,
-          "forward_pe": 16.27387,
-          "pb_ratio": 25.665428,
+          "market_cap": 5023132549120,
+          "pe_ratio": 31.759188,
+          "forward_pe": 16.29489,
+          "pb_ratio": 25.698576,
           "eps": 6.53,
           "dividend_yield": null,
           "revenue": 253491003392,
@@ -232,9 +232,9 @@
           }
         ],
         "options": {
-          "call_volume": 447347,
-          "put_volume": 312436,
-          "call_put_ratio": 1.43,
+          "call_volume": 461081,
+          "put_volume": 320049,
+          "call_put_ratio": 1.44,
           "expiry": "2026-06-17"
         },
         "earnings_dates": [],
@@ -243,9 +243,9 @@
           "5 stunning stats about the world's most valuable stocks",
           "What investors should know before hopping on SpaceX options trades",
           "SpaceX extends historic rally, rockets to No. 4 by market value",
-          "Nvidia Is Down Over 10% From Its Record High. Is This the Ultimate \"Buy the Dip\" Moment of 2026?"
+          "Sector Update: Tech Stocks Rise Wednesday Afternoon"
         ],
-        "collected_at": "2026-06-17T17:31:47.687574",
+        "collected_at": "2026-06-17T17:41:46.310347",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -283,25 +283,25 @@
       "GOOGL": {
         "ticker": "GOOGL",
         "name": "Alphabet",
-        "price": 364.83,
+        "price": 365.25,
         "prev_close": 373.25,
-        "change": -8.42,
-        "change_pct": -2.26,
+        "change": -8.0,
+        "change_pct": -2.14,
         "high_52w": 402.3797,
         "low_52w": 164.7201,
-        "volume_avg5": 24811841.0,
-        "rsi": 35.6,
+        "volume_avg5": 24842143.0,
+        "rsi": 35.8,
         "macd": {
-          "macd": -1.8974,
-          "signal": -0.3935,
-          "hist": -1.5039
+          "macd": -1.8639,
+          "signal": -0.3868,
+          "hist": -1.4771
         },
         "moving_averages": {
-          "ma5": 364.976,
-          "ma20": 372.5883,
-          "ma60": 353.4064,
-          "ma120": 335.1588,
-          "ma200": 309.95
+          "ma5": 365.06,
+          "ma20": 372.6093,
+          "ma60": 353.4134,
+          "ma120": 335.1623,
+          "ma200": 309.9522
         },
         "support": [
           273.34
@@ -309,13 +309,13 @@
         "resistance": [
           402.38
         ],
-        "weekly_ma20": 338.2734,
-        "monthly_ma12": 302.0741,
+        "weekly_ma20": 338.2944,
+        "monthly_ma12": 302.1091,
         "financials": {
-          "market_cap": 4451864674304,
-          "pe_ratio": 27.849617,
-          "forward_pe": 25.19438,
-          "pb_ratio": 9.23293,
+          "market_cap": 4456989589504,
+          "pe_ratio": 27.881678,
+          "forward_pe": 25.223385,
+          "pb_ratio": 9.243559,
           "eps": 13.1,
           "dividend_yield": 0.24,
           "revenue": 422498009088,
@@ -371,9 +371,9 @@
           }
         ],
         "options": {
-          "call_volume": 67132,
-          "put_volume": 44195,
-          "call_put_ratio": 1.52,
+          "call_volume": 68127,
+          "put_volume": 44622,
+          "call_put_ratio": 1.53,
           "expiry": "2026-06-17"
         },
         "earnings_dates": [],
@@ -384,7 +384,7 @@
           "HSBC Taps Google Cloud For 200 AI Use Cases",
           "AMD, Intel Rise as TSMC Capacity Tightens"
         ],
-        "collected_at": "2026-06-17T17:31:48.908147",
+        "collected_at": "2026-06-17T17:41:47.419870",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -422,37 +422,37 @@
       "AVGO": {
         "ticker": "AVGO",
         "name": "Broadcom",
-        "price": 396.525,
+        "price": 396.23,
         "prev_close": 376.71,
-        "change": 19.815,
-        "change_pct": 5.26,
+        "change": 19.52,
+        "change_pct": 5.18,
         "high_52w": 481.57,
         "low_52w": 247.3657,
-        "volume_avg5": 28973751.0,
+        "volume_avg5": 29028856.0,
         "rsi": 44.0,
         "macd": {
-          "macd": -7.6312,
-          "signal": -2.2655,
-          "hist": -5.3656
+          "macd": -7.6547,
+          "signal": -2.2702,
+          "hist": -5.3845
         },
         "moving_averages": {
-          "ma5": 386.963,
-          "ma20": 414.2388,
-          "ma60": 394.2194,
-          "ma120": 363.1812,
-          "ma200": 358.6013
+          "ma5": 386.904,
+          "ma20": 414.224,
+          "ma60": 394.2145,
+          "ma120": 363.1788,
+          "ma200": 358.5998
         },
         "support": [
           293.41
         ],
         "resistance": [],
-        "weekly_ma20": 369.3233,
-        "monthly_ma12": 354.2424,
+        "weekly_ma20": 369.3086,
+        "monthly_ma12": 354.2178,
         "financials": {
-          "market_cap": 1886499504128,
-          "pe_ratio": 65.758705,
-          "forward_pe": 20.49176,
-          "pb_ratio": 21.515192,
+          "market_cap": 1885096116224,
+          "pe_ratio": 65.709785,
+          "forward_pe": 20.476517,
+          "pb_ratio": 21.499186,
           "eps": 6.03,
           "dividend_yield": 0.69,
           "revenue": 75464998912,
@@ -508,9 +508,9 @@
           }
         ],
         "options": {
-          "call_volume": 84947,
-          "put_volume": 34317,
-          "call_put_ratio": 2.48,
+          "call_volume": 86169,
+          "put_volume": 34887,
+          "call_put_ratio": 2.47,
           "expiry": "2026-06-17"
         },
         "earnings_dates": [],
@@ -521,7 +521,7 @@
           "AVGO's Gross Margin Contracts Y/Y: Is Growth Getting Harder?",
           "Why Broadcom Stock Is Bouncing Higher Today"
         ],
-        "collected_at": "2026-06-17T17:31:50.107802",
+        "collected_at": "2026-06-17T17:41:48.630663",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -559,37 +559,37 @@
       "TSM": {
         "ticker": "TSM",
         "name": "TSMC",
-        "price": 439.8301,
+        "price": 440.04,
         "prev_close": 425.83,
-        "change": 14.0001,
-        "change_pct": 3.29,
+        "change": 14.21,
+        "change_pct": 3.34,
         "high_52w": 445.6464,
         "low_52w": 207.2183,
-        "volume_avg5": 10373500.0,
-        "rsi": 54.5,
+        "volume_avg5": 10388768.0,
+        "rsi": 54.6,
         "macd": {
-          "macd": 8.6113,
-          "signal": 9.0616,
-          "hist": -0.4502
+          "macd": 8.6281,
+          "signal": 9.0649,
+          "hist": -0.4368
         },
         "moving_averages": {
-          "ma5": 430.412,
-          "ma20": 423.574,
-          "ma60": 391.799,
-          "ma120": 365.8894,
-          "ma200": 332.3716
+          "ma5": 430.454,
+          "ma20": 423.5845,
+          "ma60": 391.8025,
+          "ma120": 365.8912,
+          "ma200": 332.3727
         },
         "support": [
           315.76
         ],
         "resistance": [],
-        "weekly_ma20": 378.4999,
-        "monthly_ma12": 327.0985,
+        "weekly_ma20": 378.5104,
+        "monthly_ma12": 327.116,
         "financials": {
-          "market_cap": 2281167388672,
-          "pe_ratio": 37.81858,
-          "forward_pe": 22.376207,
-          "pb_ratio": 67.27953,
+          "market_cap": 2282256072704,
+          "pe_ratio": 37.836628,
+          "forward_pe": 22.386887,
+          "pb_ratio": 67.311646,
           "eps": 11.63,
           "dividend_yield": null,
           "revenue": 4103904165888,
@@ -645,8 +645,8 @@
           }
         ],
         "options": {
-          "call_volume": 13221,
-          "put_volume": 15483,
+          "call_volume": 13311,
+          "put_volume": 15695,
           "call_put_ratio": 0.85,
           "expiry": "2026-06-18"
         },
@@ -658,7 +658,7 @@
           "Is ASML (ASML) The Best Undervalued AI Stock?",
           "Intel Stock Pops as Chip-Making Bet Moves Closer to Paying Off"
         ],
-        "collected_at": "2026-06-17T17:31:51.462526",
+        "collected_at": "2026-06-17T17:41:49.980592",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -696,25 +696,25 @@
       "TSLA": {
         "ticker": "TSLA",
         "name": "Tesla",
-        "price": 404.4,
+        "price": 404.175,
         "prev_close": 404.66,
-        "change": -0.26,
-        "change_pct": -0.06,
+        "change": -0.485,
+        "change_pct": -0.12,
         "high_52w": 489.88,
         "low_52w": 293.94,
-        "volume_avg5": 43677857.0,
-        "rsi": 37.3,
+        "volume_avg5": 43769087.0,
+        "rsi": 37.2,
         "macd": {
-          "macd": -1.9783,
-          "signal": 0.2096,
-          "hist": -2.1879
+          "macd": -1.9962,
+          "signal": 0.206,
+          "hist": -2.2022
         },
         "moving_averages": {
-          "ma5": 405.158,
-          "ma20": 414.937,
-          "ma60": 395.7737,
-          "ma120": 408.0835,
-          "ma200": 416.6482
+          "ma5": 405.113,
+          "ma20": 414.9258,
+          "ma60": 395.7699,
+          "ma120": 408.0816,
+          "ma200": 416.6471
         },
         "support": [
           343.25
@@ -722,13 +722,13 @@
         "resistance": [
           445.27
         ],
-        "weekly_ma20": 397.605,
-        "monthly_ma12": 404.15,
+        "weekly_ma20": 397.5938,
+        "monthly_ma12": 404.1313,
         "financials": {
-          "market_cap": 1518814625792,
-          "pe_ratio": 371.00916,
-          "forward_pe": 161.76324,
-          "pb_ratio": 18.468283,
+          "market_cap": 1517969604608,
+          "pe_ratio": 370.80273,
+          "forward_pe": 161.67323,
+          "pb_ratio": 18.458008,
           "eps": 1.09,
           "dividend_yield": null,
           "revenue": 97878999040,
@@ -765,8 +765,8 @@
         ],
         "insider": [],
         "options": {
-          "call_volume": 567407,
-          "put_volume": 572215,
+          "call_volume": 579673,
+          "put_volume": 586201,
           "call_put_ratio": 0.99,
           "expiry": "2026-06-17"
         },
@@ -778,7 +778,7 @@
           "Goldman Sachs Has a Great News For Tesla Stock Fans",
           "AMD, Intel Rise as TSMC Capacity Tightens"
         ],
-        "collected_at": "2026-06-17T17:31:52.644346",
+        "collected_at": "2026-06-17T17:41:51.252821",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -816,37 +816,37 @@
       "IVV": {
         "ticker": "IVV",
         "name": "iShares S&P 500 ETF",
-        "price": 750.8253,
+        "price": 751.205,
         "prev_close": 752.01,
-        "change": -1.1847,
-        "change_pct": -0.16,
+        "change": -0.805,
+        "change_pct": -0.11,
         "high_52w": 761.016,
         "low_52w": 589.6113,
-        "volume_avg5": 14919867.0,
-        "rsi": 46.9,
+        "volume_avg5": 14928538.0,
+        "rsi": 47.1,
         "macd": {
-          "macd": 4.747,
-          "signal": 6.1029,
-          "hist": -1.3558
+          "macd": 4.7773,
+          "signal": 6.1089,
+          "hist": -1.3316
         },
         "moving_averages": {
-          "ma5": 748.2789,
-          "ma20": 748.7077,
-          "ma60": 716.7438,
-          "ma120": 700.0935,
-          "ma200": 686.9646
+          "ma5": 748.3548,
+          "ma20": 748.7267,
+          "ma60": 716.7501,
+          "ma120": 700.0967,
+          "ma200": 686.9665
         },
         "support": [
           633.23
         ],
         "resistance": [],
-        "weekly_ma20": 703.4184,
-        "monthly_ma12": 685.8496,
+        "weekly_ma20": 703.4374,
+        "monthly_ma12": 685.8812,
         "financials": {
           "market_cap": null,
-          "pe_ratio": 27.011667,
+          "pe_ratio": 27.026594,
           "forward_pe": null,
-          "pb_ratio": 1.7424455,
+          "pb_ratio": 1.7434083,
           "eps": null,
           "dividend_yield": 1.06,
           "revenue": null,
@@ -867,9 +867,9 @@
         "institutional": [],
         "insider": [],
         "options": {
-          "call_volume": 13855,
-          "put_volume": 359,
-          "call_put_ratio": 38.59,
+          "call_volume": 13858,
+          "put_volume": 360,
+          "call_put_ratio": 38.49,
           "expiry": "2026-06-18"
         },
         "earnings_dates": [],
@@ -880,7 +880,7 @@
           "The Case For Mutual Fund-To-ETF Conversion: Flow Picture",
           "Exchange-Traded Funds Rise, US Equities Rise After Midday"
         ],
-        "collected_at": "2026-06-17T17:31:54.124406",
+        "collected_at": "2026-06-17T17:41:52.711461",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -924,7 +924,7 @@
         "change_pct": -0.72,
         "high_52w": 32.83,
         "low_52w": 25.4732,
-        "volume_avg5": 19941648.0,
+        "volume_avg5": 20032148.0,
         "rsi": 43.2,
         "macd": {
           "macd": 0.1892,
@@ -969,9 +969,9 @@
         "institutional": [],
         "insider": [],
         "options": {
-          "call_volume": 549,
-          "put_volume": 305,
-          "call_put_ratio": 1.8,
+          "call_volume": 566,
+          "put_volume": 309,
+          "call_put_ratio": 1.83,
           "expiry": "2026-06-18"
         },
         "earnings_dates": [],
@@ -982,7 +982,7 @@
           "64 Years of Raises: How DGRO Finds Companies That Never Cut Dividends",
           "This $1.7 Million Portfolio Pays More Than a Member of Congress"
         ],
-        "collected_at": "2026-06-17T17:31:55.532943",
+        "collected_at": "2026-06-17T17:41:54.165618",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1025,27 +1025,27 @@
         "change": 94000.0,
         "change_pct": 4.11,
         "high_52w": 2382000.0,
-        "low_52w": 243980.4688,
+        "low_52w": 243980.4531,
         "volume_avg5": 3885944.0,
         "rsi": 60.5,
         "macd": {
-          "macd": 166090.8855,
-          "signal": 183624.8956,
+          "macd": 166090.8856,
+          "signal": 183624.8957,
           "hist": -17534.0101
         },
         "moving_averages": {
           "ma5": 2193800.0,
           "ma20": 2115587.0938,
           "ma60": 1515126.9323,
-          "ma120": 1162961.6021,
-          "ma200": 874151.3936
+          "ma120": 1162961.6016,
+          "ma200": 874151.3959
         },
         "support": [
           806865.06
         ],
         "resistance": [],
         "weekly_ma20": 1370749.7906,
-        "monthly_ma12": 949911.2839,
+        "monthly_ma12": 949911.2917,
         "financials": {
           "market_cap": 1789544294776832,
           "pe_ratio": null,
@@ -1079,7 +1079,7 @@
           "SK Hynix Chairman's $917 Million Divorce Fight Resumes",
           "Quantum Stocks Jump as Growth Trade Revives"
         ],
-        "collected_at": "2026-06-17T17:31:56.666820",
+        "collected_at": "2026-06-17T17:41:55.244671",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1192,7 +1192,7 @@
           "Samsung Electronics (KOSE:A005930) Stock Could Be 64.5% Overvalued After Its Sharp Run Up",
           "The Trump Phone Is More Novelty Than Serious Smartphone Contender"
         ],
-        "collected_at": "2026-06-17T17:31:57.722743",
+        "collected_at": "2026-06-17T17:41:56.234438",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1289,7 +1289,7 @@
           "Asia’s LNG scramble gives Venture Global a fresh opening",
           "U.S. Locks In $56 Billion of Asian Energy Deals Amid Gulf Disruptions"
         ],
-        "collected_at": "2026-06-17T17:31:58.909935",
+        "collected_at": "2026-06-17T17:41:57.403190",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1336,23 +1336,23 @@
         "volume_avg5": 1060965.0,
         "rsi": 42.1,
         "macd": {
-          "macd": 7100.2527,
+          "macd": 7100.2526,
           "signal": 18956.2374,
-          "hist": -11855.9848
+          "hist": -11855.9847
         },
         "moving_averages": {
           "ma5": 618600.0,
           "ma20": 659164.8344,
           "ma60": 573966.3714,
-          "ma120": 511414.0378,
-          "ma200": 403869.2427
+          "ma120": 511414.0398,
+          "ma200": 403869.2442
         },
         "support": [
           443864.56
         ],
         "resistance": [],
-        "weekly_ma20": 568674.1234,
-        "monthly_ma12": 414679.0156,
+        "weekly_ma20": 568674.125,
+        "monthly_ma12": 414679.0169,
         "financials": {
           "market_cap": 161813463302144,
           "pe_ratio": null,
@@ -1386,7 +1386,7 @@
           "Vietnam vehicle market expands by 7% in May – VAMA",
           "SL Green Realty (SLG) Is Up 9.5% After 10 East 53rd Sale And New JV Deals – Has The Bull Case Changed?"
         ],
-        "collected_at": "2026-06-17T17:31:59.955283",
+        "collected_at": "2026-06-17T17:41:59.018995",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1483,7 +1483,7 @@
           "Wall Street's $566 Billion Nuclear Frenzy: The Real AI Power Play No One's Talking About",
           "NuScale Power Pre-Q3 Earnings Analysis: Hold or Fold the Stock?"
         ],
-        "collected_at": "2026-06-17T17:32:01.405064",
+        "collected_at": "2026-06-17T17:42:00.166366",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1576,7 +1576,7 @@
         "options": {},
         "earnings_dates": [],
         "recent_news_titles": [],
-        "collected_at": "2026-06-17T17:32:02.638009",
+        "collected_at": "2026-06-17T17:42:01.421083",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1667,7 +1667,7 @@
         "options": {},
         "earnings_dates": [],
         "recent_news_titles": [],
-        "collected_at": "2026-06-17T17:32:03.893374",
+        "collected_at": "2026-06-17T17:42:02.661390",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1766,7 +1766,7 @@
           "Pacira BioSciences Q4 Earnings Call Highlights",
           "PCRX, LG Chem Partner to Expand Exparel Reach Across the Asia-Pacific"
         ],
-        "collected_at": "2026-06-17T17:32:04.969894",
+        "collected_at": "2026-06-17T17:42:04.033845",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1863,7 +1863,7 @@
           "Samsung SDI signs first EV battery deal with Mercedes",
           "Mercedes and Samsung SDI sign first EV battery supply deal"
         ],
-        "collected_at": "2026-06-17T17:32:06.179880",
+        "collected_at": "2026-06-17T17:42:05.140978",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1906,7 +1906,7 @@
         "change": -5000.0,
         "change_pct": -1.27,
         "high_52w": 532608.9375,
-        "low_52w": 246709.9062,
+        "low_52w": 246709.8906,
         "volume_avg5": 302019.0,
         "rsi": 32.7,
         "macd": {
@@ -1919,14 +1919,14 @@
           "ma20": 406055.8094,
           "ma60": 402195.651,
           "ma120": 372538.6547,
-          "ma200": 340756.752
+          "ma200": 340756.7523
         },
         "support": [],
         "resistance": [
           532608.94
         ],
         "weekly_ma20": 394113.2922,
-        "monthly_ma12": 343607.0234,
+        "monthly_ma12": 343607.0208,
         "financials": {
           "market_cap": 29076188299264,
           "pe_ratio": null,
@@ -1960,7 +1960,7 @@
           "How POSCO Holdings (KOSE:A005490) Lithium Push Is Reshaping The Investment Story",
           "POSCO and ReElement Launch Strategic U.S. Rare Earth Venture"
         ],
-        "collected_at": "2026-06-17T17:32:07.244620",
+        "collected_at": "2026-06-17T17:42:06.215956",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
