@@ -1,6 +1,11 @@
 name: Dashboard Update
 
 on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'index.html'   # 봇 커밋이 다시 트리거 안 되도록
+      - 'data/**'
   schedule:
     # UTC 06:30 = KST 15:30 (한국 장 마감) — 월~금
     - cron: '30 6 * * 1-5'
