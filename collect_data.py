@@ -340,7 +340,7 @@ def fetch_news(region: str, max_per_feed: int = 5) -> list:
             seen.add(a["title"])
             unique.append(a)
 
-    return unique[:10]  # 최대 10개
+    return unique[:5]  # 최대 5개
 
 
 def fetch_all_news() -> dict:
