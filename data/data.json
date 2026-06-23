@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-06-23T10:09:12.547833",
+  "generated_at": "2026-06-23T16:42:51.006992",
   "stocks": {
     "watchlist": {
       "MSFT": {
         "ticker": "MSFT",
         "name": "Microsoft",
-        "price": 367.34,
-        "prev_close": 379.4,
-        "change": -12.06,
-        "change_pct": -3.18,
-        "high_52w": 538.6586,
+        "price": 373.04,
+        "prev_close": 367.34,
+        "change": 5.7,
+        "change_pct": 1.55,
+        "high_52w": 538.6585,
         "low_52w": 355.9989,
-        "volume_avg5": 42104420.0,
-        "rsi": 9.3,
+        "volume_avg5": 39292968.0,
+        "rsi": 16.2,
         "macd": {
-          "macd": -10.2843,
-          "signal": -4.7408,
-          "hist": -5.5435
+          "macd": -11.1804,
+          "signal": -6.0287,
+          "hist": -5.1517
         },
         "moving_averages": {
-          "ma5": 383.848,
-          "ma20": 410.561,
-          "ma60": 404.94,
-          "ma120": 414.4755,
-          "ma200": 448.8813
+          "ma5": 378.504,
+          "ma20": 408.2845,
+          "ma60": 405.071,
+          "ma120": 413.543,
+          "ma200": 448.2226
         },
         "support": [
           356.0
@@ -31,13 +31,13 @@
         "resistance": [
           431.98
         ],
-        "weekly_ma20": 399.3827,
-        "monthly_ma12": 453.9535,
+        "weekly_ma20": 399.6677,
+        "monthly_ma12": 454.4285,
         "financials": {
-          "market_cap": 2728761229312,
-          "pe_ratio": 21.878498,
-          "forward_pe": 18.988003,
-          "pb_ratio": 6.585869,
+          "market_cap": 2771326337024,
+          "pe_ratio": 22.219772,
+          "forward_pe": 19.284191,
+          "pb_ratio": 6.688599,
           "eps": 16.79,
           "dividend_yield": 0.99,
           "revenue": 318272995328,
@@ -93,20 +93,20 @@
           }
         ],
         "options": {
-          "call_volume": 39164,
-          "put_volume": 22778,
-          "call_put_ratio": 1.72,
+          "call_volume": 94431,
+          "put_volume": 32703,
+          "call_put_ratio": 2.89,
           "expiry": "2026-06-24"
         },
         "earnings_dates": [],
         "recent_news_titles": [
-          "SpaceX stock tumbles 16.4%, shaving off most IPO gains since debut",
-          "Microsoft CEO Satya Nadella warns of AI concentration risks",
-          "Stocks hit by Fed rate reality check; oil slips",
-          "Ranking the \"Magnificent Seven\" From Most to Least Attractive, Based on Future Cash Flow",
-          "SpaceX sheds $600 billion in three days as it taps the bond market for the first time"
+          "SpaceX stock in focus: Why this strategist says to think like Woody — not Buzz Lightyear",
+          "Memory's price surge threatens Apple's 'magic formula' — and the economy: WSJ reporter",
+          "Chevron and Microsoft bet big on data centers",
+          "How To Play The Options Game With This Struggling Software Titan",
+          "Melius Research's Ben Reitzes Slams Satya Nadella Pivoting Microsoft To Being Model-Agnostic — 'What's He Talking About?'"
         ],
-        "collected_at": "2026-06-23T10:08:50.647956",
+        "collected_at": "2026-06-23T16:42:26.380058",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -144,25 +144,25 @@
       "NVDA": {
         "ticker": "NVDA",
         "name": "Nvidia",
-        "price": 208.65,
-        "prev_close": 210.69,
-        "change": -2.04,
-        "change_pct": -0.97,
+        "price": 202.35,
+        "prev_close": 208.65,
+        "change": -6.3,
+        "change_pct": -3.02,
         "high_52w": 235.4656,
         "low_52w": 143.9782,
-        "volume_avg5": 153389000.0,
-        "rsi": 38.5,
+        "volume_avg5": 137008350.0,
+        "rsi": 35.9,
         "macd": {
-          "macd": -0.97,
-          "signal": -0.2386,
-          "hist": -0.7314
+          "macd": -1.4372,
+          "signal": -0.4783,
+          "hist": -0.9589
         },
         "moving_averages": {
-          "ma5": 208.77,
-          "ma20": 211.1508,
-          "ma60": 203.8694,
-          "ma120": 194.1158,
-          "ma200": 189.8757
+          "ma5": 206.75,
+          "ma20": 210.5143,
+          "ma60": 204.3912,
+          "ma120": 194.2355,
+          "ma200": 190.0303
         },
         "support": [
           164.98
@@ -170,13 +170,13 @@
         "resistance": [
           235.47
         ],
-        "weekly_ma20": 195.7757,
-        "monthly_ma12": 188.6795,
+        "weekly_ma20": 195.4607,
+        "monthly_ma12": 188.1545,
         "financials": {
-          "market_cap": 5053711646720,
-          "pe_ratio": 31.952524,
-          "forward_pe": 16.391691,
-          "pb_ratio": 25.855019,
+          "market_cap": 4900876976128,
+          "pe_ratio": 30.986216,
+          "forward_pe": 15.895973,
+          "pb_ratio": 25.07311,
           "eps": 6.53,
           "dividend_yield": 0.48,
           "revenue": 253491003392,
@@ -232,20 +232,20 @@
           }
         ],
         "options": {
-          "call_volume": 234086,
-          "put_volume": 126397,
-          "call_put_ratio": 1.85,
+          "call_volume": 317848,
+          "put_volume": 225164,
+          "call_put_ratio": 1.41,
           "expiry": "2026-06-24"
         },
         "earnings_dates": [],
         "recent_news_titles": [
-          "Stock market today: S&P 500, Nasdaq slide as Big Tech, SpaceX hammered",
-          "3 S&P 500 Stocks with Exciting Potential",
-          "2 Hypergrowth Artificial Intelligence (AI) Stocks Smart Investors Are Loading Up On",
-          "Meet the Unstoppable Stock That Obliterated Nvidia, Broadcom, and Advanced Micro Devices (AMD) Over the Last 12 Months With a 670% Return",
-          "Ranking the \"Magnificent Seven\" From Most to Least Attractive, Based on Future Cash Flow"
+          "Nvidia, Micron, AMD lead tech sell-off as AI trade cools",
+          "Micron stock hits an all-time high, thanks to the new Anthropic deal",
+          "'The most powerful market force I think I've ever seen in my career': Strategist discusses",
+          "3 Screaming Buy Artificial Intelligence (AI) Stocks Set for a Massive Summer Rebound",
+          "Down Nearly 50% From Its High, Is Super Micro Computer Stock a Bargain Buy?"
         ],
-        "collected_at": "2026-06-23T10:08:51.775831",
+        "collected_at": "2026-06-23T16:42:27.953447",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -283,25 +283,25 @@
       "GOOGL": {
         "ticker": "GOOGL",
         "name": "Alphabet",
-        "price": 349.68,
-        "prev_close": 368.03,
-        "change": -18.35,
-        "change_pct": -4.99,
+        "price": 347.785,
+        "prev_close": 349.68,
+        "change": -1.895,
+        "change_pct": -0.54,
         "high_52w": 402.3797,
         "low_52w": 164.7201,
-        "volume_avg5": 34852320.0,
-        "rsi": 36.4,
+        "volume_avg5": 32605052.0,
+        "rsi": 41.8,
         "macd": {
-          "macd": -3.0789,
-          "signal": -1.1641,
-          "hist": -1.9147
+          "macd": -4.2071,
+          "signal": -1.7727,
+          "hist": -2.4344
         },
         "moving_averages": {
-          "ma5": 364.82,
-          "ma20": 369.6165,
-          "ma60": 355.6672,
-          "ma120": 335.9079,
-          "ma200": 311.3296
+          "ma5": 360.507,
+          "ma20": 367.8687,
+          "ma60": 356.7844,
+          "ma120": 336.1965,
+          "ma200": 311.9104
         },
         "support": [
           273.34
@@ -309,13 +309,13 @@
         "resistance": [
           402.38
         ],
-        "weekly_ma20": 339.7954,
-        "monthly_ma12": 300.8116,
+        "weekly_ma20": 339.7007,
+        "monthly_ma12": 300.6537,
         "financials": {
-          "market_cap": 4266995482624,
-          "pe_ratio": 26.67277,
-          "forward_pe": 24.121851,
-          "pb_ratio": 8.849522,
+          "market_cap": 4243871760384,
+          "pe_ratio": 26.528223,
+          "forward_pe": 23.89705,
+          "pb_ratio": 8.801564,
           "eps": 13.11,
           "dividend_yield": 0.25,
           "revenue": 422498009088,
@@ -371,20 +371,20 @@
           }
         ],
         "options": {
-          "call_volume": 57861,
-          "put_volume": 20997,
-          "call_put_ratio": 2.76,
+          "call_volume": 53046,
+          "put_volume": 25305,
+          "call_put_ratio": 2.1,
           "expiry": "2026-06-24"
         },
         "earnings_dates": [],
         "recent_news_titles": [
-          "Stock market today: S&P 500, Nasdaq slide as Big Tech, SpaceX hammered",
+          "Nvidia, Micron, AMD lead tech sell-off as AI trade cools",
           "SpaceX initiates first bond sale while the stock sheds post-IPO gains",
-          "Stocks hit by Fed rate reality check; oil slips",
-          "Ranking the \"Magnificent Seven\" From Most to Least Attractive, Based on Future Cash Flow",
-          "Nasdaq futures drop over 2% as AI buildout costs, Fed rate outlook weigh"
+          "Tech stocks tumble for a second day. Here's what is behind the selloff.",
+          "S&P, Nasdaq drop on tech selloff as concerns about hawkish Fed, AI spending mount",
+          "European Stocks Close Mixed in Tuesday Trading; Eurozone Business Activity Contracts for Third Straight Month"
         ],
-        "collected_at": "2026-06-23T10:08:52.879597",
+        "collected_at": "2026-06-23T16:42:29.153427",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -422,37 +422,37 @@
       "AVGO": {
         "ticker": "AVGO",
         "name": "Broadcom",
-        "price": 392.13,
-        "prev_close": 410.7,
-        "change": -18.57,
-        "change_pct": -4.52,
+        "price": 383.206,
+        "prev_close": 392.13,
+        "change": -8.924,
+        "change_pct": -2.28,
         "high_52w": 480.8091,
         "low_52w": 251.9241,
-        "volume_avg5": 35077360.0,
-        "rsi": 36.7,
+        "volume_avg5": 30849897.0,
+        "rsi": 29.6,
         "macd": {
-          "macd": -6.4211,
-          "signal": -3.7742,
-          "hist": -2.6469
+          "macd": -7.1674,
+          "signal": -4.4528,
+          "hist": -2.7145
         },
         "moving_averages": {
-          "ma5": 392.9083,
-          "ma20": 411.994,
-          "ma60": 396.3151,
-          "ma120": 363.436,
-          "ma200": 359.0494
+          "ma5": 390.886,
+          "ma20": 410.48,
+          "ma60": 397.553,
+          "ma120": 363.7285,
+          "ma200": 359.446
         },
         "support": [
           292.95
         ],
         "resistance": [],
-        "weekly_ma20": 372.5014,
-        "monthly_ma12": 353.3686,
+        "weekly_ma20": 372.0552,
+        "monthly_ma12": 352.6249,
         "financials": {
-          "market_cap": 1865589981184,
-          "pe_ratio": 65.355,
-          "forward_pe": 20.228518,
-          "pb_ratio": 21.276722,
+          "market_cap": 1823390302208,
+          "pe_ratio": 63.876667,
+          "forward_pe": 19.770948,
+          "pb_ratio": 20.795443,
           "eps": 6.0,
           "dividend_yield": 0.66,
           "revenue": 75464998912,
@@ -508,20 +508,20 @@
           }
         ],
         "options": {
-          "call_volume": 14255,
-          "put_volume": 10387,
-          "call_put_ratio": 1.37,
+          "call_volume": 17114,
+          "put_volume": 12444,
+          "call_put_ratio": 1.38,
           "expiry": "2026-06-24"
         },
         "earnings_dates": [],
         "recent_news_titles": [
-          "Meet the Unstoppable Stock That Obliterated Nvidia, Broadcom, and Advanced Micro Devices (AMD) Over the Last 12 Months With a 670% Return",
-          "NVIDIA Stock's Next Big Move Might Not Involve A GPU",
-          "Broadcom's AI Revenue Is on Pace to Triple to $16 Billion in a Single Quarter, but the Stock Just Dipped 17%. Is This an Opportunity to Buy the Dip?",
-          "The Market Is Panicking on Broadcom. This Is Why I Keep Buying The Stock",
-          "The Real Price Of Admission For Broadcom Stock"
+          "Nvidia, Micron, AMD lead tech sell-off as AI trade cools",
+          "How Broadcom’s (AVGO) AI XPV Platform Ties Its Custom XPUs to the Next Wave of AI Compute Demand",
+          "Broadcom Stock Drops After Strong Earnings -- Time to Buy?",
+          "Is The AI-Fueled Growth Story For AMD Stock Worth The Elevated Price?",
+          "Nvidia Stock Falls as Tech Selloff Catches Up With Chips"
         ],
-        "collected_at": "2026-06-23T10:08:54.087985",
+        "collected_at": "2026-06-23T16:42:30.377038",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -559,37 +559,37 @@
       "TSM": {
         "ticker": "TSM",
         "name": "TSMC",
-        "price": 467.67,
-        "prev_close": 462.12,
-        "change": 5.55,
-        "change_pct": 1.2,
+        "price": 442.335,
+        "prev_close": 467.67,
+        "change": -25.335,
+        "change_pct": -5.42,
         "high_52w": 467.67,
         "low_52w": 208.0194,
-        "volume_avg5": 14508060.0,
-        "rsi": 59.1,
+        "volume_avg5": 14648578.0,
+        "rsi": 49.2,
         "macd": {
-          "macd": 12.3925,
-          "signal": 9.8442,
-          "hist": 2.5482
+          "macd": 11.8855,
+          "signal": 10.2525,
+          "hist": 1.633
         },
         "moving_averages": {
-          "ma5": 445.834,
-          "ma20": 429.3355,
-          "ma60": 395.6777,
-          "ma120": 368.5858,
-          "ma200": 334.7084
+          "ma5": 446.021,
+          "ma20": 431.2735,
+          "ma60": 397.6275,
+          "ma120": 369.7771,
+          "ma200": 335.7569
         },
         "support": [
           315.76
         ],
         "resistance": [],
-        "weekly_ma20": 385.6451,
-        "monthly_ma12": 329.4185,
+        "weekly_ma20": 384.3783,
+        "monthly_ma12": 327.3072,
         "financials": {
-          "market_cap": 2425558401024,
-          "pe_ratio": 40.31638,
-          "forward_pe": 23.792553,
-          "pb_ratio": 71.538124,
+          "market_cap": 2294158983168,
+          "pe_ratio": 38.132324,
+          "forward_pe": 22.503643,
+          "pb_ratio": 67.6627,
           "eps": 11.6,
           "dividend_yield": 0.81,
           "revenue": 4103904165888,
@@ -645,20 +645,20 @@
           }
         ],
         "options": {
-          "call_volume": 19251,
-          "put_volume": 28716,
-          "call_put_ratio": 0.67,
+          "call_volume": 9174,
+          "put_volume": 11267,
+          "call_put_ratio": 0.81,
           "expiry": "2026-06-26"
         },
         "earnings_dates": [],
         "recent_news_titles": [
+          "Why TSMC’s CoWoS Role Keeps Taiwan Semiconductor (TSM) Central to the HBM-Driven AI Chip Boom",
+          "Chip Stocks Tumble From Record Heights, Lead Tech Wreck",
+          "Tech, Media & Telecom Roundup: Market Talk",
           "SpaceX sheds $600 billion in three days as it taps the bond market for the first time",
-          "‘FOMO Really Got Me’: Taiwanese Go Deep Into Debt to Amp 100% Stock Rally",
-          "TSMC (TSM) Advances While Market Declines: Some Information for Investors",
-          "Cerebras gets set for inaugural earnings with upside potential, Wedbush says",
-          "The Best-Performing Dividend ETFs Have a Big AI Bet"
+          "‘FOMO Really Got Me’: Taiwanese Go Deep Into Debt to Amp 100% Stock Rally"
         ],
-        "collected_at": "2026-06-23T10:08:55.240304",
+        "collected_at": "2026-06-23T16:42:31.672020",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -696,25 +696,25 @@
       "TSLA": {
         "ticker": "TSLA",
         "name": "Tesla",
-        "price": 405.05,
-        "prev_close": 400.49,
-        "change": 4.56,
-        "change_pct": 1.14,
+        "price": 384.625,
+        "prev_close": 405.05,
+        "change": -20.425,
+        "change_pct": -5.04,
         "high_52w": 489.88,
         "low_52w": 293.94,
-        "volume_avg5": 47102460.0,
-        "rsi": 46.1,
+        "volume_avg5": 43163396.0,
+        "rsi": 37.1,
         "macd": {
-          "macd": -2.6349,
-          "signal": -0.9307,
-          "hist": -1.7042
+          "macd": -4.066,
+          "signal": -1.5577,
+          "hist": -2.5082
         },
         "moving_averages": {
-          "ma5": 403.546,
-          "ma20": 413.0575,
-          "ma60": 396.2493,
-          "ma120": 406.7246,
-          "ma200": 417.3186
+          "ma5": 398.241,
+          "ma20": 410.9882,
+          "ma60": 396.4579,
+          "ma120": 406.0995,
+          "ma200": 417.549
         },
         "support": [
           343.25
@@ -722,13 +722,13 @@
         "resistance": [
           445.27
         ],
-        "weekly_ma20": 397.1065,
-        "monthly_ma12": 404.2042,
+        "weekly_ma20": 396.0853,
+        "monthly_ma12": 402.5021,
         "financials": {
-          "market_cap": 1521255841792,
-          "pe_ratio": 371.60547,
-          "forward_pe": 162.02324,
-          "pb_ratio": 18.497969,
+          "market_cap": 1444526424064,
+          "pe_ratio": 352.86237,
+          "forward_pe": 153.85107,
+          "pb_ratio": 17.564964,
           "eps": 1.09,
           "dividend_yield": null,
           "revenue": 97878999040,
@@ -739,7 +739,7 @@
           "current_ratio": 2.043,
           "roe": 0.04901,
           "short_ratio": 1.48,
-          "analyst_target": 420.54633,
+          "analyst_target": 421.1561,
           "analyst_rating": 2.34043,
           "earnings_date": "1776888000",
           "sector": "Consumer Cyclical",
@@ -765,20 +765,20 @@
         ],
         "insider": [],
         "options": {
-          "call_volume": 243896,
-          "put_volume": 200366,
-          "call_put_ratio": 1.22,
+          "call_volume": 302167,
+          "put_volume": 346877,
+          "call_put_ratio": 0.87,
           "expiry": "2026-06-24"
         },
         "earnings_dates": [],
         "recent_news_titles": [
-          "Tesla Auto Registrations in Europe Gain in May, Other Makers Mixed",
-          "Ranking the \"Magnificent Seven\" From Most to Least Attractive, Based on Future Cash Flow",
-          "Nasdaq, S&P 500, Dow Futures Crack On Tech, SpaceX Selloff: Why SPCX, TSLA, INFQ, MU, HOOD, ADTX Are In Focus",
-          "NatPower, Tesla reach deal on first phase of $5 billion battery storage plan",
-          "Tesla Notches Over Twofold Increase in European Monthly Sales"
+          "Tesla leads Cars.com's 'Most American' car title yet again, and now tariffs play a part",
+          "SpaceX stock in focus: Why this strategist says to think like Woody — not Buzz Lightyear",
+          "Tesla Stunning Europe Rebound Sparks Fresh EV Battle With BYD",
+          "Tesla Faces New Crash Probe",
+          "Stocks fall as chipmakers and tech slump on rate bets"
         ],
-        "collected_at": "2026-06-23T10:08:56.357550",
+        "collected_at": "2026-06-23T16:42:32.878736",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -816,37 +816,37 @@
       "IVV": {
         "ticker": "IVV",
         "name": "iShares S&P 500 ETF",
-        "price": 747.78,
-        "prev_close": 750.11,
-        "change": -2.33,
-        "change_pct": -0.31,
+        "price": 741.15,
+        "prev_close": 747.78,
+        "change": -6.63,
+        "change_pct": -0.89,
         "high_52w": 761.016,
-        "low_52w": 595.8072,
-        "volume_avg5": 16610720.0,
-        "rsi": 43.8,
+        "low_52w": 595.8073,
+        "volume_avg5": 14547095.0,
+        "rsi": 40.5,
         "macd": {
-          "macd": 3.9284,
-          "signal": 5.2685,
-          "hist": -1.3401
+          "macd": 3.1962,
+          "signal": 4.8541,
+          "hist": -1.6578
         },
         "moving_averages": {
-          "ma5": 749.772,
-          "ma20": 748.8426,
-          "ma60": 719.6976,
-          "ma120": 701.0135,
-          "ma200": 688.0377
+          "ma5": 746.732,
+          "ma20": 748.5435,
+          "ma60": 721.2789,
+          "ma120": 701.4628,
+          "ma200": 688.521
         },
         "support": [
           633.23
         ],
         "resistance": [],
-        "weekly_ma20": 706.2674,
-        "monthly_ma12": 685.5958,
+        "weekly_ma20": 705.9359,
+        "monthly_ma12": 685.0433,
         "financials": {
           "market_cap": null,
-          "pe_ratio": 26.903372,
+          "pe_ratio": 26.664478,
           "forward_pe": null,
-          "pb_ratio": 1.7354596,
+          "pb_ratio": 1.7200494,
           "eps": null,
           "dividend_yield": 1.06,
           "revenue": null,
@@ -867,20 +867,20 @@
         "institutional": [],
         "insider": [],
         "options": {
-          "call_volume": 100,
-          "put_volume": 329,
-          "call_put_ratio": 0.3,
+          "call_volume": 115,
+          "put_volume": 239,
+          "call_put_ratio": 0.48,
           "expiry": "2026-06-26"
         },
         "earnings_dates": [],
         "recent_news_titles": [
+          "13 Investment Must Reads for This Week (June 23, 2026)",
+          "Exchange-Traded Funds, Equity Futures Lower Pre-Bell Tuesday as AI Spending Concerns Weigh on Technology Shares",
           "ETF Zoo: The Leveraged ETF Frenzy Picks Up Momentum",
           "Post-SpaceX IPO, Investors Pour $83B Into U.S. Equities",
-          "Software Used to Beat the Market Long-Term. Not Anymore.",
-          "Exchange-Traded Funds, US Equities Mixed After Midday",
-          "Exchange-Traded Funds, Equity Futures Higher Pre-Bell Amid Continued US-Iran Talks"
+          "Software Used to Beat the Market Long-Term. Not Anymore."
         ],
-        "collected_at": "2026-06-23T10:08:57.715203",
+        "collected_at": "2026-06-23T16:42:34.726066",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -918,35 +918,37 @@
       "SCHD": {
         "ticker": "SCHD",
         "name": "Schwab Dividend ETF",
-        "price": 31.89,
-        "prev_close": 31.86,
-        "change": 0.03,
-        "change_pct": 0.09,
+        "price": 31.9799,
+        "prev_close": 31.89,
+        "change": 0.0899,
+        "change_pct": 0.28,
         "high_52w": 32.83,
         "low_52w": 25.4732,
-        "volume_avg5": 22617480.0,
-        "rsi": 44.2,
+        "volume_avg5": 19858232.0,
+        "rsi": 41.8,
         "macd": {
-          "macd": 0.0649,
-          "signal": 0.175,
-          "hist": -0.1101
+          "macd": 0.0391,
+          "signal": 0.1478,
+          "hist": -0.1087
         },
         "moving_averages": {
-          "ma5": 32.168,
-          "ma20": 32.406,
-          "ma60": 31.6285,
-          "ma120": 30.7806,
-          "ma200": 29.1556
+          "ma5": 32.038,
+          "ma20": 32.3635,
+          "ma60": 31.6512,
+          "ma120": 30.8189,
+          "ma200": 29.1809
         },
         "support": [
           30.14
         ],
-        "resistance": [],
-        "weekly_ma20": 31.4474,
-        "monthly_ma12": 29.0383,
+        "resistance": [
+          32.83
+        ],
+        "weekly_ma20": 31.4519,
+        "monthly_ma12": 29.0458,
         "financials": {
           "market_cap": null,
-          "pe_ratio": 18.794697,
+          "pe_ratio": 18.847681,
           "forward_pe": null,
           "pb_ratio": null,
           "eps": null,
@@ -969,20 +971,20 @@
         "institutional": [],
         "insider": [],
         "options": {
-          "call_volume": 894,
-          "put_volume": 291,
-          "call_put_ratio": 3.07,
+          "call_volume": 402,
+          "put_volume": 67,
+          "call_put_ratio": 6.0,
           "expiry": "2026-06-26"
         },
         "earnings_dates": [],
         "recent_news_titles": [
+          "The 401(k) Vesting Cliff That Cost a 59-Year-Old $74,000: Make Sure You Know Your Timeline",
           "Is SCHD a Better Dividend ETF Than VIG?",
           "Should Schwab U.S. Dividend Equity ETF (SCHD) Be on Your Investing Radar?",
           "Should You Forget Picking Individual Stocks and Buy This Index Fund Instead?",
-          "2 Top-Tier Dividend ETFs that Complement Each Other Well to Invest in Right Now",
-          "SCHD vs. HDV: Which Dividend ETF Is the Better Buy for Long-Term Investors?"
+          "2 Top-Tier Dividend ETFs that Complement Each Other Well to Invest in Right Now"
         ],
-        "collected_at": "2026-06-23T10:08:59.060696",
+        "collected_at": "2026-06-23T16:42:36.032370",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1020,32 +1022,32 @@
       "000660.KS": {
         "ticker": "000660.KS",
         "name": "SK하이닉스",
-        "price": 2555000.0,
-        "prev_close": 2919000.0,
-        "change": -364000.0,
-        "change_pct": -12.47,
+        "price": 2919000.0,
+        "prev_close": 2764000.0,
+        "change": 155000.0,
+        "change_pct": 5.61,
         "high_52w": 2919000.0,
-        "low_52w": 243980.4531,
+        "low_52w": 243980.4688,
         "volume_avg5": 6227678.0,
-        "rsi": 54.5,
+        "rsi": 65.5,
         "macd": {
-          "macd": 242680.1922,
-          "signal": 214028.8352,
-          "hist": 28651.357
+          "macd": 253434.5881,
+          "signal": 206865.9959,
+          "hist": 46568.5922
         },
         "moving_averages": {
-          "ma5": 2688800.0,
-          "ma20": 2327314.0938,
-          "ma60": 1656974.0156,
-          "ma120": 1252041.1354,
-          "ma200": 934988.0702
+          "ma5": 2654200.0,
+          "ma20": 2296597.8687,
+          "ma60": 1630971.2427,
+          "ma120": 1235573.0943,
+          "ma200": 923462.8459
         },
         "support": [
           806865.06
         ],
         "resistance": [],
-        "weekly_ma20": 1475734.0562,
-        "monthly_ma12": 964327.9583,
+        "weekly_ma20": 1493934.0562,
+        "monthly_ma12": 994661.2865,
         "financials": {
           "market_cap": 1813679326625792,
           "pe_ratio": null,
@@ -1073,13 +1075,13 @@
         "options": {},
         "earnings_dates": [],
         "recent_news_titles": [
-          "Stock market today: Dow, S&P 500, Nasdaq futures dive as tech sell-off outweighs Iran deal progress",
-          "MU, SNDK, DRAM Fall Sharply From Record Highs: Korean Market Crashes 10% Crash On SK Hynix, Samsung Pullback",
-          "Global chip stocks slump as rate and AI valuation fears trigger tech selloff",
-          "Nasdaq, S&P 500, Dow Futures Crack On Tech, SpaceX Selloff: Why SPCX, TSLA, INFQ, MU, HOOD, ADTX Are In Focus",
-          "Micron Stock Dives After Memory Chip Rivals SK Hynix, Samsung Tumble in KOSPI Selloff"
+          "South Korean market drops 10% on memory chip stock losses amid sell-off",
+          "Micron stock hits an all-time high, thanks to the new Anthropic deal",
+          "How SK hynix’s (HXSCL) 12-Layer HBM4E Samples Keep It Ahead in the AI Memory Upgrade Cycle",
+          "Tech drags down world stocks, oil dips on supply hopes",
+          "Stock Market Today: Nasdaq Falls As Micron Sinks Ahead Of Earnings; Trump Helps Quantum Stocks (Live Coverage)"
         ],
-        "collected_at": "2026-06-23T10:09:00.185444",
+        "collected_at": "2026-06-23T16:42:37.320581",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1117,32 +1119,32 @@
       "005930.KS": {
         "ticker": "005930.KS",
         "name": "삼성전자",
-        "price": 310000.0,
-        "prev_close": 353500.0,
-        "change": -43500.0,
-        "change_pct": -12.31,
+        "price": 353500.0,
+        "prev_close": 354000.0,
+        "change": -500.0,
+        "change_pct": -0.14,
         "high_52w": 362500.0,
         "low_52w": 56994.7539,
         "volume_avg5": 32819065.0,
-        "rsi": 39.0,
+        "rsi": 51.1,
         "macd": {
-          "macd": 17463.745,
-          "signal": 19985.3834,
-          "hist": -2521.6383
+          "macd": 21198.7585,
+          "signal": 20615.7929,
+          "hist": 582.9656
         },
         "moving_averages": {
-          "ma5": 345300.0,
-          "ma20": 328025.0,
-          "ma60": 262430.1,
-          "ma120": 214014.1469,
-          "ma200": 165278.8834
+          "ma5": 351900.0,
+          "ma20": 327150.0,
+          "ma60": 260406.9268,
+          "ma120": 212345.2995,
+          "ma200": 164081.8477
         },
         "support": [
           167200.0
         ],
         "resistance": [],
-        "weekly_ma20": 242421.7117,
-        "monthly_ma12": 161663.873,
+        "weekly_ma20": 244596.7117,
+        "monthly_ma12": 165288.873,
         "financials": {
           "market_cap": 2035634646548480,
           "pe_ratio": null,
@@ -1186,13 +1188,13 @@
         "options": {},
         "earnings_dates": [],
         "recent_news_titles": [
-          "Stock market today: Dow, S&P 500, Nasdaq futures dive as tech sell-off outweighs Iran deal progress",
-          "SK Hynix soars to new heights, becomes South Korea's most valuable company",
-          "MU, SNDK, DRAM Fall Sharply From Record Highs: Korean Market Crashes 10% Crash On SK Hynix, Samsung Pullback",
-          "Global chip stocks slump as rate and AI valuation fears trigger tech selloff",
-          "Micron Stock Dives After Memory Chip Rivals SK Hynix, Samsung Tumble in KOSPI Selloff"
+          "Nvidia, Micron, AMD lead tech sell-off as AI trade cools",
+          "Micron stock hits an all-time high, thanks to the new Anthropic deal",
+          "Why Samsung Electronics’ (SSNLF) 12-Layer HBM4E Push Matters for Its AI Memory Position",
+          "Tech drags down world stocks, oil dips on supply hopes",
+          "Why Micron Stock Suddenly Crashed"
         ],
-        "collected_at": "2026-06-23T10:09:01.186252",
+        "collected_at": "2026-06-23T16:42:38.400943",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1230,32 +1232,32 @@
       "012450.KS": {
         "ticker": "012450.KS",
         "name": "한화에어로스페이스",
-        "price": 1073000.0,
-        "prev_close": 1125000.0,
-        "change": -52000.0,
-        "change_pct": -4.62,
+        "price": 1125000.0,
+        "prev_close": 1122000.0,
+        "change": 3000.0,
+        "change_pct": 0.27,
         "high_52w": 1537000.0,
         "low_52w": 772732.1875,
         "volume_avg5": 275424.0,
-        "rsi": 50.3,
+        "rsi": 48.7,
         "macd": {
-          "macd": -38764.1602,
-          "signal": -51674.4741,
-          "hist": 12910.3138
+          "macd": -36936.5979,
+          "signal": -54902.0525,
+          "hist": 17965.4546
         },
         "moving_averages": {
-          "ma5": 1146600.0,
-          "ma20": 1116900.0,
-          "ma60": 1296150.0,
-          "ma120": 1267472.4521,
-          "ma200": 1138318.7619
+          "ma5": 1168600.0,
+          "ma20": 1126300.0,
+          "ma60": 1301600.0,
+          "ma120": 1265854.7125,
+          "ma200": 1137372.9172
         },
         "support": [],
         "resistance": [
           1537000.0
         ],
-        "weekly_ma20": 1286900.0,
-        "monthly_ma12": 1093936.2083,
+        "weekly_ma20": 1289500.0,
+        "monthly_ma12": 1098269.5417,
         "financials": {
           "market_cap": 55204548444160,
           "pe_ratio": null,
@@ -1289,7 +1291,7 @@
           "Asia’s LNG scramble gives Venture Global a fresh opening",
           "U.S. Locks In $56 Billion of Asian Energy Deals Amid Gulf Disruptions"
         ],
-        "collected_at": "2026-06-23T10:09:02.309517",
+        "collected_at": "2026-06-23T16:42:39.612808",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1327,32 +1329,32 @@
       "005380.KS": {
         "ticker": "005380.KS",
         "name": "현대차",
-        "price": 511000.0,
-        "prev_close": 581000.0,
-        "change": -70000.0,
-        "change_pct": -12.05,
+        "price": 581000.0,
+        "prev_close": 613000.0,
+        "change": -32000.0,
+        "change_pct": -5.22,
         "high_52w": 750000.0,
         "low_52w": 195722.2344,
         "volume_avg5": 1312251.0,
-        "rsi": 18.1,
+        "rsi": 21.2,
         "macd": {
-          "macd": -13502.7261,
-          "signal": 3066.7653,
-          "hist": -16569.4914
+          "macd": -4873.0222,
+          "signal": 7209.1382,
+          "hist": -12082.1604
         },
         "moving_averages": {
-          "ma5": 584800.0,
-          "ma20": 646948.5312,
-          "ma60": 580903.7052,
-          "ma120": 523943.1453,
-          "ma200": 413159.0901
+          "ma5": 610600.0,
+          "ma20": 654028.3031,
+          "ma60": 580706.3854,
+          "ma120": 522073.8169,
+          "ma200": 411672.5488
         },
         "support": [
           443864.56
         ],
         "resistance": [],
-        "weekly_ma20": 569686.725,
-        "monthly_ma12": 403929.0143,
+        "weekly_ma20": 573186.725,
+        "monthly_ma12": 409762.3464,
         "financials": {
           "market_cap": 133797215469568,
           "pe_ratio": null,
@@ -1380,13 +1382,13 @@
         "options": {},
         "earnings_dates": [],
         "recent_news_titles": [
+          "SK hynix briefly tops Samsung as Korea’s most valuable company—and it’s reportedly eyeing a U.S. listing as soon as August",
           "Hyundai to buy SoftBank's remaining stake in Boston Dynamics for $325 million, newspaper says",
           "PKX Teams Up With Hyundai & Others to Develop Advanced EV Motor Steel",
           "Adapting AI to auto dealership operations is a work in progress",
-          "NVIDIA Gets the Headlines, But Micron Could Offer More Upside",
-          "Vietnam vehicle market expands by 7% in May – VAMA"
+          "NVIDIA Gets the Headlines, But Micron Could Offer More Upside"
         ],
-        "collected_at": "2026-06-23T10:09:03.390882",
+        "collected_at": "2026-06-23T16:42:40.706410",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1424,32 +1426,32 @@
       "034020.KS": {
         "ticker": "034020.KS",
         "name": "두산에너빌리티",
-        "price": 89200.0,
-        "prev_close": 94200.0,
-        "change": -5000.0,
-        "change_pct": -5.31,
+        "price": 94200.0,
+        "prev_close": 97900.0,
+        "change": -3700.0,
+        "change_pct": -3.78,
         "high_52w": 136400.0,
         "low_52w": 57400.0,
         "volume_avg5": 3530926.0,
-        "rsi": 39.8,
+        "rsi": 38.5,
         "macd": {
-          "macd": -4112.3463,
-          "signal": -4193.7042,
-          "hist": 81.358
+          "macd": -3663.2736,
+          "signal": -4214.0437,
+          "hist": 550.7701
         },
         "moving_averages": {
-          "ma5": 96820.0,
-          "ma20": 98620.0,
-          "ma60": 107181.6667,
-          "ma120": 100370.0,
-          "ma200": 89590.0
+          "ma5": 99640.0,
+          "ma20": 99740.0,
+          "ma60": 107405.0,
+          "ma120": 100276.6667,
+          "ma200": 89455.0
         },
         "support": [],
         "resistance": [
           136400.0
         ],
-        "weekly_ma20": 105720.0,
-        "monthly_ma12": 86750.0,
+        "weekly_ma20": 105970.0,
+        "monthly_ma12": 87166.6667,
         "financials": {
           "market_cap": 57010645106688,
           "pe_ratio": null,
@@ -1483,7 +1485,7 @@
           "Wall Street's $566 Billion Nuclear Frenzy: The Real AI Power Play No One's Talking About",
           "NuScale Power Pre-Q3 Earnings Analysis: Hold or Fold the Stock?"
         ],
-        "collected_at": "2026-06-23T10:09:04.428815",
+        "collected_at": "2026-06-23T16:42:41.969136",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1576,7 +1578,7 @@
         "options": {},
         "earnings_dates": [],
         "recent_news_titles": [],
-        "collected_at": "2026-06-23T10:09:05.589624",
+        "collected_at": "2026-06-23T16:42:43.436311",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1667,7 +1669,7 @@
         "options": {},
         "earnings_dates": [],
         "recent_news_titles": [],
-        "collected_at": "2026-06-23T10:09:06.710400",
+        "collected_at": "2026-06-23T16:42:44.722600",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1705,25 +1707,25 @@
       "051910.KS": {
         "ticker": "051910.KS",
         "name": "LG화학",
-        "price": 291500.0,
-        "prev_close": 323000.0,
-        "change": -31500.0,
-        "change_pct": -9.75,
+        "price": 323000.0,
+        "prev_close": 338000.0,
+        "change": -15000.0,
+        "change_pct": -4.44,
         "high_52w": 429500.0,
         "low_52w": 201206.0625,
         "volume_avg5": 285958.0,
-        "rsi": 32.5,
+        "rsi": 37.2,
         "macd": {
-          "macd": -10387.2787,
-          "signal": -7329.7628,
-          "hist": -3057.5159
+          "macd": -6768.1462,
+          "signal": -6565.3839,
+          "hist": -202.7624
         },
         "moving_averages": {
-          "ma5": 331200.0,
-          "ma20": 341575.0,
-          "ma60": 356333.2266,
-          "ma120": 341396.0687,
-          "ma200": 340624.4116
+          "ma5": 346400.0,
+          "ma20": 344550.0,
+          "ma60": 356741.0271,
+          "ma120": 341831.8115,
+          "ma200": 340595.2263
         },
         "support": [
           288146.97
@@ -1731,8 +1733,8 @@
         "resistance": [
           429500.0
         ],
-        "weekly_ma20": 348256.8641,
-        "monthly_ma12": 335567.8854,
+        "weekly_ma20": 349831.8641,
+        "monthly_ma12": 338192.8854,
         "financials": {
           "market_cap": 22817192017920,
           "pe_ratio": null,
@@ -1766,7 +1768,7 @@
           "Pacira BioSciences Q4 Earnings Call Highlights",
           "PCRX, LG Chem Partner to Expand Exparel Reach Across the Asia-Pacific"
         ],
-        "collected_at": "2026-06-23T10:09:07.766175",
+        "collected_at": "2026-06-23T16:42:46.001328",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1804,32 +1806,32 @@
       "006400.KS": {
         "ticker": "006400.KS",
         "name": "삼성SDI",
-        "price": 469000.0,
-        "prev_close": 533000.0,
-        "change": -64000.0,
-        "change_pct": -12.01,
+        "price": 533000.0,
+        "prev_close": 555000.0,
+        "change": -22000.0,
+        "change_pct": -3.96,
         "high_52w": 712000.0,
         "low_52w": 169300.0,
         "volume_avg5": 562813.0,
-        "rsi": 30.9,
+        "rsi": 32.2,
         "macd": {
-          "macd": -23887.8707,
-          "signal": -17357.3704,
-          "hist": -6530.5003
+          "macd": -18911.8499,
+          "signal": -15724.7453,
+          "hist": -3187.1046
         },
         "moving_averages": {
-          "ma5": 525800.0,
-          "ma20": 567400.0,
-          "ma60": 564466.6667,
-          "ma120": 461945.8333,
-          "ma200": 382354.0
+          "ma5": 541800.0,
+          "ma20": 576300.0,
+          "ma60": 563383.3333,
+          "ma120": 460391.6667,
+          "ma200": 381089.0
         },
         "support": [],
         "resistance": [
           712000.0
         ],
-        "weekly_ma20": 518225.0,
-        "monthly_ma12": 385000.0,
+        "weekly_ma20": 521425.0,
+        "monthly_ma12": 390333.3333,
         "financials": {
           "market_cap": 36907312480256,
           "pe_ratio": null,
@@ -1863,7 +1865,7 @@
           "Samsung SDI signs first EV battery deal with Mercedes",
           "Mercedes and Samsung SDI sign first EV battery supply deal"
         ],
-        "collected_at": "2026-06-23T10:09:09.024910",
+        "collected_at": "2026-06-23T16:42:47.132128",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1901,32 +1903,32 @@
       "005490.KS": {
         "ticker": "005490.KS",
         "name": "POSCO홀딩스",
-        "price": 322000.0,
-        "prev_close": 346500.0,
-        "change": -24500.0,
-        "change_pct": -7.07,
+        "price": 346500.0,
+        "prev_close": 356500.0,
+        "change": -10000.0,
+        "change_pct": -2.81,
         "high_52w": 532608.9375,
         "low_52w": 246709.8906,
         "volume_avg5": 445257.0,
-        "rsi": 27.1,
+        "rsi": 28.9,
         "macd": {
-          "macd": -21238.12,
-          "signal": -16253.2351,
-          "hist": -4984.885
+          "macd": -18284.3798,
+          "signal": -15007.0138,
+          "hist": -3277.366
         },
         "moving_averages": {
-          "ma5": 355300.0,
-          "ma20": 384800.0,
-          "ma60": 403796.3865,
-          "ma120": 374711.3776,
-          "ma200": 342315.8127
+          "ma5": 368900.0,
+          "ma20": 390975.0,
+          "ma60": 404104.2448,
+          "ma120": 374542.7898,
+          "ma200": 342165.6345
         },
         "support": [],
         "resistance": [
           532608.94
         ],
-        "weekly_ma20": 390753.6813,
-        "monthly_ma12": 337940.3542,
+        "weekly_ma20": 391978.6813,
+        "monthly_ma12": 339982.0208,
         "financials": {
           "market_cap": 24349889265664,
           "pe_ratio": null,
@@ -1960,7 +1962,7 @@
           "How POSCO Holdings (KOSE:A005490) Lithium Push Is Reshaping The Investment Story",
           "POSCO and ReElement Launch Strategic U.S. Rare Earth Venture"
         ],
-        "collected_at": "2026-06-23T10:09:10.018322",
+        "collected_at": "2026-06-23T16:42:48.263915",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -2021,9 +2023,9 @@
       },
       {
         "title": "주식 팔면 다음날 현금…충청 증시도 MSCI 기대감 - 금강일보",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE03WFF6V0RKTi1pUHhIb01JYW1xX1RNWW5fYkZtSEtUX2FGd2g0bnRiQWtqWmtSS0FWcko2UDFDT1YybjI3MkZ5LU92blh4Xy15bkZJSmFTMU1Oc0xVeXd1YUJ2Ynd3RUJK?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9OdDVEVkJKUjlRVjVSUlYzTlRsTWhIZ1BOQzg4c3ptMjRTSDkyN1JyOXNNR2g4QlVhaUduSWxlSTM5ek1IV2JZR2RXODV6OGFYc3kxdlMybmxreVhVbzljZmgyZEFYaHN2NVE?oc=5",
         "published": "Tue, 23 Jun 2026 07:51:36 GMT",
-        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiaEFVX3lxTE03WFF6V0RKTi1pUHhIb01JYW1xX1RNWW5fYkZtSEtUX2FGd2g0bnRiQWtqWmtSS0FWcko2UDFDT1YybjI3MkZ5LU92blh4Xy15bkZJSmFTMU1Oc0xVeXd1YUJ2Ynd3RUJK?oc=5\" tar",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiakFVX3lxTE9OdDVEVkJKUjlRVjVSUlYzTlRsTWhIZ1BOQzg4c3ptMjRTSDkyN1JyOXNNR2g4QlVhaUduSWxlSTM5ek1IV2JZR2RXODV6OGFYc3kxdlMybmxreVhVbzljZmgyZEFYaHN2NVE?oc=5\" ",
         "source": "금강일보",
         "analysis": {
           "summary3": "(분석 준비 중)",
