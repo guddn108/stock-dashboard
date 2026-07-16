@@ -34,7 +34,9 @@ if "--step" in args:
         START_STEP = 1
 
 if MOCK_ONLY:
-    os.environ["GEMINI_API_KEY"] = ""  # analyze.py가 Mock 모드로 돌도록
+    os.environ["GEMINI_API_KEY"] = ""
+    for _i in range(1, 6):
+        os.environ[f"GEMINI_API_KEY_{_i}"] = ""
 
 DATA_PATH = os.path.join("data", "data.json")
 

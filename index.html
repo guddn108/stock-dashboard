@@ -9,15 +9,15 @@
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #0d1117;
-      color: #e6edf3;
+      background: #ffffff;
+      color: #1f2328;
       min-height: 100vh;
     }
 
     /* ── 헤더 ── */
     header {
-      background: #161b22;
-      border-bottom: 1px solid #30363d;
+      background: #f6f8fa;
+      border-bottom: 1px solid #d0d7de;
       padding: 14px 20px;
       display: flex;
       align-items: center;
@@ -29,25 +29,25 @@
     header h1 {
       font-size: 17px;
       font-weight: 600;
-      color: #f0f6fc;
+      color: #1f2328;
     }
     .update-time {
       font-size: 12px;
-      color: #8b949e;
+      color: #656d76;
     }
 
     /* ── 탭 ── */
     .tab-bar {
       display: flex;
-      background: #161b22;
-      border-bottom: 1px solid #30363d;
+      background: #f6f8fa;
+      border-bottom: 1px solid #d0d7de;
       padding: 0 20px;
     }
     .tab-btn {
       padding: 12px 20px;
       font-size: 14px;
       font-weight: 500;
-      color: #8b949e;
+      color: #656d76;
       background: none;
       border: none;
       border-bottom: 2px solid transparent;
@@ -55,11 +55,11 @@
       transition: color 0.2s, border-color 0.2s;
     }
     .tab-btn.active {
-      color: #58a6ff;
-      border-bottom-color: #58a6ff;
+      color: #0969da;
+      border-bottom-color: #0969da;
     }
     .tab-btn:hover:not(.active) {
-      color: #c9d1d9;
+      color: #424a53;
     }
 
     /* ── 탭 컨텐츠 ── */
@@ -70,7 +70,7 @@
     .section-title {
       font-size: 13px;
       font-weight: 600;
-      color: #8b949e;
+      color: #656d76;
       text-transform: uppercase;
       letter-spacing: 0.08em;
       margin: 24px 0 12px;
@@ -79,8 +79,8 @@
 
     /* ── 뉴스 카드 (탭1) ── */
     .news-card {
-      background: #161b22;
-      border: 1px solid #30363d;
+      background: #f6f8fa;
+      border: 1px solid #d0d7de;
       border-radius: 10px;
       margin-bottom: 14px;
       overflow: hidden;
@@ -90,7 +90,7 @@
       cursor: pointer;
       user-select: none;
     }
-    .news-card-header:hover { background: #1c2128; }
+    .news-card-header:hover { background: #eaeef2; }
 
     .news-card .news-source-badge {
       display: inline-block;
@@ -100,19 +100,19 @@
       border-radius: 20px;
       margin-bottom: 10px;
     }
-    .badge-kr { background: #1f3a5f; color: #58a6ff; }
-    .badge-us { background: #1f3d2f; color: #3fb950; }
+    .badge-kr { background: #ddf4ff; color: #0969da; }
+    .badge-us { background: #dafbe1; color: #1a7f37; }
 
     .news-card h3 {
       font-size: 14px;
       font-weight: 600;
-      color: #f0f6fc;
+      color: #1f2328;
       margin-bottom: 6px;
       line-height: 1.5;
     }
     .news-card .news-summary {
       font-size: 13px;
-      color: #8b949e;
+      color: #656d76;
       line-height: 1.6;
       margin-bottom: 0;
     }
@@ -124,12 +124,12 @@
     }
     .news-toggle-label {
       font-size: 12px;
-      color: #58a6ff;
+      color: #0969da;
       font-weight: 600;
     }
     .news-chevron {
       font-size: 11px;
-      color: #8b949e;
+      color: #656d76;
       transition: transform 0.2s;
     }
     .news-card.open .news-chevron { transform: rotate(180deg); }
@@ -138,7 +138,7 @@
     .news-analysis-detail {
       display: none;
       padding: 0 18px 18px;
-      border-top: 1px solid #21262d;
+      border-top: 1px solid #eaeef2;
     }
     .news-card.open .news-analysis-detail { display: block; }
 
@@ -152,28 +152,28 @@
       .analysis-grid { grid-template-columns: 1fr; }
     }
     .analysis-item {
-      background: #0d1117;
-      border: 1px solid #21262d;
+      background: #ffffff;
+      border: 1px solid #eaeef2;
       border-radius: 8px;
       padding: 10px 12px;
     }
     .analysis-item .item-label {
       font-size: 11px;
-      color: #8b949e;
+      color: #656d76;
       font-weight: 600;
       margin-bottom: 5px;
     }
     .analysis-item .item-value {
       font-size: 13px;
-      color: #c9d1d9;
+      color: #424a53;
       line-height: 1.5;
     }
     .analysis-item.full-width { grid-column: 1 / -1; }
 
     /* ── 종목 카드 (탭2) ── */
     .stock-card {
-      background: #161b22;
-      border: 1px solid #30363d;
+      background: #f6f8fa;
+      border: 1px solid #d0d7de;
       border-radius: 10px;
       margin-bottom: 10px;
       overflow: hidden;
@@ -183,7 +183,7 @@
       cursor: pointer;
       user-select: none;
     }
-    .stock-card-header:hover { background: #1c2128; }
+    .stock-card-header:hover { background: #eaeef2; }
     .stock-card-top {
       display: flex;
       align-items: center;
@@ -191,10 +191,10 @@
     }
     .opinion-summary {
       font-size: 12px;
-      color: #8b949e;
+      color: #656d76;
       margin-top: 7px;
       padding-top: 7px;
-      border-top: 1px solid #21262d;
+      border-top: 1px solid #eaeef2;
       line-height: 1.5;
     }
     .opinion-summary .badge-inline {
@@ -210,39 +210,30 @@
     .stock-ticker {
       font-size: 13px;
       font-weight: 700;
-      color: #58a6ff;
-      background: #1f3a5f;
+      color: #0969da;
+      background: #ddf4ff;
       padding: 2px 8px;
       border-radius: 6px;
     }
-    .stock-name { font-size: 14px; font-weight: 600; color: #f0f6fc; }
+    .stock-name { font-size: 14px; font-weight: 600; color: #1f2328; }
 
     .stock-price-wrap { text-align: right; }
-    .stock-price { font-size: 16px; font-weight: 700; color: #f0f6fc; }
+    .stock-price { font-size: 16px; font-weight: 700; color: #1f2328; }
     .stock-change {
       font-size: 12px;
       font-weight: 600;
       margin-top: 2px;
     }
-    .change-up { color: #3fb950; }
-    .change-down { color: #f85149; }
+    .change-up { color: #cf222e; }
+    .change-down { color: #0969da; }
 
     .chevron {
-      font-size: 12px;
-      color: #8b949e;
+      font-size: 16px;
+      color: #656d76;
       margin-left: 12px;
-      transition: transform 0.2s;
     }
-    .stock-card.open .chevron { transform: rotate(180deg); }
 
-    /* ── 종목 상세 분석 ── */
-    .stock-detail {
-      display: none;
-      padding: 0 18px 18px;
-      border-top: 1px solid #21262d;
-    }
-    .stock-card.open .stock-detail { display: block; }
-
+    /* ── 종목 상세 그리드 (바텀시트 내부에서 재사용) ── */
     .detail-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -253,20 +244,20 @@
       .detail-grid { grid-template-columns: 1fr; }
     }
     .detail-item {
-      background: #0d1117;
-      border: 1px solid #21262d;
+      background: #ffffff;
+      border: 1px solid #eaeef2;
       border-radius: 8px;
       padding: 10px 12px;
     }
     .detail-item .d-label {
       font-size: 11px;
-      color: #8b949e;
+      color: #656d76;
       font-weight: 600;
       margin-bottom: 4px;
     }
     .detail-item .d-value {
       font-size: 13px;
-      color: #c9d1d9;
+      color: #424a53;
       line-height: 1.5;
     }
     .detail-item.full { grid-column: 1 / -1; }
@@ -279,13 +270,13 @@
       padding: 4px 14px;
       border-radius: 20px;
     }
-    .op-buy { background: #1f3d2f; color: #3fb950; }
-    .op-hold { background: #2d2a1f; color: #e3b341; }
-    .op-sell { background: #3d1f1f; color: #f85149; }
+    .op-buy { background: #dafbe1; color: #1a7f37; }
+    .op-hold { background: #fff8c5; color: #9a6700; }
+    .op-sell { background: #ffebe9; color: #cf222e; }
 
     /* 로딩 상태 */
     .loading-placeholder {
-      background: linear-gradient(90deg, #21262d 25%, #2d333b 50%, #21262d 75%);
+      background: linear-gradient(90deg, #eaeef2 25%, #f6f8fa 50%, #eaeef2 75%);
       background-size: 200% 100%;
       animation: shimmer 1.5s infinite;
       border-radius: 6px;
@@ -295,6 +286,228 @@
     @keyframes shimmer {
       0% { background-position: 200% 0; }
       100% { background-position: -200% 0; }
+    }
+
+    /* ── 매입가 / P&L / 액션 시그널 ── */
+    .pnl-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 7px;
+      padding-top: 7px;
+      border-top: 1px solid #eaeef2;
+      font-size: 12px;
+      flex-wrap: wrap;
+    }
+    .pnl-label { color: #656d76; font-size: 11px; }
+    .pnl-value { font-weight: 700; font-size: 15px; }
+    .pnl-pos   { color: #cf222e; }
+    .pnl-neg   { color: #0969da; }
+    .action-signal {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 9px;
+      border-radius: 10px;
+      margin-left: auto;
+      white-space: nowrap;
+    }
+    .action-hold   { background: #fff8c5; color: #9a6700; }
+    .action-buy    { background: #ddf4ff; color: #0969da; }
+    .action-sell   { background: #ffebe9; color: #cf222e; }
+    .action-profit { background: #dafbe1; color: #1a7f37; }
+
+    /* ── 키 메트릭 미니 바 ── */
+    .stock-metrics {
+      display: flex;
+      gap: 14px;
+      margin-top: 7px;
+      font-size: 11px;
+      color: #656d76;
+      flex-wrap: wrap;
+    }
+    .metric-val { color: #424a53; font-weight: 600; }
+
+    /* ── 뉴스 퀵 인사이트 ── */
+    .quick-insight {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+      padding: 7px 10px;
+      background: #ffffff;
+      border-radius: 6px;
+      font-size: 11px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .qi-benefit { color: #1a7f37; font-weight: 600; }
+    .qi-damage  { color: #cf222e; font-weight: 600; }
+    .qi-flow    { color: #9a6700; }
+    .qi-sep     { color: #d0d7de; }
+
+    /* ══════════════════════════════════════════
+       종목 상세 바텀시트 (모바일 우선)
+       ══════════════════════════════════════════ */
+    body.sheet-open { overflow: hidden; }
+
+    .sheet-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(1, 4, 9, 0.6);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+      z-index: 200;
+    }
+    .sheet-overlay.open { opacity: 1; pointer-events: auto; }
+
+    .stock-sheet {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      max-width: 640px;
+      margin: 0 auto;
+      background: #f6f8fa;
+      border: 1px solid #d0d7de;
+      border-bottom: none;
+      border-radius: 16px 16px 0 0;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      transform: translateY(100%);
+      transition: transform 0.28s cubic-bezier(0.2, 0.8, 0.3, 1);
+      z-index: 201;
+      box-shadow: 0 -12px 32px rgba(0, 0, 0, 0.5);
+    }
+    .stock-sheet.open { transform: translateY(0); }
+
+    .sheet-handle {
+      width: 36px;
+      height: 4px;
+      background: #d0d7de;
+      border-radius: 2px;
+      margin: 10px auto 2px;
+      flex-shrink: 0;
+    }
+    .sheet-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 18px 14px;
+      border-bottom: 1px solid #eaeef2;
+      flex-shrink: 0;
+    }
+    .sheet-header-main { display: flex; flex-direction: column; gap: 4px; }
+    .sheet-header-price { text-align: right; }
+    .sheet-close {
+      background: #eaeef2;
+      border: none;
+      color: #424a53;
+      width: 30px;
+      height: 30px;
+      min-width: 30px;
+      border-radius: 50%;
+      font-size: 15px;
+      line-height: 1;
+      cursor: pointer;
+    }
+    .sheet-body {
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: 16px 18px 40px;
+    }
+    /* ── 상세정보 전체를 한 번에 펼치는 토글 — 기본은 접힌 채로 시작 ── */
+    .sheet-detail-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 14px;
+      padding: 12px 14px;
+      border: 1px solid #eaeef2;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #24292f;
+      cursor: pointer;
+      user-select: none;
+    }
+    .sheet-detail-toggle:active { background: #f6f8fa; }
+    .sheet-accordion-chevron {
+      font-size: 12px;
+      color: #656d76;
+      transition: transform 0.2s;
+    }
+    .sheet-detail-toggle.open .sheet-accordion-chevron { transform: rotate(180deg); }
+    .sheet-detail-all { display: none; }
+    .sheet-detail-all.open { display: block; }
+    .sheet-section-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #656d76;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin: 20px 0 8px;
+    }
+    .sheet-detail-all > .sheet-section-title:first-child { margin-top: 16px; }
+
+    /* ── 핵심 요약 스탯 타일 ── */
+    .quick-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+    .stat-tile {
+      background: #ffffff;
+      border: 1px solid #eaeef2;
+      border-radius: 10px;
+      padding: 10px 12px;
+    }
+    .stat-tile.wide { grid-column: 1 / -1; }
+    .stat-label { font-size: 11px; color: #656d76; font-weight: 600; margin-bottom: 4px; }
+    .stat-val { font-size: 15px; font-weight: 700; color: #1f2328; }
+    .stat-val.small { font-size: 13px; font-weight: 500; color: #424a53; line-height: 1.5; }
+
+    /* ── 52주 레인지 바 / RSI 게이지 (마크: 얇은 트랙 + 둥근 마커) ── */
+    .gauge-wrap { margin: 16px 0; }
+    .gauge-label-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: #656d76;
+      margin-bottom: 16px;
+    }
+    .gauge-track {
+      position: relative;
+      height: 4px;
+      border-radius: 2px;
+      background: #eaeef2;
+    }
+    .rsi-track {
+      background: linear-gradient(to right,
+        #0969da 0%, #0969da 30%,
+        #d0d7de 30%, #d0d7de 70%,
+        #cf222e 70%, #cf222e 100%);
+    }
+    .gauge-tick {
+      position: absolute;
+      top: -3px;
+      width: 2px;
+      height: 10px;
+      border-radius: 1px;
+    }
+    .gauge-marker {
+      position: absolute;
+      top: 50%;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #1f2328;
+      border: 2px solid #f6f8fa;
+      box-shadow: 0 0 0 2px #0969da;
+      transform: translate(-50%, -50%);
     }
   </style>
 </head>
@@ -332,6 +545,24 @@
 
   </div>
 
+  <!-- ══════════════ 종목 상세 바텀시트 ══════════════ -->
+  <div class="sheet-overlay" id="sheet-overlay" onclick="closeStockSheet()"></div>
+  <div class="stock-sheet" id="stock-sheet">
+    <div class="sheet-handle"></div>
+    <div class="sheet-header">
+      <div class="sheet-header-main">
+        <span class="stock-ticker" id="sheet-ticker"></span>
+        <span class="stock-name" id="sheet-name"></span>
+      </div>
+      <div class="sheet-header-price">
+        <div class="stock-price" id="sheet-price"></div>
+        <div class="stock-change" id="sheet-change"></div>
+      </div>
+      <button class="sheet-close" onclick="closeStockSheet()">✕</button>
+    </div>
+    <div class="sheet-body" id="sheet-body"></div>
+  </div>
+
   <script>
     // ── 탭 전환 ──
     function switchTab(tabId, btn) {
@@ -346,9 +577,159 @@
       card.classList.toggle('open');
     }
 
-    // ── 종목 카드 펼치기/접기 ──
-    function toggleStock(card) {
-      card.classList.toggle('open');
+    // ── 종목 상세 바텀시트 열기/닫기 ──
+    const STOCK_LOOKUP = {};
+
+    function openStockSheet(key) {
+      const s = STOCK_LOOKUP[key];
+      if (!s) return;
+      document.getElementById('sheet-ticker').textContent = s.ticker;
+      document.getElementById('sheet-name').textContent = s.name;
+      document.getElementById('sheet-price').textContent = s.price;
+      const chEl = document.getElementById('sheet-change');
+      chEl.textContent = (s.changeVal >= 0 ? '▲ ' : '▼ ') + Math.abs(s.changeVal) + '%';
+      chEl.className = 'stock-change ' + (s.changeVal >= 0 ? 'change-up' : 'change-down');
+      document.getElementById('sheet-body').innerHTML = buildStockSheetBody(s);
+      document.getElementById('sheet-body').scrollTop = 0;
+      document.getElementById('sheet-overlay').classList.add('open');
+      document.getElementById('stock-sheet').classList.add('open');
+      document.body.classList.add('sheet-open');
+    }
+
+    function closeStockSheet() {
+      document.getElementById('sheet-overlay').classList.remove('open');
+      document.getElementById('stock-sheet').classList.remove('open');
+      document.body.classList.remove('sheet-open');
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeStockSheet();
+    });
+
+    // ── 핵심 요약 스탯 타일 ──
+    function buildQuickStats(s) {
+      const tiles = [];
+      tiles.push(`<div class="stat-tile wide">
+        <div class="stat-label">투자 의견</div>
+        <div class="stat-val"><span class="opinion-badge ${s.opinionClass}">${s.opinion}</span>
+        <span style="font-size:12px;color:#656d76;font-weight:600;margin-left:6px;">확률 ${s.opinionProb}%</span></div>
+      </div>`);
+      if (s.opinionSimple) {
+        tiles.push(`<div class="stat-tile wide">
+          <div class="stat-label">한줄 요약</div>
+          <div class="stat-val small">${s.opinionSimple}</div>
+        </div>`);
+      }
+      if (s.pnlPct != null) {
+        const cls = s.pnlPct >= 0 ? 'pnl-pos' : 'pnl-neg';
+        tiles.push(`<div class="stat-tile">
+          <div class="stat-label">매입가 대비</div>
+          <div class="stat-val ${cls}">${s.pnlPct >= 0 ? '+' : ''}${s.pnlPct.toFixed(1)}%</div>
+        </div>`);
+      }
+      tiles.push(`<div class="stat-tile"><div class="stat-label">적정가</div><div class="stat-val">${s.fairValue}</div></div>`);
+      tiles.push(`<div class="stat-tile"><div class="stat-label">손절가</div><div class="stat-val" style="color:#0969da;">${s.stopLoss}</div></div>`);
+      tiles.push(`<div class="stat-tile"><div class="stat-label">6개월 목표가</div><div class="stat-val" style="color:#cf222e;">${s.target6m}</div></div>`);
+      tiles.push(`<div class="stat-tile"><div class="stat-label">1년 목표가</div><div class="stat-val" style="color:#cf222e;">${s.target1y}</div></div>`);
+      return `<div class="quick-stats">${tiles.join('')}</div>`;
+    }
+
+    // ── 52주 레인지 바 (지지/저항 눈금 포함) ──
+    function buildRangeGauge(s) {
+      const low = s.low52wRaw, high = s.high52wRaw, price = s.priceRaw;
+      if (low == null || high == null || price == null || high <= low) return '';
+      const pct = v => Math.max(0, Math.min(100, ((v - low) / (high - low)) * 100));
+      const ticks = []
+        .concat((s.supportRaw || []).map(v => [v, '#0969da']))
+        .concat((s.resistanceRaw || []).map(v => [v, '#cf222e']))
+        .filter(([v]) => v != null && v >= low && v <= high)
+        .map(([v, color]) => `<div class="gauge-tick" style="left:${pct(v)}%;background:${color};"></div>`)
+        .join('');
+      return `<div class="gauge-wrap">
+        <div class="gauge-label-row"><span>52주 최저 ${s.low52w}</span><span>52주 최고 ${s.high52w}</span></div>
+        <div class="gauge-track">
+          ${ticks}
+          <div class="gauge-marker" style="left:${pct(price)}%;"></div>
+        </div>
+      </div>`;
+    }
+
+    // ── RSI 게이지 (과매도 30 / 과매수 70 구간 표시) ──
+    function buildRsiGauge(s) {
+      const rsi = s.rsiRaw;
+      if (rsi == null || isNaN(rsi)) return '';
+      const pct = Math.max(0, Math.min(100, rsi));
+      const zone = rsi >= 70 ? '과매수' : rsi <= 30 ? '과매도' : '중립';
+      return `<div class="gauge-wrap">
+        <div class="gauge-label-row"><span>RSI</span><span>${rsi} · ${zone}</span></div>
+        <div class="gauge-track rsi-track">
+          <div class="gauge-marker" style="left:${pct}%;"></div>
+        </div>
+      </div>`;
+    }
+
+    // ── 상세 항목 섹션 (라벨-값 그리드) — 개별 접기/펼치기는 없고, 전체가 하나의 토글로 묶임 ──
+    function detailSection(title, pairs) {
+      const items = pairs
+        .filter(([, val]) => val != null && val !== '')
+        .map(([label, val]) => `<div class="detail-item"><div class="d-label">${label}</div><div class="d-value">${val}</div></div>`)
+        .join('');
+      if (!items) return '';
+      return `<div class="sheet-section-title">${title}</div><div class="detail-grid">${items}</div>`;
+    }
+
+    function toggleAllDetails(el) {
+      const isOpen = el.classList.toggle('open');
+      document.getElementById('sheet-detail-all').classList.toggle('open');
+      el.querySelector('span').textContent = isOpen ? '상세정보 접기' : '상세정보 보기';
+    }
+
+    function buildStockSheetBody(s) {
+      const allDetails =
+        detailSection('기업 개요', [
+          ['사업 모델', s.businessModel],
+          ['산업 전망', s.industryOutlook],
+          ['경쟁사 비교', s.competitors],
+          ['경제적 해자', s.moat],
+          ['AI 수혜 여부', s.aiBenefit],
+        ]) +
+        detailSection('실적 · 밸류에이션', [
+          ['최근 실적', s.recentEarnings],
+          ['재무제표', s.financials],
+          ['밸류에이션', s.valuation],
+        ]) +
+        detailSection('수급 · 시장 신호', [
+          ['기관 매수/매도', s.institutionalFlow],
+          ['내부자 매매', s.insiderTrading],
+          ['옵션 시장', s.options],
+          ['공매도 비율', s.shortRatio],
+        ]) +
+        detailSection('일정 · 이벤트', [
+          ['실적 발표 일정', s.earningsDate],
+          ['주요 이벤트', s.events],
+        ]) +
+        detailSection('기술적 분석 (전문가용 · 숫자로 보기)', [
+          ['판단 근거 상세', s.opinionSummary],
+          ['최근 뉴스 영향', s.recentNews],
+          ['일봉 분석', s.dailyChart],
+          ['주봉 분석', s.weeklyChart],
+          ['월봉 분석', s.monthlyChart],
+          ['분할매수 구간', s.buyZone],
+        ]) +
+        detailSection('시나리오', [
+          ['상승 시나리오', s.bullCase],
+          ['하락 시나리오', s.bearCase],
+        ]);
+
+      return (
+        buildQuickStats(s) +
+        buildRangeGauge(s) +
+        buildRsiGauge(s) +
+        `<div class="sheet-detail-toggle" onclick="toggleAllDetails(this)">
+          <span>상세정보 보기</span><span class="sheet-accordion-chevron">▾</span>
+        </div>
+        <div class="sheet-detail-all" id="sheet-detail-all">${allDetails}</div>`
+      );
     }
 
     // ── 업데이트 시간 표시 ──
@@ -360,78 +741,63 @@
     // ── Mock 데이터 렌더링 (개발용) ──
     // TODO: Python generate_html.py가 이 함수들을 실제 데이터로 교체 예정
 
+    function quickInsightHTML(analysis) {
+      if (!analysis) return '';
+      const clean = s => (s || '').replace(/^\(샘플\)\s*/, '');
+      const benefit = clean(analysis.usStocks).substring(0, 35) || '-';
+      const damage  = clean(analysis.directDamage).split(/[,，]/)[0].trim().substring(0, 20) || '-';
+      const flow    = clean(analysis.moneyFlow).substring(0, 50) || '';
+      return `<div class="quick-insight">
+        <span class="qi-benefit">↑수혜&nbsp;${benefit}</span>
+        <span class="qi-sep">|</span>
+        <span class="qi-damage">↓피해&nbsp;${damage}</span>
+        ${flow ? `<span class="qi-sep">|</span><span class="qi-flow">💸&nbsp;${flow}</span>` : ''}
+      </div>`;
+    }
+
+    // 전문가용 상세 11개 항목 — "자세히 보기"를 눌러야만 보임
     function newsAnalysisHTML(a) {
       if (!a.analysis) return '';
       const d = a.analysis;
       return `
         <div class="news-analysis-detail">
+          ${quickInsightHTML(d)}
           <div class="analysis-grid">
-            <div class="analysis-item full-width">
-              <div class="item-label">1. 뉴스 3줄 요약</div>
-              <div class="item-value">${d.summary3}</div>
-            </div>
-            <div class="analysis-item full-width">
-              <div class="item-label">2. 왜 지금 이런 뉴스가 나왔는가</div>
-              <div class="item-value">${d.why}</div>
-            </div>
-            <div class="analysis-item full-width">
-              <div class="item-label">3. 돈의 흐름</div>
-              <div class="item-value">${d.moneyFlow}</div>
-            </div>
-            <div class="analysis-item">
-              <div class="item-label">4. 직접 수혜 산업</div>
-              <div class="item-value">${d.directBenefit}</div>
-            </div>
-            <div class="analysis-item">
-              <div class="item-label">5. 간접 수혜 산업</div>
-              <div class="item-value">${d.indirectBenefit}</div>
-            </div>
-            <div class="analysis-item">
-              <div class="item-label">6. 직접 피해 산업</div>
-              <div class="item-value">${d.directDamage}</div>
-            </div>
-            <div class="analysis-item">
-              <div class="item-label">7. 간접 피해 산업</div>
-              <div class="item-value">${d.indirectDamage}</div>
-            </div>
-            <div class="analysis-item">
-              <div class="item-label">8. 관련 미국 주식</div>
-              <div class="item-value">${d.usStocks}</div>
-            </div>
-            <div class="analysis-item">
-              <div class="item-label">9. 관련 한국 주식</div>
-              <div class="item-value">${d.krStocks}</div>
-            </div>
-            <div class="analysis-item full-width">
-              <div class="item-label">10. 향후 1년 최대 수혜 기업</div>
-              <div class="item-value">${d.topBeneficiary}</div>
-            </div>
-            <div class="analysis-item full-width">
-              <div class="item-label">11. 시장이 놓치고 있는 투자 포인트</div>
-              <div class="item-value">${d.hiddenPoint}</div>
-            </div>
+            <div class="analysis-item full-width"><div class="item-label">1. 뉴스 3줄 요약</div><div class="item-value">${d.summary3}</div></div>
+            <div class="analysis-item full-width"><div class="item-label">2. 왜 지금 이런 뉴스가 나왔는가</div><div class="item-value">${d.why}</div></div>
+            <div class="analysis-item full-width"><div class="item-label">3. 돈의 흐름</div><div class="item-value">${d.moneyFlow}</div></div>
+            <div class="analysis-item"><div class="item-label">4. 직접 수혜 산업</div><div class="item-value">${d.directBenefit}</div></div>
+            <div class="analysis-item"><div class="item-label">5. 간접 수혜 산업</div><div class="item-value">${d.indirectBenefit}</div></div>
+            <div class="analysis-item"><div class="item-label">6. 직접 피해 산업</div><div class="item-value">${d.directDamage}</div></div>
+            <div class="analysis-item"><div class="item-label">7. 간접 피해 산업</div><div class="item-value">${d.indirectDamage}</div></div>
+            <div class="analysis-item"><div class="item-label">8. 관련 미국 주식</div><div class="item-value">${d.usStocks}</div></div>
+            <div class="analysis-item"><div class="item-label">9. 관련 한국 주식</div><div class="item-value">${d.krStocks}</div></div>
+            <div class="analysis-item full-width"><div class="item-label">10. 향후 1년 최대 수혜 기업</div><div class="item-value">${d.topBeneficiary}</div></div>
+            <div class="analysis-item full-width"><div class="item-label">11. 시장이 놓치고 있는 투자 포인트</div><div class="item-value">${d.hiddenPoint}</div></div>
           </div>
-        </div>
-      `;
+        </div>`;
     }
 
     function renderNews(containerId, articles, badgeClass, badgeLabel) {
       const container = document.getElementById(containerId);
-      container.innerHTML = articles.map(a => `
-        <div class="news-card ${a.analysis ? '' : ''}" onclick="toggleNews(this)">
+      container.innerHTML = articles.map(a => {
+        const plain = a.analysis?.simpleSummary || (a.summary || '').replace(/<[^>]*>/g, '');
+        return `
+        <div class="news-card" onclick="toggleNews(this)">
           <div class="news-card-header">
             <span class="news-source-badge ${badgeClass}">${badgeLabel}</span>
             <h3>${a.title}</h3>
-            <div class="news-summary">${a.summary}</div>
+            <div class="news-summary">${plain}</div>
             ${a.analysis ? `
             <div class="news-toggle-row">
-              <span class="news-toggle-label">기관투자자 분석 보기</span>
+              <span class="news-toggle-label">자세히 보기</span>
               <span class="news-chevron">▼</span>
             </div>` : ''}
           </div>
           ${newsAnalysisHTML(a)}
         </div>
-      `).join('');
+      `;
+      }).join('');
     }
 
     function renderNewsKr(articles) { renderNews('news-kr', articles, 'badge-kr', '한국'); }
@@ -439,247 +805,248 @@
 
     function renderStocks(containerId, stocks) {
       const container = document.getElementById(containerId);
-      container.innerHTML = stocks.map(s => `
-        <div class="stock-card" onclick="toggleStock(this)">
+      container.innerHTML = stocks.map((s, idx) => {
+        const key = containerId + '-' + idx;
+        STOCK_LOOKUP[key] = s;
+
+        // P&L 행 (보유종목만)
+        let pnlRow = '';
+        if (s.pnlPct != null) {
+          const cls   = s.pnlPct >= 0 ? 'pnl-pos' : 'pnl-neg';
+          const arrow = s.pnlPct >= 0 ? '▲' : '▼';
+          const sign  = s.pnlPct >= 0 ? '+' : '';
+          let action = '⚪ 보유 유지', actionCls = 'action-hold';
+          if      (s.opinionClass === 'op-sell' && s.pnlPct < -5) { action = '🔴 손절 검토';      actionCls = 'action-sell';   }
+          else if (s.opinionClass === 'op-sell' && s.pnlPct >= 5) { action = '🟢 이익실현 고려';  actionCls = 'action-profit'; }
+          else if (s.opinionClass === 'op-buy'  && s.pnlPct < 0)  { action = '📉 추가매수 검토';  actionCls = 'action-buy';    }
+          else if (s.opinionClass === 'op-buy')                    { action = '✅ 보유 유지';       actionCls = 'action-hold';   }
+          pnlRow = `<div class="pnl-row">
+            <span class="pnl-label">매입가 ${s.costBasis || '-'}</span>
+            <span class="pnl-value ${cls}">${arrow} ${sign}${Math.abs(s.pnlPct).toFixed(1)}%</span>
+            <span class="action-signal ${actionCls}">${action}</span>
+          </div>`;
+        }
+        // 키 메트릭 (RSI, 목표가, 손절)
+        const rsiVal = s.rsiRaw != null ? s.rsiRaw : (s.dailyChart || '').match(/RSI\s*([\d.]+)/)?.[1];
+        const metricsRow = `<div class="stock-metrics">
+          ${rsiVal ? `<span>RSI <span class="metric-val">${rsiVal}</span></span>` : ''}
+          ${s.target1y  ? `<span>목표가 <span class="metric-val">${s.target1y}</span></span>` : ''}
+          ${s.stopLoss  ? `<span>손절 <span class="metric-val">${s.stopLoss}</span></span>` : ''}
+          ${s.buyZone   ? `<span>매수구간 <span class="metric-val">${(s.buyZone||'').split(',')[0]}</span></span>` : ''}
+        </div>`;
+        return `
+        <div class="stock-card" onclick="openStockSheet('${key}')">
           <div class="stock-card-header">
             <div class="stock-card-top">
               <div class="stock-name-wrap">
+                <span class="opinion-badge ${s.opinionClass}" style="font-size:11px;padding:2px 10px;">${s.opinion} ${s.opinionProb}%</span>
                 <span class="stock-ticker">${s.ticker}</span>
                 <span class="stock-name">${s.name}</span>
               </div>
-              <div style="display:flex; align-items:center;">
+              <div style="display:flex;align-items:center;">
                 <div class="stock-price-wrap">
                   <div class="stock-price">${s.price}</div>
                   <div class="stock-change ${s.changeVal >= 0 ? 'change-up' : 'change-down'}">
                     ${s.changeVal >= 0 ? '▲' : '▼'} ${Math.abs(s.changeVal)}%
                   </div>
                 </div>
-                <span class="chevron">▼</span>
+                <span class="chevron">›</span>
               </div>
             </div>
-            ${s.opinionSummary ? `
-            <div class="opinion-summary">
-              <span class="badge-inline ${s.opinionClass}">${s.opinion} ${s.opinionProb}%</span>${s.opinionSummary}
-            </div>` : ''}
+            ${pnlRow}
+            ${s.opinionSummary ? `<div class="opinion-summary">${s.opinionSummary}</div>` : ''}
+            ${metricsRow}
           </div>
-          <div class="stock-detail">
-            <div class="detail-grid">
-              <div class="detail-item"><div class="d-label">1. 사업 모델</div><div class="d-value">${s.businessModel}</div></div>
-              <div class="detail-item"><div class="d-label">2. 산업 전망</div><div class="d-value">${s.industryOutlook}</div></div>
-              <div class="detail-item"><div class="d-label">3. 최근 뉴스 영향</div><div class="d-value">${s.recentNews}</div></div>
-              <div class="detail-item"><div class="d-label">4. 경쟁사 비교</div><div class="d-value">${s.competitors}</div></div>
-              <div class="detail-item"><div class="d-label">5. 경제적 해자</div><div class="d-value">${s.moat}</div></div>
-              <div class="detail-item"><div class="d-label">6. AI 수혜 여부</div><div class="d-value">${s.aiBenefit}</div></div>
-              <div class="detail-item"><div class="d-label">7. 최근 실적</div><div class="d-value">${s.recentEarnings}</div></div>
-              <div class="detail-item"><div class="d-label">8. 재무제표</div><div class="d-value">${s.financials}</div></div>
-              <div class="detail-item"><div class="d-label">9. 밸류에이션</div><div class="d-value">${s.valuation}</div></div>
-              <div class="detail-item"><div class="d-label">10. 기관 매수/매도</div><div class="d-value">${s.institutionalFlow}</div></div>
-              <div class="detail-item"><div class="d-label">11. 내부자 매매</div><div class="d-value">${s.insiderTrading}</div></div>
-              <div class="detail-item"><div class="d-label">12. 옵션 시장</div><div class="d-value">${s.options}</div></div>
-              <div class="detail-item"><div class="d-label">13. 공매도 비율</div><div class="d-value">${s.shortRatio}</div></div>
-              <div class="detail-item"><div class="d-label">14. 실적 발표 일정</div><div class="d-value">${s.earningsDate}</div></div>
-              <div class="detail-item"><div class="d-label">15. 주요 이벤트</div><div class="d-value">${s.events}</div></div>
-              <div class="detail-item"><div class="d-label">16. 일봉 분석</div><div class="d-value">${s.dailyChart}</div></div>
-              <div class="detail-item"><div class="d-label">17. 주봉 분석</div><div class="d-value">${s.weeklyChart}</div></div>
-              <div class="detail-item"><div class="d-label">18. 월봉 분석</div><div class="d-value">${s.monthlyChart}</div></div>
-              <div class="detail-item"><div class="d-label">19. 주요 지지선</div><div class="d-value">${s.support}</div></div>
-              <div class="detail-item"><div class="d-label">20. 주요 저항선</div><div class="d-value">${s.resistance}</div></div>
-              <div class="detail-item"><div class="d-label">21. 적정가</div><div class="d-value">${s.fairValue}</div></div>
-              <div class="detail-item"><div class="d-label">22. 분할매수 구간</div><div class="d-value">${s.buyZone}</div></div>
-              <div class="detail-item"><div class="d-label">23. 손절가</div><div class="d-value">${s.stopLoss}</div></div>
-              <div class="detail-item"><div class="d-label">24. 6개월 목표가</div><div class="d-value">${s.target6m}</div></div>
-              <div class="detail-item"><div class="d-label">25. 1년 목표가</div><div class="d-value">${s.target1y}</div></div>
-              <div class="detail-item full"><div class="d-label">26. 상승 시나리오</div><div class="d-value">${s.bullCase}</div></div>
-              <div class="detail-item full"><div class="d-label">27. 하락 시나리오</div><div class="d-value">${s.bearCase}</div></div>
-              <div class="detail-item full">
-                <div class="d-label">28. 매수/보유/매도 의견</div>
-                <div class="d-value">
-                  <span class="opinion-badge ${s.opinionClass}">${s.opinion}</span>
-                  &nbsp; 확률 ${s.opinionProb}%
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      `).join('');
+        </div>`;
+      }).join('');
     }
 
     // ════════════════════════════════════════════
     // LIVE_DATA_START — generate_html.py 자동 생성
     const DASHBOARD_DATA = {
-  "generated_at": "2026-06-17T19:03:22.667042",
+  "generated_at": "2026-07-16T15:16:28.453417",
   "news": {
     "kr": [
+      {
+        "title": "[굿모닝! 금융지식] 외국인이 주식을 사면 왜 증시가 오를까 - 굿모닝경제",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE5rTDFYb1gyNFZkZFFZdmN4OTNGT2o1ZFREeGZYOFdZZVBQZDhrZnhPdVA4Z0RDWFU3Zm1tVDVUR2tOVkZhX2ppXzlXdGlaX0JtVmJ4djI1UVR0azBHTjJDNEg1N1V0ZlRzMzFMYw?oc=",
+        "analysis": {
+          "simpleSummary": "(샘플) 이런 뉴스가 나오면 관련된 회사들의 주가가 오르거나 내릴 수 있어요.",
+          "summary3": "(샘플) [굿모닝! 금융지식] 외국인이 주식을 사면 왜 증시가 ... 핵심 3줄 요약입니다. 두 번째 줄. 세 번째 줄.",
+          "why": "(샘플) 글로벌 AI 인프라 투자 사이클 본격화로 관련 뉴스 증가.",
+          "moneyFlow": "(샘플) 채권 → 기술주·반도체로 자금 이동.",
+          "directBenefit": "(샘플) 반도체, 데이터센터",
+          "indirectBenefit": "(샘플) 전력 인프라, 소재·부품",
+          "directDamage": "(샘플) 레거시 IT 서비스",
+          "indirectDamage": "(샘플) 에너지 집약 산업",
+          "usStocks": "(샘플) NVDA, MSFT, AVGO",
+          "krStocks": "(샘플) 삼성전자(005930), SK하이닉스(000660)",
+          "topBeneficiary": "(샘플) Nvidia — GPU 독점 + CUDA 생태계 락인",
+          "hiddenPoint": "(샘플) 전력 인프라 병목. Vertiv(VRT), Eaton(ETN) 주목."
+        }
+      },
+      {
+        "title": "\"투기적 개별종목 ETF 거래가 한국 증시 급등락 주범\" - 세상을 바꾸는 시민언론 민들레",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE5NdDkwRHFxa3c5bWpGY0Q0UkxyWHZsQ1Bmb3pzcG9PNE1ac0thYVZFRjVhaTRSRG83bFFrdzBRRnRZdnFNQ1FSWFc4YTZxbm1YcUZvLW5GZVI2VXhYS3JMV1daWlRfck9IT01jYg?oc=",
+        "analysis": {
+          "simpleSummary": "(샘플) 이런 뉴스가 나오면 관련된 회사들의 주가가 오르거나 내릴 수 있어요.",
+          "summary3": "(샘플) \"투기적 개별종목 ETF 거래가 한국 증시 급등락 주범... 핵심 3줄 요약입니다. 두 번째 줄. 세 번째 줄.",
+          "why": "(샘플) 글로벌 AI 인프라 투자 사이클 본격화로 관련 뉴스 증가.",
+          "moneyFlow": "(샘플) 채권 → 기술주·반도체로 자금 이동.",
+          "directBenefit": "(샘플) 반도체, 데이터센터",
+          "indirectBenefit": "(샘플) 전력 인프라, 소재·부품",
+          "directDamage": "(샘플) 레거시 IT 서비스",
+          "indirectDamage": "(샘플) 에너지 집약 산업",
+          "usStocks": "(샘플) NVDA, MSFT, AVGO",
+          "krStocks": "(샘플) 삼성전자(005930), SK하이닉스(000660)",
+          "topBeneficiary": "(샘플) Nvidia — GPU 독점 + CUDA 생태계 락인",
+          "hiddenPoint": "(샘플) 전력 인프라 병목. Vertiv(VRT), Eaton(ETN) 주목."
+        }
+      },
       {
         "title": "코스피 7,000 돌파! 한국 주식시장은 왜 이렇게 올랐을까? - KB Think",
         "summary": "<a href=\"https://news.google.com/rss/articles/CBMidEFVX3lxTE5kcmhTN25YMkFHNkQ5UkNLaTFqU21GUXBFVjdGcS1UdS1FNzFPZXZUTzk2aDAwN3BnVGZic1Q5Z25ZVXY3aFJzczBjV0dTaVNoQjRiMTItNU1NcjZBQmdPd0pHTEJRSUttaU5IRHRvMD",
         "analysis": {
-          "summary3": "[Mock] 코스피 7,000 돌파! 한국 주식시장은 왜 이렇게 올... 핵심 3줄 요약입니다. 두 번째 줄. 세 번째 줄.",
-          "why": "[Mock] 글로벌 AI 인프라 투자 사이클 본격화로 관련 뉴스 증가.",
-          "moneyFlow": "[Mock] 채권 → 기술주·반도체로 자금 이동.",
-          "directBenefit": "[Mock] 반도체, 데이터센터",
-          "indirectBenefit": "[Mock] 전력 인프라, 소재·부품",
-          "directDamage": "[Mock] 레거시 IT 서비스",
-          "indirectDamage": "[Mock] 에너지 집약 산업",
-          "usStocks": "[Mock] NVDA, MSFT, AVGO",
-          "krStocks": "[Mock] 삼성전자(005930), SK하이닉스(000660)",
-          "topBeneficiary": "[Mock] Nvidia — GPU 독점 + CUDA 생태계 락인",
-          "hiddenPoint": "[Mock] 전력 인프라 병목. Vertiv(VRT), Eaton(ETN) 주목."
+          "simpleSummary": "(샘플) 이런 뉴스가 나오면 관련된 회사들의 주가가 오르거나 내릴 수 있어요.",
+          "summary3": "(샘플) 코스피 7,000 돌파! 한국 주식시장은 왜 이렇게 올... 핵심 3줄 요약입니다. 두 번째 줄. 세 번째 줄.",
+          "why": "(샘플) 글로벌 AI 인프라 투자 사이클 본격화로 관련 뉴스 증가.",
+          "moneyFlow": "(샘플) 채권 → 기술주·반도체로 자금 이동.",
+          "directBenefit": "(샘플) 반도체, 데이터센터",
+          "indirectBenefit": "(샘플) 전력 인프라, 소재·부품",
+          "directDamage": "(샘플) 레거시 IT 서비스",
+          "indirectDamage": "(샘플) 에너지 집약 산업",
+          "usStocks": "(샘플) NVDA, MSFT, AVGO",
+          "krStocks": "(샘플) 삼성전자(005930), SK하이닉스(000660)",
+          "topBeneficiary": "(샘플) Nvidia — GPU 독점 + CUDA 생태계 락인",
+          "hiddenPoint": "(샘플) 전력 인프라 병목. Vertiv(VRT), Eaton(ETN) 주목."
         }
       },
       {
-        "title": "\"개미 다 죽는다\"…주식 거래시간 12시간 확대 '반발' - v.daum.net",
-        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiT0FVX3lxTE1pc0FOT3dFWUR6TXNmUnpjdmZLeDYyRmt6azFmQnFMdndBX2VmSENXT3l5VUt1a1VzWGRzbVJyWEhfQ3E2aUlOdDlIVmE2Sm8?oc=5\" target=\"_blank\">\"개미 다 죽는다\"…주식 거래시간 1",
+        "title": "\"한국 증시를 보라\" 무서운 경고…2100조 '빚투' 공포 덮쳤다 - 한국경제",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE84eDdoWXliWXlCXzFzb1dNSldYZUp3bFdVcXdVRFR0QXlpRGtWTUxYR0trSTZhaDFUTmZyaWxIUGtSR3o0eU1BZUpkb183cS1WTVRocWxJLUhPUQ?oc=5\" target=\"_blank\">\"한국 증",
         "analysis": {
-          "summary3": "[Mock] \"개미 다 죽는다\"…주식 거래시간 12시간 확대 '반발... 핵심 3줄 요약입니다. 두 번째 줄. 세 번째 줄.",
-          "why": "[Mock] 글로벌 AI 인프라 투자 사이클 본격화로 관련 뉴스 증가.",
-          "moneyFlow": "[Mock] 채권 → 기술주·반도체로 자금 이동.",
-          "directBenefit": "[Mock] 반도체, 데이터센터",
-          "indirectBenefit": "[Mock] 전력 인프라, 소재·부품",
-          "directDamage": "[Mock] 레거시 IT 서비스",
-          "indirectDamage": "[Mock] 에너지 집약 산업",
-          "usStocks": "[Mock] NVDA, MSFT, AVGO",
-          "krStocks": "[Mock] 삼성전자(005930), SK하이닉스(000660)",
-          "topBeneficiary": "[Mock] Nvidia — GPU 독점 + CUDA 생태계 락인",
-          "hiddenPoint": "[Mock] 전력 인프라 병목. Vertiv(VRT), Eaton(ETN) 주목."
+          "simpleSummary": "(샘플) 이런 뉴스가 나오면 관련된 회사들의 주가가 오르거나 내릴 수 있어요.",
+          "summary3": "(샘플) \"한국 증시를 보라\" 무서운 경고…2100조 '빚투' ... 핵심 3줄 요약입니다. 두 번째 줄. 세 번째 줄.",
+          "why": "(샘플) 글로벌 AI 인프라 투자 사이클 본격화로 관련 뉴스 증가.",
+          "moneyFlow": "(샘플) 채권 → 기술주·반도체로 자금 이동.",
+          "directBenefit": "(샘플) 반도체, 데이터센터",
+          "indirectBenefit": "(샘플) 전력 인프라, 소재·부품",
+          "directDamage": "(샘플) 레거시 IT 서비스",
+          "indirectDamage": "(샘플) 에너지 집약 산업",
+          "usStocks": "(샘플) NVDA, MSFT, AVGO",
+          "krStocks": "(샘플) 삼성전자(005930), SK하이닉스(000660)",
+          "topBeneficiary": "(샘플) Nvidia — GPU 독점 + CUDA 생태계 락인",
+          "hiddenPoint": "(샘플) 전력 인프라 병목. Vertiv(VRT), Eaton(ETN) 주목."
         }
       },
       {
-        "title": "시간의 희소성과 한국 증시의 선진화 - 한국경제",
-        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE9VWFB1bWNITHMzaFpCVzFqRE5JR2p3ekJ3QWZfOWhPSXNnbkFoT0dtTUhHV2gtbjFuVG1LelZ1U0tUNXh5eWtOS3dURFNuRmtiMlpBY0hQbFlsd9IBVEFVX3lxTE0zRTVNbmxfM09XMm",
+        "title": "[‘클릭’ 증시] 애써 키운 코스피 무너뜨리는 한국 정치 - 공공뉴스",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiakFVX3lxTFBTanVoLWc1dk9rbGdiYWl3SWlFYmxqVlZuRjFYd1BVeFJvbjZvTmNEMTNwb0F6d2NLdUo4cU1rUlV0dTIzZE0tV0NHb1dvTzhjRFVYc2ZETmlCVDVlQTdTRzZ0TjMxZnI5ZWfSAW5BVV",
         "analysis": {
-          "summary3": "[Mock] 시간의 희소성과 한국 증시의 선진화 - 한국경제... 핵심 3줄 요약입니다. 두 번째 줄. 세 번째 줄.",
-          "why": "[Mock] 글로벌 AI 인프라 투자 사이클 본격화로 관련 뉴스 증가.",
-          "moneyFlow": "[Mock] 채권 → 기술주·반도체로 자금 이동.",
-          "directBenefit": "[Mock] 반도체, 데이터센터",
-          "indirectBenefit": "[Mock] 전력 인프라, 소재·부품",
-          "directDamage": "[Mock] 레거시 IT 서비스",
-          "indirectDamage": "[Mock] 에너지 집약 산업",
-          "usStocks": "[Mock] NVDA, MSFT, AVGO",
-          "krStocks": "[Mock] 삼성전자(005930), SK하이닉스(000660)",
-          "topBeneficiary": "[Mock] Nvidia — GPU 독점 + CUDA 생태계 락인",
-          "hiddenPoint": "[Mock] 전력 인프라 병목. Vertiv(VRT), Eaton(ETN) 주목."
-        }
-      },
-      {
-        "title": "“많이 오른 한국증시, 최대 20% 조정 올 수도”…활황에 경고 날린 전문가 - 매일경제",
-        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiVEFVX3lxTE9GeTVuRVUwODd1b05ZY0FDRnVtejljY1ZVSHdKRmNpRG5kQmhOUGl5UVJJdHZRa1YxVWo5a3NTMUxmbHpxTFpTc3k5Yjd6VkJSTnJuaA?oc=5\" target=\"_blank\">“많이 오른 한국증시, ",
-        "analysis": {
-          "summary3": "[Mock] “많이 오른 한국증시, 최대 20% 조정 올 수도”…활... 핵심 3줄 요약입니다. 두 번째 줄. 세 번째 줄.",
-          "why": "[Mock] 글로벌 AI 인프라 투자 사이클 본격화로 관련 뉴스 증가.",
-          "moneyFlow": "[Mock] 채권 → 기술주·반도체로 자금 이동.",
-          "directBenefit": "[Mock] 반도체, 데이터센터",
-          "indirectBenefit": "[Mock] 전력 인프라, 소재·부품",
-          "directDamage": "[Mock] 레거시 IT 서비스",
-          "indirectDamage": "[Mock] 에너지 집약 산업",
-          "usStocks": "[Mock] NVDA, MSFT, AVGO",
-          "krStocks": "[Mock] 삼성전자(005930), SK하이닉스(000660)",
-          "topBeneficiary": "[Mock] Nvidia — GPU 독점 + CUDA 생태계 락인",
-          "hiddenPoint": "[Mock] 전력 인프라 병목. Vertiv(VRT), Eaton(ETN) 주목."
-        }
-      },
-      {
-        "title": "오른 종목 200개, 내린 종목 679개… 7000 찍어도 80%는 남의 잔치 - 조선일보",
-        "summary": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxNVWEtMkFpYmNqNHhrU2dyaGhvc1FsZlhIdUhFWmtLQWdieEhSYUM2Mlh5SEpFcGFzOXpsdzVHUG5nVzk2QlBUZEpWYlhfZWxKY0RzSkNMVVZTTTA5NGR1dm1XQlo4YWh2UUdkUHRxZl",
-        "analysis": {
-          "summary3": "[Mock] 오른 종목 200개, 내린 종목 679개… 7000 찍... 핵심 3줄 요약입니다. 두 번째 줄. 세 번째 줄.",
-          "why": "[Mock] 글로벌 AI 인프라 투자 사이클 본격화로 관련 뉴스 증가.",
-          "moneyFlow": "[Mock] 채권 → 기술주·반도체로 자금 이동.",
-          "directBenefit": "[Mock] 반도체, 데이터센터",
-          "indirectBenefit": "[Mock] 전력 인프라, 소재·부품",
-          "directDamage": "[Mock] 레거시 IT 서비스",
-          "indirectDamage": "[Mock] 에너지 집약 산업",
-          "usStocks": "[Mock] NVDA, MSFT, AVGO",
-          "krStocks": "[Mock] 삼성전자(005930), SK하이닉스(000660)",
-          "topBeneficiary": "[Mock] Nvidia — GPU 독점 + CUDA 생태계 락인",
-          "hiddenPoint": "[Mock] 전력 인프라 병목. Vertiv(VRT), Eaton(ETN) 주목."
+          "simpleSummary": "(샘플) 이런 뉴스가 나오면 관련된 회사들의 주가가 오르거나 내릴 수 있어요.",
+          "summary3": "(샘플) [‘클릭’ 증시] 애써 키운 코스피 무너뜨리는 한국 정... 핵심 3줄 요약입니다. 두 번째 줄. 세 번째 줄.",
+          "why": "(샘플) 글로벌 AI 인프라 투자 사이클 본격화로 관련 뉴스 증가.",
+          "moneyFlow": "(샘플) 채권 → 기술주·반도체로 자금 이동.",
+          "directBenefit": "(샘플) 반도체, 데이터센터",
+          "indirectBenefit": "(샘플) 전력 인프라, 소재·부품",
+          "directDamage": "(샘플) 레거시 IT 서비스",
+          "indirectDamage": "(샘플) 에너지 집약 산업",
+          "usStocks": "(샘플) NVDA, MSFT, AVGO",
+          "krStocks": "(샘플) 삼성전자(005930), SK하이닉스(000660)",
+          "topBeneficiary": "(샘플) Nvidia — GPU 독점 + CUDA 생태계 락인",
+          "hiddenPoint": "(샘플) 전력 인프라 병목. Vertiv(VRT), Eaton(ETN) 주목."
         }
       }
     ],
     "us": [
       {
-        "title": "Kevin Warsh's Fed is not expected to make any change to rates for a while, according to CNBC Fed Survey - CNBC",
-        "summary": "<a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxQMVNCM1B5Y1NfRk4yN2thdUltcFlBMXZRVFVDVzBlZGR5aXBTWk0ydWo3dHRNSUp1NHFCQ0VfQjdtdncwRmc5TUxEV0ZmVWd6VWYxaGc4REN3WGFienJUWGtPd0QxQTNrcWhlQjRsM1",
+        "title": "US Stock Market: Fed Beige Book signals improving economy as inflation eases, but fuel costs and tariffs r - The Economic Times",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMinAJBVV95cUxORm80eFluR0FVSl92Vkk4cDR6aGN2Z2ZGQmVncmhXVlYtREgtWWtUZ3ZXVWhGWWNESzViWlRXOEF1aTYtV0MtUUVxZi1xVGFYVW5Nd05PM2dLbTNXZlJFMTlSLUpFTEZjTFFfdV9hQz",
         "analysis": {
-          "summary3": "[Mock] Kevin Warsh's Fed is not expec... 핵심 3줄 요약입니다. 두 번째 줄. 세 번째 줄.",
-          "why": "[Mock] 글로벌 AI 인프라 투자 사이클 본격화로 관련 뉴스 증가.",
-          "moneyFlow": "[Mock] 채권 → 기술주·반도체로 자금 이동.",
-          "directBenefit": "[Mock] 반도체, 데이터센터",
-          "indirectBenefit": "[Mock] 전력 인프라, 소재·부품",
-          "directDamage": "[Mock] 레거시 IT 서비스",
-          "indirectDamage": "[Mock] 에너지 집약 산업",
-          "usStocks": "[Mock] NVDA, MSFT, AVGO",
-          "krStocks": "[Mock] 삼성전자(005930), SK하이닉스(000660)",
-          "topBeneficiary": "[Mock] Nvidia — GPU 독점 + CUDA 생태계 락인",
-          "hiddenPoint": "[Mock] 전력 인프라 병목. Vertiv(VRT), Eaton(ETN) 주목."
+          "simpleSummary": "(샘플) 이런 뉴스가 나오면 관련된 회사들의 주가가 오르거나 내릴 수 있어요.",
+          "summary3": "(샘플) US Stock Market: Fed Beige Boo... 핵심 3줄 요약입니다. 두 번째 줄. 세 번째 줄.",
+          "why": "(샘플) 글로벌 AI 인프라 투자 사이클 본격화로 관련 뉴스 증가.",
+          "moneyFlow": "(샘플) 채권 → 기술주·반도체로 자금 이동.",
+          "directBenefit": "(샘플) 반도체, 데이터센터",
+          "indirectBenefit": "(샘플) 전력 인프라, 소재·부품",
+          "directDamage": "(샘플) 레거시 IT 서비스",
+          "indirectDamage": "(샘플) 에너지 집약 산업",
+          "usStocks": "(샘플) NVDA, MSFT, AVGO",
+          "krStocks": "(샘플) 삼성전자(005930), SK하이닉스(000660)",
+          "topBeneficiary": "(샘플) Nvidia — GPU 독점 + CUDA 생태계 락인",
+          "hiddenPoint": "(샘플) 전력 인프라 병목. Vertiv(VRT), Eaton(ETN) 주목."
         }
       },
       {
-        "title": "What to Look Out for in Economic Data This Week (June 15-19) - Kiplinger",
+        "title": "Elizabeth Warren blasts Kevin Warsh, saying he ‘seems to invite corruption’ - CNN",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxNS2loSG9aODZSWHJkc0R1VU85ZHVUeEVZNmQtNTBXQjBrbGcwXzQ1bE9oM0xLOVpBVzRZZFl0SlRKUnM5LXl0QU1MSnpxSTJaRXJQZXl6VE51REVSRE5XVk9QSHVwUWpiNlJXY2ZkM1",
+        "analysis": {
+          "simpleSummary": "(샘플) 이런 뉴스가 나오면 관련된 회사들의 주가가 오르거나 내릴 수 있어요.",
+          "summary3": "(샘플) Elizabeth Warren blasts Kevin ... 핵심 3줄 요약입니다. 두 번째 줄. 세 번째 줄.",
+          "why": "(샘플) 글로벌 AI 인프라 투자 사이클 본격화로 관련 뉴스 증가.",
+          "moneyFlow": "(샘플) 채권 → 기술주·반도체로 자금 이동.",
+          "directBenefit": "(샘플) 반도체, 데이터센터",
+          "indirectBenefit": "(샘플) 전력 인프라, 소재·부품",
+          "directDamage": "(샘플) 레거시 IT 서비스",
+          "indirectDamage": "(샘플) 에너지 집약 산업",
+          "usStocks": "(샘플) NVDA, MSFT, AVGO",
+          "krStocks": "(샘플) 삼성전자(005930), SK하이닉스(000660)",
+          "topBeneficiary": "(샘플) Nvidia — GPU 독점 + CUDA 생태계 락인",
+          "hiddenPoint": "(샘플) 전력 인프라 병목. Vertiv(VRT), Eaton(ETN) 주목."
+        }
+      },
+      {
+        "title": "What to Look Out for in Economic Data This Week (July 13-17) - Kiplinger",
         "summary": "<a href=\"https://news.google.com/rss/articles/CBMifEFVX3lxTE1MeVNwMVVnVmhvRWo4b0N4WkhCRXQxTVRtb2ZmTWhCSmd4eERsN3Nfdllwejg0eG5ueFFCRUdPTzVUaXh4dEFZaWJqN3FFZnlFWTBlZ2ZvVkFFRzVScTR3TXRhZGl6MHp2RUF1clppVD",
         "analysis": {
-          "summary3": "[Mock] What to Look Out for in Econom... 핵심 3줄 요약입니다. 두 번째 줄. 세 번째 줄.",
-          "why": "[Mock] 글로벌 AI 인프라 투자 사이클 본격화로 관련 뉴스 증가.",
-          "moneyFlow": "[Mock] 채권 → 기술주·반도체로 자금 이동.",
-          "directBenefit": "[Mock] 반도체, 데이터센터",
-          "indirectBenefit": "[Mock] 전력 인프라, 소재·부품",
-          "directDamage": "[Mock] 레거시 IT 서비스",
-          "indirectDamage": "[Mock] 에너지 집약 산업",
-          "usStocks": "[Mock] NVDA, MSFT, AVGO",
-          "krStocks": "[Mock] 삼성전자(005930), SK하이닉스(000660)",
-          "topBeneficiary": "[Mock] Nvidia — GPU 독점 + CUDA 생태계 락인",
-          "hiddenPoint": "[Mock] 전력 인프라 병목. Vertiv(VRT), Eaton(ETN) 주목."
+          "simpleSummary": "(샘플) 이런 뉴스가 나오면 관련된 회사들의 주가가 오르거나 내릴 수 있어요.",
+          "summary3": "(샘플) What to Look Out for in Econom... 핵심 3줄 요약입니다. 두 번째 줄. 세 번째 줄.",
+          "why": "(샘플) 글로벌 AI 인프라 투자 사이클 본격화로 관련 뉴스 증가.",
+          "moneyFlow": "(샘플) 채권 → 기술주·반도체로 자금 이동.",
+          "directBenefit": "(샘플) 반도체, 데이터센터",
+          "indirectBenefit": "(샘플) 전력 인프라, 소재·부품",
+          "directDamage": "(샘플) 레거시 IT 서비스",
+          "indirectDamage": "(샘플) 에너지 집약 산업",
+          "usStocks": "(샘플) NVDA, MSFT, AVGO",
+          "krStocks": "(샘플) 삼성전자(005930), SK하이닉스(000660)",
+          "topBeneficiary": "(샘플) Nvidia — GPU 독점 + CUDA 생태계 락인",
+          "hiddenPoint": "(샘플) 전력 인프라 병목. Vertiv(VRT), Eaton(ETN) 주목."
         }
       },
       {
-        "title": "Stock market today: Nikkei gains 0.4 percent, DAX rises 0.3 percent, S&P 500 futures climb 0.2 percent ahead of Fed decision - Economy Middle East",
-        "summary": "<a href=\"https://news.google.com/rss/articles/CBMi7AFBVV95cUxNWFMwN1plc1dqcVZma1pRUldWeWNBRE9vMko0R2NwQTY5N2VlRDlrOTZFamQ4Q2lrTEVvdHBYZlRVSTlacVJhMGdINXZKcll4cDhVRmtIeGNHSUxJWjZQV0ZyNW5xOW5ha194cWFRTz",
+        "title": "Global stocks head for best week since May; US jobs data shifts rate outlook - Reuters",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTE5xc1Y1VGpFS1BhTUVYMUhUTm9aQVMwSGZnRlgwUjRVNlJubTc1MVZKRkllNG12SFBnd01JeVpwRjNhV0oxOHN1SGx2M1VYaWRaZ2hRWE05TGRjSFNic0dUVUxPNWdUa2NDQ1dKdF9Ga2",
         "analysis": {
-          "summary3": "[Mock] Stock market today: Nikkei gai... 핵심 3줄 요약입니다. 두 번째 줄. 세 번째 줄.",
-          "why": "[Mock] 글로벌 AI 인프라 투자 사이클 본격화로 관련 뉴스 증가.",
-          "moneyFlow": "[Mock] 채권 → 기술주·반도체로 자금 이동.",
-          "directBenefit": "[Mock] 반도체, 데이터센터",
-          "indirectBenefit": "[Mock] 전력 인프라, 소재·부품",
-          "directDamage": "[Mock] 레거시 IT 서비스",
-          "indirectDamage": "[Mock] 에너지 집약 산업",
-          "usStocks": "[Mock] NVDA, MSFT, AVGO",
-          "krStocks": "[Mock] 삼성전자(005930), SK하이닉스(000660)",
-          "topBeneficiary": "[Mock] Nvidia — GPU 독점 + CUDA 생태계 락인",
-          "hiddenPoint": "[Mock] 전력 인프라 병목. Vertiv(VRT), Eaton(ETN) 주목."
+          "simpleSummary": "(샘플) 이런 뉴스가 나오면 관련된 회사들의 주가가 오르거나 내릴 수 있어요.",
+          "summary3": "(샘플) Global stocks head for best we... 핵심 3줄 요약입니다. 두 번째 줄. 세 번째 줄.",
+          "why": "(샘플) 글로벌 AI 인프라 투자 사이클 본격화로 관련 뉴스 증가.",
+          "moneyFlow": "(샘플) 채권 → 기술주·반도체로 자금 이동.",
+          "directBenefit": "(샘플) 반도체, 데이터센터",
+          "indirectBenefit": "(샘플) 전력 인프라, 소재·부품",
+          "directDamage": "(샘플) 레거시 IT 서비스",
+          "indirectDamage": "(샘플) 에너지 집약 산업",
+          "usStocks": "(샘플) NVDA, MSFT, AVGO",
+          "krStocks": "(샘플) 삼성전자(005930), SK하이닉스(000660)",
+          "topBeneficiary": "(샘플) Nvidia — GPU 독점 + CUDA 생태계 락인",
+          "hiddenPoint": "(샘플) 전력 인프라 병목. Vertiv(VRT), Eaton(ETN) 주목."
         }
       },
       {
-        "title": "June 16 May be a Big Day for the Stock Market and Set the Stage for What Happens Next. - The Motley Fool",
-        "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxNNERUM0ctZ1Y0QkkzbGdTRFlBUGNFbG1TYmpYT0RTdFViT1lUM19rTU1YQ2w4ekoxY1Jrall4OUpfZmprUDQ5cUY2SHNJazFQdHR4S2dLbzNVWkJMNjd3VGpxMFh0NENjSUJJQ0t2M3",
+        "title": "Why the Fed may need to stay patient - invesco.com",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMihgFBVV95cUxPY2Rodm44akFzYjFsTkk2ZXpZQTliWnJpUlc0TGQtYzFRMEFRSUlIYmNnaE5NeERfV2c2Njdud3RjcXlnNklUYTIzbE5kSDRBRHl1SW5YeHRLS0NibjRUNF9wRDFNQXg1UDRrdTB6aj",
         "analysis": {
-          "summary3": "[Mock] June 16 May be a Big Day for t... 핵심 3줄 요약입니다. 두 번째 줄. 세 번째 줄.",
-          "why": "[Mock] 글로벌 AI 인프라 투자 사이클 본격화로 관련 뉴스 증가.",
-          "moneyFlow": "[Mock] 채권 → 기술주·반도체로 자금 이동.",
-          "directBenefit": "[Mock] 반도체, 데이터센터",
-          "indirectBenefit": "[Mock] 전력 인프라, 소재·부품",
-          "directDamage": "[Mock] 레거시 IT 서비스",
-          "indirectDamage": "[Mock] 에너지 집약 산업",
-          "usStocks": "[Mock] NVDA, MSFT, AVGO",
-          "krStocks": "[Mock] 삼성전자(005930), SK하이닉스(000660)",
-          "topBeneficiary": "[Mock] Nvidia — GPU 독점 + CUDA 생태계 락인",
-          "hiddenPoint": "[Mock] 전력 인프라 병목. Vertiv(VRT), Eaton(ETN) 주목."
-        }
-      },
-      {
-        "title": "How Is the Economy Doing Right Now? - NerdWallet",
-        "summary": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE1nRU1VZTZjeXA1TTdRU1g5d1Zha0RvU1phVU1LaGIwVmN6Wk5wTk5WRG5fTHMxZUZCZkdrb0oyVk1DU1VhM05Felp2WXNmbHktdzEwSTNYOTlTWmNtMmYyMjV6RkFTYUYwSVEtRWZn?o",
-        "analysis": {
-          "summary3": "[Mock] How Is the Economy Doing Right... 핵심 3줄 요약입니다. 두 번째 줄. 세 번째 줄.",
-          "why": "[Mock] 글로벌 AI 인프라 투자 사이클 본격화로 관련 뉴스 증가.",
-          "moneyFlow": "[Mock] 채권 → 기술주·반도체로 자금 이동.",
-          "directBenefit": "[Mock] 반도체, 데이터센터",
-          "indirectBenefit": "[Mock] 전력 인프라, 소재·부품",
-          "directDamage": "[Mock] 레거시 IT 서비스",
-          "indirectDamage": "[Mock] 에너지 집약 산업",
-          "usStocks": "[Mock] NVDA, MSFT, AVGO",
-          "krStocks": "[Mock] 삼성전자(005930), SK하이닉스(000660)",
-          "topBeneficiary": "[Mock] Nvidia — GPU 독점 + CUDA 생태계 락인",
-          "hiddenPoint": "[Mock] 전력 인프라 병목. Vertiv(VRT), Eaton(ETN) 주목."
+          "simpleSummary": "(샘플) 이런 뉴스가 나오면 관련된 회사들의 주가가 오르거나 내릴 수 있어요.",
+          "summary3": "(샘플) Why the Fed may need to stay p... 핵심 3줄 요약입니다. 두 번째 줄. 세 번째 줄.",
+          "why": "(샘플) 글로벌 AI 인프라 투자 사이클 본격화로 관련 뉴스 증가.",
+          "moneyFlow": "(샘플) 채권 → 기술주·반도체로 자금 이동.",
+          "directBenefit": "(샘플) 반도체, 데이터센터",
+          "indirectBenefit": "(샘플) 전력 인프라, 소재·부품",
+          "directDamage": "(샘플) 레거시 IT 서비스",
+          "indirectDamage": "(샘플) 에너지 집약 산업",
+          "usStocks": "(샘플) NVDA, MSFT, AVGO",
+          "krStocks": "(샘플) 삼성전자(005930), SK하이닉스(000660)",
+          "topBeneficiary": "(샘플) Nvidia — GPU 독점 + CUDA 생태계 락인",
+          "hiddenPoint": "(샘플) 전력 인프라 병목. Vertiv(VRT), Eaton(ETN) 주목."
         }
       }
     ]
@@ -687,671 +1054,920 @@
   "watchlist": [
     {
       "ticker": "MSFT",
-      "name": "Microsoft",
-      "price": "$382.07",
-      "changeVal": -2.98,
-      "businessModel": "[Mock] Microsoft의 핵심 사업 모델 요약.",
-      "industryOutlook": "[Mock] Microsoft 속한 산업 중기 전망 긍정적.",
-      "recentNews": "[Mock] 최근 뉴스가 Microsoft에 미치는 영향 분석.",
-      "competitors": "[Mock] Microsoft 경쟁사 비교 및 차별점.",
-      "moat": "[Mock] Microsoft 경제적 해자 — 브랜드/기술/규모의 경제.",
-      "aiBenefit": "[Mock] AI 수혜 여부: 직접 수혜.",
-      "recentEarnings": "[Mock] 최근 분기 실적 분석.",
-      "financials": "[Mock] PER 22.766983x, 재무 건전성 분석.",
-      "valuation": "[Mock] 현재 밸류에이션 적정 여부 판단.",
-      "institutionalFlow": "[Mock] 기관 최근 3개월 매수/매도 동향.",
-      "insiderTrading": "[Mock] 내부자 최근 거래 내역.",
-      "options": "[Mock] Call/Put 비율 분석.",
-      "shortRatio": "[Mock] 공매도 비율 2.42%.",
-      "earningsDate": "[Mock] 다음 실적 발표 일정.",
-      "events": "[Mock] 주요 이벤트 일정.",
-      "dailyChart": "[Mock] 일봉: MA20 대비 아래, RSI 33.0 (중립).",
-      "weeklyChart": "[Mock] 주봉: 중기 하락 추세.",
-      "monthlyChart": "[Mock] 월봉: 장기 추세 분석.",
-      "support": "$356.0",
-      "resistance": "$431.98",
-      "fairValue": "$362.97 ~ $439.39",
-      "buyZone": "1차 $356.0, 2차 $343.87",
-      "stopLoss": "$336.23",
-      "target6m": "$533.32",
-      "target1y": "$561.38763",
-      "bullCase": "[Mock] 상승 시나리오: $477.59 (확률 30%)",
-      "bearCase": "[Mock] 하락 시나리오: $305.66 (확률 20%)",
+      "name": "마이크로소프트",
+      "price": "$402.89",
+      "changeVal": 1.84,
+      "costBasis": null,
+      "costBasisRaw": null,
+      "pnlPct": null,
+      "priceRaw": 402.89,
+      "high52wRaw": 538.6586,
+      "low52wRaw": 352.83,
+      "high52w": "$538.66",
+      "low52w": "$352.83",
+      "rsiRaw": 78.0,
+      "supportRaw": [],
+      "resistanceRaw": [
+        431.98,
+        460.52
+      ],
+      "businessModel": "(샘플) 마이크로소프트의 핵심 사업 모델 요약.",
+      "industryOutlook": "(샘플) 마이크로소프트 속한 산업 중기 전망 긍정적.",
+      "recentNews": "(샘플) 최근 뉴스가 마이크로소프트에 미치는 영향 분석.",
+      "competitors": "(샘플) 마이크로소프트 경쟁사 비교 및 차별점.",
+      "moat": "(샘플) 마이크로소프트 경제적 해자 — 브랜드/기술/규모의 경제.",
+      "aiBenefit": "(샘플) AI 수혜 여부: 직접 수혜.",
+      "recentEarnings": "(샘플) 최근 분기 실적 분석.",
+      "financials": "(샘플) PER 24.028322x, 재무 건전성 분석.",
+      "valuation": "(샘플) 현재 밸류에이션 적정 여부 판단.",
+      "institutionalFlow": "(샘플) 기관 최근 3개월 매수/매도 동향.",
+      "insiderTrading": "(샘플) 내부자 최근 거래 내역.",
+      "options": "(샘플) Call/Put 비율 분석.",
+      "shortRatio": "(샘플) 공매도 비율 1.84%.",
+      "earningsDate": "(샘플) 다음 실적 발표 일정.",
+      "events": "(샘플) 주요 이벤트 일정.",
+      "dailyChart": "현재가 402.89 vs 일봉 MA20 380.50 → 상승 · RSI 78.00(과매수) · MACD 상승 · Stoch %K/%D 93.90/88.10(상승)",
+      "weeklyChart": "현재가 402.89 vs 주간 MA20(20주선) 399.20 → 상승 · 거래량(5일/20일) 비율 0.61(감소)",
+      "monthlyChart": "현재가 402.89 vs 월간 MA12(12개월선) 443.89 → 하락",
+      "support": "",
+      "resistance": "$431.98, $460.52",
+      "fairValue": "$382.75 ~ $463.32",
+      "buyZone": "1차 $382.75, 2차 $362.6",
+      "stopLoss": "$354.54",
+      "target6m": "$530.73",
+      "target1y": "$558.66034",
+      "bullCase": "(샘플) 상승 시나리오: $503.61 (확률 30%)",
+      "bearCase": "(샘플) 하락 시나리오: $322.31 (확률 20%)",
       "opinion": "매수",
       "opinionClass": "op-buy",
-      "opinionProb": 70,
-      "opinionSummary": "RSI 33.0 (중립), MA20 대비 아래 — 매수 구간 판단"
+      "opinionProb": 60,
+      "opinionSimple": "전체적으로 나쁘지 않은 흐름이라 매수 쪽으로 보여요. 다만 최근 너무 빨리 올라서 잠깐 쉬어갈 수 있으니 서두르지 마세요. 다만 거래량이 적어서 힘은 약한 편이에요.",
+      "opinionSummary": "기술 신호 4/5 상승 (일봉↑, 주봉↑, 월봉↓, MACD↑, 스토캐스틱↑) → 매수 (확신도 60%). 다만 RSI 과매수 구간이라 단기 조정 가능성에 유의. 다만 거래량이 평균보다 줄어 추세 힘은 약한 편."
     },
     {
       "ticker": "NVDA",
-      "name": "Nvidia",
-      "price": "$205.99",
-      "changeVal": -0.68,
-      "businessModel": "[Mock] Nvidia의 핵심 사업 모델 요약.",
-      "industryOutlook": "[Mock] Nvidia 속한 산업 중기 전망 긍정적.",
-      "recentNews": "[Mock] 최근 뉴스가 Nvidia에 미치는 영향 분석.",
-      "competitors": "[Mock] Nvidia 경쟁사 비교 및 차별점.",
-      "moat": "[Mock] Nvidia 경제적 해자 — 브랜드/기술/규모의 경제.",
-      "aiBenefit": "[Mock] AI 수혜 여부: 직접 수혜.",
-      "recentEarnings": "[Mock] 최근 분기 실적 분석.",
-      "financials": "[Mock] PER 31.542112x, 재무 건전성 분석.",
-      "valuation": "[Mock] 현재 밸류에이션 적정 여부 판단.",
-      "institutionalFlow": "[Mock] 기관 최근 3개월 매수/매도 동향.",
-      "insiderTrading": "[Mock] 내부자 최근 거래 내역.",
-      "options": "[Mock] Call/Put 비율 분석.",
-      "shortRatio": "[Mock] 공매도 비율 1.71%.",
-      "earningsDate": "[Mock] 다음 실적 발표 일정.",
-      "events": "[Mock] 주요 이벤트 일정.",
-      "dailyChart": "[Mock] 일봉: MA20 대비 아래, RSI 44.6 (중립).",
-      "weeklyChart": "[Mock] 주봉: 중기 하락 추세.",
-      "monthlyChart": "[Mock] 월봉: 장기 추세 분석.",
-      "support": "$164.98",
+      "name": "엔비디아",
+      "price": "$206.68",
+      "changeVal": -2.74,
+      "costBasis": null,
+      "costBasisRaw": null,
+      "pnlPct": null,
+      "priceRaw": 206.68,
+      "high52wRaw": 235.4656,
+      "low52wRaw": 164.9777,
+      "high52w": "$235.47",
+      "low52w": "$164.98",
+      "rsiRaw": 59.6,
+      "supportRaw": [],
+      "resistanceRaw": [
+        235.47
+      ],
+      "businessModel": "(샘플) 엔비디아의 핵심 사업 모델 요약.",
+      "industryOutlook": "(샘플) 엔비디아 속한 산업 중기 전망 긍정적.",
+      "recentNews": "(샘플) 최근 뉴스가 엔비디아에 미치는 영향 분석.",
+      "competitors": "(샘플) 엔비디아 경쟁사 비교 및 차별점.",
+      "moat": "(샘플) 엔비디아 경제적 해자 — 브랜드/기술/규모의 경제.",
+      "aiBenefit": "(샘플) AI 수혜 여부: 직접 수혜.",
+      "recentEarnings": "(샘플) 최근 분기 실적 분석.",
+      "financials": "(샘플) PER 31.699385x, 재무 건전성 분석.",
+      "valuation": "(샘플) 현재 밸류에이션 적정 여부 판단.",
+      "institutionalFlow": "(샘플) 기관 최근 3개월 매수/매도 동향.",
+      "insiderTrading": "(샘플) 내부자 최근 거래 내역.",
+      "options": "(샘플) Call/Put 비율 분석.",
+      "shortRatio": "(샘플) 공매도 비율 1.9%.",
+      "earningsDate": "(샘플) 다음 실적 발표 일정.",
+      "events": "(샘플) 주요 이벤트 일정.",
+      "dailyChart": "현재가 206.68 vs 일봉 MA20 202.18 → 상승 · RSI 59.60(중립) · MACD 상승 · Stoch %K/%D 70.30/87.20(하락)",
+      "weeklyChart": "현재가 206.68 vs 주간 MA20(20주선) 198.14 → 상승 · 거래량(5일/20일) 비율 0.84(감소)",
+      "monthlyChart": "현재가 206.68 vs 월간 MA12(12개월선) 190.39 → 상승",
+      "support": "",
       "resistance": "$235.47",
-      "fairValue": "$195.69 ~ $236.89",
-      "buyZone": "1차 $164.98, 2차 $185.39",
-      "stopLoss": "$181.27",
-      "target6m": "$283.99",
-      "target1y": "$298.9322",
-      "bullCase": "[Mock] 상승 시나리오: $257.49 (확률 30%)",
-      "bearCase": "[Mock] 하락 시나리오: $164.79 (확률 20%)",
+      "fairValue": "$196.35 ~ $237.68",
+      "buyZone": "1차 $196.35, 2차 $186.01",
+      "stopLoss": "$181.88",
+      "target6m": "$286.87",
+      "target1y": "$301.9655",
+      "bullCase": "(샘플) 상승 시나리오: $258.35 (확률 30%)",
+      "bearCase": "(샘플) 하락 시나리오: $165.34 (확률 20%)",
       "opinion": "매수",
       "opinionClass": "op-buy",
       "opinionProb": 70,
-      "opinionSummary": "RSI 44.6 (중립), MA20 대비 아래 — 매수 구간 판단"
+      "opinionSimple": "전체적으로 나쁘지 않은 흐름이라 매수 쪽으로 보여요. 다만 거래량이 적어서 힘은 약한 편이에요.",
+      "opinionSummary": "기술 신호 4/5 상승 (일봉↑, 주봉↑, 월봉↑, MACD↑, 스토캐스틱↓) → 매수 (확신도 70%). 다만 거래량이 평균보다 줄어 추세 힘은 약한 편."
     },
     {
       "ticker": "GOOGL",
-      "name": "Alphabet",
-      "price": "$364.12",
-      "changeVal": -2.45,
-      "businessModel": "[Mock] Alphabet의 핵심 사업 모델 요약.",
-      "industryOutlook": "[Mock] Alphabet 속한 산업 중기 전망 긍정적.",
-      "recentNews": "[Mock] 최근 뉴스가 Alphabet에 미치는 영향 분석.",
-      "competitors": "[Mock] Alphabet 경쟁사 비교 및 차별점.",
-      "moat": "[Mock] Alphabet 경제적 해자 — 브랜드/기술/규모의 경제.",
-      "aiBenefit": "[Mock] AI 수혜 여부: 직접 수혜.",
-      "recentEarnings": "[Mock] 최근 분기 실적 분석.",
-      "financials": "[Mock] PER 27.798473x, 재무 건전성 분석.",
-      "valuation": "[Mock] 현재 밸류에이션 적정 여부 판단.",
-      "institutionalFlow": "[Mock] 기관 최근 3개월 매수/매도 동향.",
-      "insiderTrading": "[Mock] 내부자 최근 거래 내역.",
-      "options": "[Mock] Call/Put 비율 분석.",
-      "shortRatio": "[Mock] 공매도 비율 2.79%.",
-      "earningsDate": "[Mock] 다음 실적 발표 일정.",
-      "events": "[Mock] 주요 이벤트 일정.",
-      "dailyChart": "[Mock] 일봉: MA20 대비 아래, RSI 35.3 (중립).",
-      "weeklyChart": "[Mock] 주봉: 중기 하락 추세.",
-      "monthlyChart": "[Mock] 월봉: 장기 추세 분석.",
-      "support": "$273.34",
+      "name": "알파벳(구글)",
+      "price": "$353.80",
+      "changeVal": -4.62,
+      "costBasis": null,
+      "costBasisRaw": null,
+      "pnlPct": null,
+      "priceRaw": 353.8,
+      "high52wRaw": 402.3797,
+      "low52wRaw": 182.4495,
+      "high52w": "$402.38",
+      "low52w": "$182.45",
+      "rsiRaw": 55.7,
+      "supportRaw": [],
+      "resistanceRaw": [
+        402.38
+      ],
+      "businessModel": "(샘플) 알파벳(구글)의 핵심 사업 모델 요약.",
+      "industryOutlook": "(샘플) 알파벳(구글) 속한 산업 중기 전망 긍정적.",
+      "recentNews": "(샘플) 최근 뉴스가 알파벳(구글)에 미치는 영향 분석.",
+      "competitors": "(샘플) 알파벳(구글) 경쟁사 비교 및 차별점.",
+      "moat": "(샘플) 알파벳(구글) 경제적 해자 — 브랜드/기술/규모의 경제.",
+      "aiBenefit": "(샘플) AI 수혜 여부: 직접 수혜.",
+      "recentEarnings": "(샘플) 최근 분기 실적 분석.",
+      "financials": "(샘플) PER 27.0298x, 재무 건전성 분석.",
+      "valuation": "(샘플) 현재 밸류에이션 적정 여부 판단.",
+      "institutionalFlow": "(샘플) 기관 최근 3개월 매수/매도 동향.",
+      "insiderTrading": "(샘플) 내부자 최근 거래 내역.",
+      "options": "(샘플) Call/Put 비율 분석.",
+      "shortRatio": "(샘플) 공매도 비율 2.13%.",
+      "earningsDate": "(샘플) 다음 실적 발표 일정.",
+      "events": "(샘플) 주요 이벤트 일정.",
+      "dailyChart": "현재가 353.80 vs 일봉 MA20 356.72 → 하락 · RSI 55.70(중립) · MACD 상승 · Stoch %K/%D 52.40/71.40(하락)",
+      "weeklyChart": "현재가 353.80 vs 주간 MA20(20주선) 346.16 → 상승 · 거래량(5일/20일) 비율 0.62(감소)",
+      "monthlyChart": "현재가 353.80 vs 월간 MA12(12개월선) 314.99 → 상승",
+      "support": "",
       "resistance": "$402.38",
-      "fairValue": "$345.91 ~ $418.74",
-      "buyZone": "1차 $273.34, 2차 $327.71",
-      "stopLoss": "$320.43",
-      "target6m": "$411.19",
-      "target1y": "$432.83453",
-      "bullCase": "[Mock] 상승 시나리오: $455.15 (확률 30%)",
-      "bearCase": "[Mock] 하락 시나리오: $291.3 (확률 20%)",
-      "opinion": "매수",
-      "opinionClass": "op-buy",
-      "opinionProb": 70,
-      "opinionSummary": "RSI 35.3 (중립), MA20 대비 아래 — 매수 구간 판단"
+      "fairValue": "$336.11 ~ $406.87",
+      "buyZone": "1차 $336.11, 2차 $318.42",
+      "stopLoss": "$311.34",
+      "target6m": "$410.14",
+      "target1y": "$431.7213",
+      "bullCase": "(샘플) 상승 시나리오: $442.25 (확률 30%)",
+      "bearCase": "(샘플) 하락 시나리오: $283.04 (확률 20%)",
+      "opinion": "보유",
+      "opinionClass": "op-hold",
+      "opinionProb": 50,
+      "opinionSimple": "오를지 내릴지 신호가 엇갈리고 있어서, 지금은 서두르지 않고 지켜보는 게 좋아요.",
+      "opinionSummary": "기술 신호 3/5 상승 (일봉↓, 주봉↑, 월봉↑, MACD↑, 스토캐스틱↓) → 보유 (확신도 50%)."
     },
     {
       "ticker": "AVGO",
-      "name": "Broadcom",
-      "price": "$396.92",
-      "changeVal": 5.36,
-      "businessModel": "[Mock] Broadcom의 핵심 사업 모델 요약.",
-      "industryOutlook": "[Mock] Broadcom 속한 산업 중기 전망 긍정적.",
-      "recentNews": "[Mock] 최근 뉴스가 Broadcom에 미치는 영향 분석.",
-      "competitors": "[Mock] Broadcom 경쟁사 비교 및 차별점.",
-      "moat": "[Mock] Broadcom 경제적 해자 — 브랜드/기술/규모의 경제.",
-      "aiBenefit": "[Mock] AI 수혜 여부: 직접 수혜.",
-      "recentEarnings": "[Mock] 최근 분기 실적 분석.",
-      "financials": "[Mock] PER 65.82338x, 재무 건전성 분석.",
-      "valuation": "[Mock] 현재 밸류에이션 적정 여부 판단.",
-      "institutionalFlow": "[Mock] 기관 최근 3개월 매수/매도 동향.",
-      "insiderTrading": "[Mock] 내부자 최근 거래 내역.",
-      "options": "[Mock] Call/Put 비율 분석.",
-      "shortRatio": "[Mock] 공매도 비율 3.01%.",
-      "earningsDate": "[Mock] 다음 실적 발표 일정.",
-      "events": "[Mock] 주요 이벤트 일정.",
-      "dailyChart": "[Mock] 일봉: MA20 대비 아래, RSI 44.1 (중립).",
-      "weeklyChart": "[Mock] 주봉: 중기 하락 추세.",
-      "monthlyChart": "[Mock] 월봉: 장기 추세 분석.",
-      "support": "$293.41",
-      "resistance": "",
-      "fairValue": "$377.07 ~ $456.45",
-      "buyZone": "1차 $293.41, 2차 $357.22",
-      "stopLoss": "$349.29",
-      "target6m": "$495.96",
-      "target1y": "$522.06226",
-      "bullCase": "[Mock] 상승 시나리오: $496.14 (확률 30%)",
-      "bearCase": "[Mock] 하락 시나리오: $317.53 (확률 20%)",
-      "opinion": "매수",
-      "opinionClass": "op-buy",
-      "opinionProb": 70,
-      "opinionSummary": "RSI 44.1 (중립), MA20 대비 아래 — 매수 구간 판단"
+      "name": "브로드컴",
+      "price": "$375.75",
+      "changeVal": -4.7,
+      "costBasis": null,
+      "costBasisRaw": null,
+      "pnlPct": null,
+      "priceRaw": 375.75,
+      "high52wRaw": 480.8091,
+      "low52wRaw": 276.5636,
+      "high52w": "$480.81",
+      "low52w": "$276.56",
+      "rsiRaw": 48.8,
+      "supportRaw": [],
+      "resistanceRaw": [
+        480.81
+      ],
+      "businessModel": "(샘플) 브로드컴의 핵심 사업 모델 요약.",
+      "industryOutlook": "(샘플) 브로드컴 속한 산업 중기 전망 긍정적.",
+      "recentNews": "(샘플) 최근 뉴스가 브로드컴에 미치는 영향 분석.",
+      "competitors": "(샘플) 브로드컴 경쟁사 비교 및 차별점.",
+      "moat": "(샘플) 브로드컴 경제적 해자 — 브랜드/기술/규모의 경제.",
+      "aiBenefit": "(샘플) AI 수혜 여부: 직접 수혜.",
+      "recentEarnings": "(샘플) 최근 분기 실적 분석.",
+      "financials": "(샘플) PER 62.729553x, 재무 건전성 분석.",
+      "valuation": "(샘플) 현재 밸류에이션 적정 여부 판단.",
+      "institutionalFlow": "(샘플) 기관 최근 3개월 매수/매도 동향.",
+      "insiderTrading": "(샘플) 내부자 최근 거래 내역.",
+      "options": "(샘플) Call/Put 비율 분석.",
+      "shortRatio": "(샘플) 공매도 비율 1.9%.",
+      "earningsDate": "(샘플) 다음 실적 발표 일정.",
+      "events": "(샘플) 주요 이벤트 일정.",
+      "dailyChart": "현재가 375.75 vs 일봉 MA20 382.94 → 하락 · RSI 48.80(중립) · MACD 상승 · Stoch %K/%D 37.80/58.60(하락)",
+      "weeklyChart": "현재가 375.75 vs 주간 MA20(20주선) 379.27 → 하락 · 거래량(5일/20일) 비율 0.63(감소)",
+      "monthlyChart": "현재가 375.75 vs 월간 MA12(12개월선) 359.19 → 상승",
+      "support": "",
+      "resistance": "$480.81",
+      "fairValue": "$356.96 ~ $432.11",
+      "buyZone": "1차 $356.96, 2차 $338.18",
+      "stopLoss": "$330.66",
+      "target6m": "$498.28",
+      "target1y": "$524.5067",
+      "bullCase": "(샘플) 상승 시나리오: $469.69 (확률 30%)",
+      "bearCase": "(샘플) 하락 시나리오: $300.6 (확률 20%)",
+      "opinion": "보유",
+      "opinionClass": "op-hold",
+      "opinionProb": 50,
+      "opinionSimple": "오를지 내릴지 신호가 엇갈리고 있어서, 지금은 서두르지 않고 지켜보는 게 좋아요.",
+      "opinionSummary": "기술 신호 2/5 상승 (일봉↓, 주봉↓, 월봉↑, MACD↑, 스토캐스틱↓) → 보유 (확신도 50%)."
     },
     {
       "ticker": "TSM",
       "name": "TSMC",
-      "price": "$439.70",
-      "changeVal": 3.26,
-      "businessModel": "[Mock] TSMC의 핵심 사업 모델 요약.",
-      "industryOutlook": "[Mock] TSMC 속한 산업 중기 전망 긍정적.",
-      "recentNews": "[Mock] 최근 뉴스가 TSMC에 미치는 영향 분석.",
-      "competitors": "[Mock] TSMC 경쟁사 비교 및 차별점.",
-      "moat": "[Mock] TSMC 경제적 해자 — 브랜드/기술/규모의 경제.",
-      "aiBenefit": "[Mock] AI 수혜 여부: 직접 수혜.",
-      "recentEarnings": "[Mock] 최근 분기 실적 분석.",
-      "financials": "[Mock] PER 37.807396x, 재무 건전성 분석.",
-      "valuation": "[Mock] 현재 밸류에이션 적정 여부 판단.",
-      "institutionalFlow": "[Mock] 기관 최근 3개월 매수/매도 동향.",
-      "insiderTrading": "[Mock] 내부자 최근 거래 내역.",
-      "options": "[Mock] Call/Put 비율 분석.",
-      "shortRatio": "[Mock] 공매도 비율 2.21%.",
-      "earningsDate": "[Mock] 다음 실적 발표 일정.",
-      "events": "[Mock] 주요 이벤트 일정.",
-      "dailyChart": "[Mock] 일봉: MA20 대비 위, RSI 54.5 (중립).",
-      "weeklyChart": "[Mock] 주봉: 중기 상승 추세.",
-      "monthlyChart": "[Mock] 월봉: 장기 추세 분석.",
-      "support": "$315.76",
+      "price": "$407.06",
+      "changeVal": -2.96,
+      "costBasis": null,
+      "costBasisRaw": null,
+      "pnlPct": null,
+      "priceRaw": 407.055,
+      "high52wRaw": 477.57,
+      "low52wRaw": 224.8434,
+      "high52w": "$477.57",
+      "low52w": "$224.84",
+      "rsiRaw": 41.4,
+      "supportRaw": [],
+      "resistanceRaw": [],
+      "businessModel": "(샘플) TSMC의 핵심 사업 모델 요약.",
+      "industryOutlook": "(샘플) TSMC 속한 산업 중기 전망 긍정적.",
+      "recentNews": "(샘플) 최근 뉴스가 TSMC에 미치는 영향 분석.",
+      "competitors": "(샘플) TSMC 경쟁사 비교 및 차별점.",
+      "moat": "(샘플) TSMC 경제적 해자 — 브랜드/기술/규모의 경제.",
+      "aiBenefit": "(샘플) AI 수혜 여부: 직접 수혜.",
+      "recentEarnings": "(샘플) 최근 분기 실적 분석.",
+      "financials": "(샘플) PER 35.42733x, 재무 건전성 분석.",
+      "valuation": "(샘플) 현재 밸류에이션 적정 여부 판단.",
+      "institutionalFlow": "(샘플) 기관 최근 3개월 매수/매도 동향.",
+      "insiderTrading": "(샘플) 내부자 최근 거래 내역.",
+      "options": "(샘플) Call/Put 비율 분석.",
+      "shortRatio": "(샘플) 공매도 비율 1.91%.",
+      "earningsDate": "(샘플) 다음 실적 발표 일정.",
+      "events": "(샘플) 주요 이벤트 일정.",
+      "dailyChart": "현재가 407.06 vs 일봉 MA20 438.92 → 하락 · RSI 41.40(중립) · MACD 하락 · Stoch %K/%D 4.70/6.70(하락)",
+      "weeklyChart": "현재가 407.06 vs 주간 MA20(20주선) 392.36 → 상승 · 거래량(5일/20일) 비율 0.97(보통)",
+      "monthlyChart": "현재가 407.06 vs 월간 MA12(12개월선) 344.25 → 상승",
+      "support": "",
       "resistance": "",
-      "fairValue": "$417.71 ~ $505.65",
-      "buyZone": "1차 $315.76, 2차 $395.73",
-      "stopLoss": "$386.94",
-      "target6m": "$449.73",
-      "target1y": "$473.39584",
-      "bullCase": "[Mock] 상승 시나리오: $549.62 (확률 30%)",
-      "bearCase": "[Mock] 하락 시나리오: $351.76 (확률 20%)",
+      "fairValue": "$386.7 ~ $468.11",
+      "buyZone": "1차 $386.7, 2차 $366.35",
+      "stopLoss": "$358.21",
+      "target6m": "$473.33",
+      "target1y": "$498.24393",
+      "bullCase": "(샘플) 상승 시나리오: $508.82 (확률 30%)",
+      "bearCase": "(샘플) 하락 시나리오: $325.64 (확률 20%)",
       "opinion": "보유",
       "opinionClass": "op-hold",
-      "opinionProb": 55,
-      "opinionSummary": "RSI 54.5 (중립), MA20 대비 위 — 보유 구간 판단"
+      "opinionProb": 50,
+      "opinionSimple": "오를지 내릴지 신호가 엇갈리고 있어서, 지금은 서두르지 않고 지켜보는 게 좋아요.",
+      "opinionSummary": "기술 신호 2/5 상승 (일봉↓, 주봉↑, 월봉↑, MACD↓, 스토캐스틱↓) → 보유 (확신도 50%)."
     },
     {
       "ticker": "TSLA",
-      "name": "Tesla",
-      "price": "$400.37",
-      "changeVal": -1.06,
-      "businessModel": "[Mock] Tesla의 핵심 사업 모델 요약.",
-      "industryOutlook": "[Mock] Tesla 속한 산업 중기 전망 긍정적.",
-      "recentNews": "[Mock] 최근 뉴스가 Tesla에 미치는 영향 분석.",
-      "competitors": "[Mock] Tesla 경쟁사 비교 및 차별점.",
-      "moat": "[Mock] Tesla 경제적 해자 — 브랜드/기술/규모의 경제.",
-      "aiBenefit": "[Mock] AI 수혜 여부: 간접 수혜.",
-      "recentEarnings": "[Mock] 최근 분기 실적 분석.",
-      "financials": "[Mock] PER 367.44952x, 재무 건전성 분석.",
-      "valuation": "[Mock] 현재 밸류에이션 적정 여부 판단.",
-      "institutionalFlow": "[Mock] 기관 최근 3개월 매수/매도 동향.",
-      "insiderTrading": "[Mock] 내부자 최근 거래 내역.",
-      "options": "[Mock] Call/Put 비율 분석.",
-      "shortRatio": "[Mock] 공매도 비율 1.48%.",
-      "earningsDate": "[Mock] 다음 실적 발표 일정.",
-      "events": "[Mock] 주요 이벤트 일정.",
-      "dailyChart": "[Mock] 일봉: MA20 대비 아래, RSI 36.3 (중립).",
-      "weeklyChart": "[Mock] 주봉: 중기 하락 추세.",
-      "monthlyChart": "[Mock] 월봉: 장기 추세 분석.",
+      "name": "테슬라",
+      "price": "$390.94",
+      "changeVal": -0.89,
+      "costBasis": null,
+      "costBasisRaw": null,
+      "pnlPct": null,
+      "priceRaw": 390.94,
+      "high52wRaw": 489.88,
+      "low52wRaw": 302.63,
+      "high52w": "$489.88",
+      "low52w": "$302.63",
+      "rsiRaw": 54.7,
+      "supportRaw": [
+        343.25
+      ],
+      "resistanceRaw": [
+        445.27
+      ],
+      "businessModel": "(샘플) 테슬라의 핵심 사업 모델 요약.",
+      "industryOutlook": "(샘플) 테슬라 속한 산업 중기 전망 긍정적.",
+      "recentNews": "(샘플) 최근 뉴스가 테슬라에 미치는 영향 분석.",
+      "competitors": "(샘플) 테슬라 경쟁사 비교 및 차별점.",
+      "moat": "(샘플) 테슬라 경제적 해자 — 브랜드/기술/규모의 경제.",
+      "aiBenefit": "(샘플) AI 수혜 여부: 간접 수혜.",
+      "recentEarnings": "(샘플) 최근 분기 실적 분석.",
+      "financials": "(샘플) PER 355.47272x, 재무 건전성 분석.",
+      "valuation": "(샘플) 현재 밸류에이션 적정 여부 판단.",
+      "institutionalFlow": "(샘플) 기관 최근 3개월 매수/매도 동향.",
+      "insiderTrading": "(샘플) 내부자 최근 거래 내역.",
+      "options": "(샘플) Call/Put 비율 분석.",
+      "shortRatio": "(샘플) 공매도 비율 1.66%.",
+      "earningsDate": "(샘플) 다음 실적 발표 일정.",
+      "events": "(샘플) 주요 이벤트 일정.",
+      "dailyChart": "현재가 390.94 vs 일봉 MA20 398.62 → 하락 · RSI 54.70(중립) · MACD 하락 · Stoch %K/%D 34.80/39.30(하락)",
+      "weeklyChart": "현재가 390.94 vs 주간 MA20(20주선) 393.86 → 하락 · 거래량(5일/20일) 비율 0.68(감소)",
+      "monthlyChart": "현재가 390.94 vs 월간 MA12(12개월선) 412.39 → 하락",
       "support": "$343.25",
       "resistance": "$445.27",
-      "fairValue": "$380.35 ~ $460.43",
-      "buyZone": "1차 $343.25, 2차 $360.33",
-      "stopLoss": "$352.33",
-      "target6m": "$399.52",
-      "target1y": "$420.54633",
-      "bullCase": "[Mock] 상승 시나리오: $500.46 (확률 30%)",
-      "bearCase": "[Mock] 하락 시나리오: $320.3 (확률 20%)",
-      "opinion": "매수",
-      "opinionClass": "op-buy",
-      "opinionProb": 70,
-      "opinionSummary": "RSI 36.3 (중립), MA20 대비 아래 — 매수 구간 판단"
+      "fairValue": "$371.39 ~ $449.58",
+      "buyZone": "1차 $343.25, 2차 $351.85",
+      "stopLoss": "$344.03",
+      "target6m": "$404.33",
+      "target1y": "$425.61",
+      "bullCase": "(샘플) 상승 시나리오: $488.68 (확률 30%)",
+      "bearCase": "(샘플) 하락 시나리오: $312.75 (확률 20%)",
+      "opinion": "매도",
+      "opinionClass": "op-sell",
+      "opinionProb": 80,
+      "opinionSimple": "여러 지표가 대부분 안 좋은 방향을 가리키고 있어서 지금은 조심하는 게 좋아요. 다만 거래량이 적어서 힘은 약한 편이에요.",
+      "opinionSummary": "기술 신호 0/5 상승 (일봉↓, 주봉↓, 월봉↓, MACD↓, 스토캐스틱↓) → 매도 (확신도 80%). 다만 거래량이 평균보다 줄어 추세 힘은 약한 편."
     },
     {
       "ticker": "IVV",
-      "name": "iShares S&P 500 ETF",
-      "price": "$747.60",
-      "changeVal": -0.59,
-      "businessModel": "[Mock] iShares S&P 500 ETF의 핵심 사업 모델 요약.",
-      "industryOutlook": "[Mock] iShares S&P 500 ETF 속한 산업 중기 전망 긍정적.",
-      "recentNews": "[Mock] 최근 뉴스가 iShares S&P 500 ETF에 미치는 영향 분석.",
-      "competitors": "[Mock] iShares S&P 500 ETF 경쟁사 비교 및 차별점.",
-      "moat": "[Mock] iShares S&P 500 ETF 경제적 해자 — 브랜드/기술/규모의 경제.",
-      "aiBenefit": "[Mock] AI 수혜 여부: 간접 수혜.",
-      "recentEarnings": "[Mock] 최근 분기 실적 분석.",
-      "financials": "[Mock] PER 26.896893x, 재무 건전성 분석.",
-      "valuation": "[Mock] 현재 밸류에이션 적정 여부 판단.",
-      "institutionalFlow": "[Mock] 기관 최근 3개월 매수/매도 동향.",
-      "insiderTrading": "[Mock] 내부자 최근 거래 내역.",
-      "options": "[Mock] Call/Put 비율 분석.",
-      "shortRatio": "[Mock] 공매도 비율 None%.",
-      "earningsDate": "[Mock] 다음 실적 발표 일정.",
-      "events": "[Mock] 주요 이벤트 일정.",
-      "dailyChart": "[Mock] 일봉: MA20 대비 아래, RSI 45.1 (중립).",
-      "weeklyChart": "[Mock] 주봉: 중기 하락 추세.",
-      "monthlyChart": "[Mock] 월봉: 장기 추세 분석.",
-      "support": "$633.23",
-      "resistance": "",
-      "fairValue": "$710.22 ~ $859.74",
-      "buyZone": "1차 $633.23, 2차 $672.84",
-      "stopLoss": "$657.89",
-      "target6m": "$816.75",
-      "target1y": "$859.74",
-      "bullCase": "[Mock] 상승 시나리오: $934.5 (확률 30%)",
-      "bearCase": "[Mock] 하락 시나리오: $598.08 (확률 20%)",
-      "opinion": "보유",
-      "opinionClass": "op-hold",
-      "opinionProb": 55,
-      "opinionSummary": "RSI 45.1 (중립), MA20 대비 아래 — 보유 구간 판단"
-    },
-    {
-      "ticker": "SCHD",
-      "name": "Schwab Dividend ETF",
-      "price": "$32.11",
-      "changeVal": -1.29,
-      "businessModel": "[Mock] Schwab Dividend ETF의 핵심 사업 모델 요약.",
-      "industryOutlook": "[Mock] Schwab Dividend ETF 속한 산업 중기 전망 긍정적.",
-      "recentNews": "[Mock] 최근 뉴스가 Schwab Dividend ETF에 미치는 영향 분석.",
-      "competitors": "[Mock] Schwab Dividend ETF 경쟁사 비교 및 차별점.",
-      "moat": "[Mock] Schwab Dividend ETF 경제적 해자 — 브랜드/기술/규모의 경제.",
-      "aiBenefit": "[Mock] AI 수혜 여부: 간접 수혜.",
-      "recentEarnings": "[Mock] 최근 분기 실적 분석.",
-      "financials": "[Mock] PER 18.927305x, 재무 건전성 분석.",
-      "valuation": "[Mock] 현재 밸류에이션 적정 여부 판단.",
-      "institutionalFlow": "[Mock] 기관 최근 3개월 매수/매도 동향.",
-      "insiderTrading": "[Mock] 내부자 최근 거래 내역.",
-      "options": "[Mock] Call/Put 비율 분석.",
-      "shortRatio": "[Mock] 공매도 비율 None%.",
-      "earningsDate": "[Mock] 다음 실적 발표 일정.",
-      "events": "[Mock] 주요 이벤트 일정.",
-      "dailyChart": "[Mock] 일봉: MA20 대비 아래, RSI 40.2 (중립).",
-      "weeklyChart": "[Mock] 주봉: 중기 하락 추세.",
-      "monthlyChart": "[Mock] 월봉: 장기 추세 분석.",
-      "support": "$30.14",
-      "resistance": "",
-      "fairValue": "$30.5 ~ $36.93",
-      "buyZone": "1차 $30.14, 2차 $28.9",
-      "stopLoss": "$28.26",
-      "target6m": "$35.08",
-      "target1y": "$36.93",
-      "bullCase": "[Mock] 상승 시나리오: $40.14 (확률 30%)",
-      "bearCase": "[Mock] 하락 시나리오: $25.69 (확률 20%)",
+      "name": "아이셰어즈 S&P500 ETF",
+      "price": "$753.20",
+      "changeVal": -0.69,
+      "costBasis": null,
+      "costBasisRaw": null,
+      "pnlPct": null,
+      "priceRaw": 753.195,
+      "high52wRaw": 761.016,
+      "low52wRaw": 617.2707,
+      "high52w": "$761.02",
+      "low52w": "$617.27",
+      "rsiRaw": 63.1,
+      "supportRaw": [
+        726.97
+      ],
+      "resistanceRaw": [
+        761.02
+      ],
+      "businessModel": "(샘플) 아이셰어즈 S&P500 ETF의 핵심 사업 모델 요약.",
+      "industryOutlook": "(샘플) 아이셰어즈 S&P500 ETF 속한 산업 중기 전망 긍정적.",
+      "recentNews": "(샘플) 최근 뉴스가 아이셰어즈 S&P500 ETF에 미치는 영향 분석.",
+      "competitors": "(샘플) 아이셰어즈 S&P500 ETF 경쟁사 비교 및 차별점.",
+      "moat": "(샘플) 아이셰어즈 S&P500 ETF 경제적 해자 — 브랜드/기술/규모의 경제.",
+      "aiBenefit": "(샘플) AI 수혜 여부: 간접 수혜.",
+      "recentEarnings": "(샘플) 최근 분기 실적 분석.",
+      "financials": "(샘플) PER 26.966831x, 재무 건전성 분석.",
+      "valuation": "(샘플) 현재 밸류에이션 적정 여부 판단.",
+      "institutionalFlow": "(샘플) 기관 최근 3개월 매수/매도 동향.",
+      "insiderTrading": "(샘플) 내부자 최근 거래 내역.",
+      "options": "(샘플) Call/Put 비율 분석.",
+      "shortRatio": "(샘플) 공매도 비율 None%.",
+      "earningsDate": "(샘플) 다음 실적 발표 일정.",
+      "events": "(샘플) 주요 이벤트 일정.",
+      "dailyChart": "현재가 753.20 vs 일봉 MA20 747.95 → 상승 · RSI 63.10(중립) · MACD 상승 · Stoch %K/%D 80.60/88.50(하락)",
+      "weeklyChart": "현재가 753.20 vs 주간 MA20(20주선) 715.59 → 상승 · 거래량(5일/20일) 비율 0.40(감소)",
+      "monthlyChart": "현재가 753.20 vs 월간 MA12(12개월선) 696.17 → 상승",
+      "support": "$726.97",
+      "resistance": "$761.02",
+      "fairValue": "$715.54 ~ $866.17",
+      "buyZone": "1차 $726.97, 2차 $677.88",
+      "stopLoss": "$662.81",
+      "target6m": "$822.86",
+      "target1y": "$866.17",
+      "bullCase": "(샘플) 상승 시나리오: $941.49 (확률 30%)",
+      "bearCase": "(샘플) 하락 시나리오: $602.56 (확률 20%)",
       "opinion": "매수",
       "opinionClass": "op-buy",
       "opinionProb": 70,
-      "opinionSummary": "RSI 40.2 (중립), MA20 대비 아래 — 매수 구간 판단"
+      "opinionSimple": "전체적으로 나쁘지 않은 흐름이라 매수 쪽으로 보여요. 다만 거래량이 적어서 힘은 약한 편이에요.",
+      "opinionSummary": "기술 신호 4/5 상승 (일봉↑, 주봉↑, 월봉↑, MACD↑, 스토캐스틱↓) → 매수 (확신도 70%). 다만 거래량이 평균보다 줄어 추세 힘은 약한 편."
+    },
+    {
+      "ticker": "SCHD",
+      "name": "슈왑 미국 배당주 ETF",
+      "price": "$32.98",
+      "changeVal": 1.99,
+      "costBasis": null,
+      "costBasisRaw": null,
+      "pnlPct": null,
+      "priceRaw": 32.985,
+      "high52wRaw": 32.985,
+      "low52wRaw": 25.4455,
+      "high52w": "$32.98",
+      "low52w": "$25.45",
+      "rsiRaw": 65.2,
+      "supportRaw": [],
+      "resistanceRaw": [],
+      "businessModel": "(샘플) 슈왑 미국 배당주 ETF의 핵심 사업 모델 요약.",
+      "industryOutlook": "(샘플) 슈왑 미국 배당주 ETF 속한 산업 중기 전망 긍정적.",
+      "recentNews": "(샘플) 최근 뉴스가 슈왑 미국 배당주 ETF에 미치는 영향 분석.",
+      "competitors": "(샘플) 슈왑 미국 배당주 ETF 경쟁사 비교 및 차별점.",
+      "moat": "(샘플) 슈왑 미국 배당주 ETF 경제적 해자 — 브랜드/기술/규모의 경제.",
+      "aiBenefit": "(샘플) AI 수혜 여부: 간접 수혜.",
+      "recentEarnings": "(샘플) 최근 분기 실적 분석.",
+      "financials": "(샘플) PER 19.023556x, 재무 건전성 분석.",
+      "valuation": "(샘플) 현재 밸류에이션 적정 여부 판단.",
+      "institutionalFlow": "(샘플) 기관 최근 3개월 매수/매도 동향.",
+      "insiderTrading": "(샘플) 내부자 최근 거래 내역.",
+      "options": "(샘플) Call/Put 비율 분석.",
+      "shortRatio": "(샘플) 공매도 비율 None%.",
+      "earningsDate": "(샘플) 다음 실적 발표 일정.",
+      "events": "(샘플) 주요 이벤트 일정.",
+      "dailyChart": "현재가 32.98 vs 일봉 MA20 32.11 → 상승 · RSI 65.20(중립) · MACD 상승 · Stoch %K/%D 95.90/70.70(상승)",
+      "weeklyChart": "현재가 32.98 vs 주간 MA20(20주선) 31.44 → 상승 · 거래량(5일/20일) 비율 0.92(보통)",
+      "monthlyChart": "현재가 32.98 vs 월간 MA12(12개월선) 29.43 → 상승",
+      "support": "",
+      "resistance": "",
+      "fairValue": "$31.34 ~ $37.93",
+      "buyZone": "1차 $31.34, 2차 $29.69",
+      "stopLoss": "$29.03",
+      "target6m": "$36.03",
+      "target1y": "$37.93",
+      "bullCase": "(샘플) 상승 시나리오: $41.23 (확률 30%)",
+      "bearCase": "(샘플) 하락 시나리오: $26.39 (확률 20%)",
+      "opinion": "매수",
+      "opinionClass": "op-buy",
+      "opinionProb": 85,
+      "opinionSimple": "여러 지표가 대부분 좋은 방향을 가리키고 있어서 지금은 사기 좋은 흐름이에요.",
+      "opinionSummary": "기술 신호 5/5 상승 (일봉↑, 주봉↑, 월봉↑, MACD↑, 스토캐스틱↑) → 매수 (확신도 85%)."
     },
     {
       "ticker": "000660",
       "name": "SK하이닉스",
-      "price": "₩2,521,000",
-      "changeVal": 5.84,
-      "businessModel": "[Mock] SK하이닉스의 핵심 사업 모델 요약.",
-      "industryOutlook": "[Mock] SK하이닉스 속한 산업 중기 전망 긍정적.",
-      "recentNews": "[Mock] 최근 뉴스가 SK하이닉스에 미치는 영향 분석.",
-      "competitors": "[Mock] SK하이닉스 경쟁사 비교 및 차별점.",
-      "moat": "[Mock] SK하이닉스 경제적 해자 — 브랜드/기술/규모의 경제.",
-      "aiBenefit": "[Mock] AI 수혜 여부: 간접 수혜.",
-      "recentEarnings": "[Mock] 최근 분기 실적 분석.",
-      "financials": "[Mock] PER Nonex, 재무 건전성 분석.",
-      "valuation": "[Mock] 현재 밸류에이션 적정 여부 판단.",
-      "institutionalFlow": "[Mock] 기관 최근 3개월 매수/매도 동향.",
-      "insiderTrading": "[Mock] 내부자 최근 거래 내역.",
-      "options": "[Mock] 해당없음 (한국주식)",
-      "shortRatio": "[Mock] 공매도 비율 None%.",
-      "earningsDate": "[Mock] 다음 실적 발표 일정.",
-      "events": "[Mock] 주요 이벤트 일정.",
-      "dailyChart": "[Mock] 일봉: MA20 대비 위, RSI 59.2 (중립).",
-      "weeklyChart": "[Mock] 주봉: 중기 상승 추세.",
-      "monthlyChart": "[Mock] 월봉: 장기 추세 분석.",
-      "support": "₩806865.06",
+      "price": "₩2,082,000",
+      "changeVal": 8.83,
+      "costBasis": null,
+      "costBasisRaw": null,
+      "pnlPct": null,
+      "priceRaw": 2082000.0,
+      "high52wRaw": 2919000.0,
+      "low52wRaw": 243980.4688,
+      "high52w": "₩2,919,000",
+      "low52w": "₩243,980",
+      "rsiRaw": 29.6,
+      "supportRaw": [],
+      "resistanceRaw": [],
+      "businessModel": "(샘플) SK하이닉스의 핵심 사업 모델 요약.",
+      "industryOutlook": "(샘플) SK하이닉스 속한 산업 중기 전망 긍정적.",
+      "recentNews": "(샘플) 최근 뉴스가 SK하이닉스에 미치는 영향 분석.",
+      "competitors": "(샘플) SK하이닉스 경쟁사 비교 및 차별점.",
+      "moat": "(샘플) SK하이닉스 경제적 해자 — 브랜드/기술/규모의 경제.",
+      "aiBenefit": "(샘플) AI 수혜 여부: 간접 수혜.",
+      "recentEarnings": "(샘플) 최근 분기 실적 분석.",
+      "financials": "(샘플) PER Nonex, 재무 건전성 분석.",
+      "valuation": "(샘플) 현재 밸류에이션 적정 여부 판단.",
+      "institutionalFlow": "(샘플) 기관 최근 3개월 매수/매도 동향.",
+      "insiderTrading": "(샘플) 내부자 최근 거래 내역.",
+      "options": "(샘플) 해당없음 (한국주식)",
+      "shortRatio": "(샘플) 공매도 비율 None%.",
+      "earningsDate": "(샘플) 다음 실적 발표 일정.",
+      "events": "(샘플) 주요 이벤트 일정.",
+      "dailyChart": "현재가 2,082,000.00 vs 일봉 MA20 2,420,500.00 → 하락 · RSI 29.60(과매도) · MACD 하락 · Stoch %K/%D 33.60/17.40(상승)",
+      "weeklyChart": "현재가 2,082,000.00 vs 주간 MA20(20주선) 1,671,676.62 → 상승 · 거래량(5일/20일) 비율 1.08(보통)",
+      "monthlyChart": "현재가 2,082,000.00 vs 월간 MA12(12개월선) 1,123,047.80 → 상승",
+      "support": "",
       "resistance": "",
-      "fairValue": "₩2394950.0 ~ ₩2899150.0",
-      "buyZone": "1차 ₩806865.06, 2차 ₩2268900.0",
-      "stopLoss": "₩2218480.0",
-      "target6m": "₩2555614.76",
-      "target1y": "₩2690120.8",
-      "bullCase": "[Mock] 상승 시나리오: ₩3151250.0 (확률 30%)",
-      "bearCase": "[Mock] 하락 시나리오: ₩2016800.0 (확률 20%)",
+      "fairValue": "₩1977900.0 ~ ₩2394300.0",
+      "buyZone": "1차 ₩1977900.0, 2차 ₩1873800.0",
+      "stopLoss": "₩1832160.0",
+      "target6m": "₩3238077.09",
+      "target1y": "₩3408502.2",
+      "bullCase": "(샘플) 상승 시나리오: ₩2602500.0 (확률 30%)",
+      "bearCase": "(샘플) 하락 시나리오: ₩1665600.0 (확률 20%)",
       "opinion": "보유",
       "opinionClass": "op-hold",
-      "opinionProb": 55,
-      "opinionSummary": "RSI 59.2 (중립), MA20 대비 위 — 보유 구간 판단"
+      "opinionProb": 50,
+      "opinionSimple": "오를지 내릴지 신호가 엇갈리고 있어서, 지금은 서두르지 않고 지켜보는 게 좋아요.",
+      "opinionSummary": "기술 신호 3/5 상승 (일봉↓, 주봉↑, 월봉↑, MACD↓, 스토캐스틱↑) → 보유 (확신도 50%)."
     },
     {
       "ticker": "005930",
       "name": "삼성전자",
-      "price": "₩346,500",
-      "changeVal": 1.02,
-      "businessModel": "[Mock] 삼성전자의 핵심 사업 모델 요약.",
-      "industryOutlook": "[Mock] 삼성전자 속한 산업 중기 전망 긍정적.",
-      "recentNews": "[Mock] 최근 뉴스가 삼성전자에 미치는 영향 분석.",
-      "competitors": "[Mock] 삼성전자 경쟁사 비교 및 차별점.",
-      "moat": "[Mock] 삼성전자 경제적 해자 — 브랜드/기술/규모의 경제.",
-      "aiBenefit": "[Mock] AI 수혜 여부: 간접 수혜.",
-      "recentEarnings": "[Mock] 최근 분기 실적 분석.",
-      "financials": "[Mock] PER Nonex, 재무 건전성 분석.",
-      "valuation": "[Mock] 현재 밸류에이션 적정 여부 판단.",
-      "institutionalFlow": "[Mock] 기관 최근 3개월 매수/매도 동향.",
-      "insiderTrading": "[Mock] 내부자 최근 거래 내역.",
-      "options": "[Mock] 해당없음 (한국주식)",
-      "shortRatio": "[Mock] 공매도 비율 None%.",
-      "earningsDate": "[Mock] 다음 실적 발표 일정.",
-      "events": "[Mock] 주요 이벤트 일정.",
-      "dailyChart": "[Mock] 일봉: MA20 대비 위, RSI 58.6 (중립).",
-      "weeklyChart": "[Mock] 주봉: 중기 상승 추세.",
-      "monthlyChart": "[Mock] 월봉: 장기 추세 분석.",
-      "support": "₩167200.0",
+      "price": "₩279,500",
+      "changeVal": 6.27,
+      "costBasis": null,
+      "costBasisRaw": null,
+      "pnlPct": null,
+      "priceRaw": 279500.0,
+      "high52wRaw": 362500.0,
+      "low52wRaw": 63968.6094,
+      "high52w": "₩362,500",
+      "low52w": "₩63,968",
+      "rsiRaw": 32.8,
+      "supportRaw": [],
+      "resistanceRaw": [],
+      "businessModel": "(샘플) 삼성전자의 핵심 사업 모델 요약.",
+      "industryOutlook": "(샘플) 삼성전자 속한 산업 중기 전망 긍정적.",
+      "recentNews": "(샘플) 최근 뉴스가 삼성전자에 미치는 영향 분석.",
+      "competitors": "(샘플) 삼성전자 경쟁사 비교 및 차별점.",
+      "moat": "(샘플) 삼성전자 경제적 해자 — 브랜드/기술/규모의 경제.",
+      "aiBenefit": "(샘플) AI 수혜 여부: 간접 수혜.",
+      "recentEarnings": "(샘플) 최근 분기 실적 분석.",
+      "financials": "(샘플) PER Nonex, 재무 건전성 분석.",
+      "valuation": "(샘플) 현재 밸류에이션 적정 여부 판단.",
+      "institutionalFlow": "(샘플) 기관 최근 3개월 매수/매도 동향.",
+      "insiderTrading": "(샘플) 내부자 최근 거래 내역.",
+      "options": "(샘플) 해당없음 (한국주식)",
+      "shortRatio": "(샘플) 공매도 비율 None%.",
+      "earningsDate": "(샘플) 다음 실적 발표 일정.",
+      "events": "(샘플) 주요 이벤트 일정.",
+      "dailyChart": "현재가 279,500.00 vs 일봉 MA20 311,850.00 → 하락 · RSI 32.80(중립) · MACD 하락 · Stoch %K/%D 29.70/15.00(상승)",
+      "weeklyChart": "현재가 279,500.00 vs 주간 MA20(20주선) 258,267.42 → 상승 · 거래량(5일/20일) 비율 0.90(보통)",
+      "monthlyChart": "현재가 279,500.00 vs 월간 MA12(12개월선) 181,072.80 → 상승",
+      "support": "",
       "resistance": "",
-      "fairValue": "₩329175.0 ~ ₩398475.0",
-      "buyZone": "1차 ₩167200.0, 2차 ₩311850.0",
-      "stopLoss": "₩304920.0",
-      "target6m": "₩406671.75",
-      "target1y": "₩428075.53",
-      "bullCase": "[Mock] 상승 시나리오: ₩433125.0 (확률 30%)",
-      "bearCase": "[Mock] 하락 시나리오: ₩277200.0 (확률 20%)",
+      "fairValue": "₩265525.0 ~ ₩321425.0",
+      "buyZone": "1차 ₩265525.0, 2차 ₩251550.0",
+      "stopLoss": "₩245960.0",
+      "target6m": "₩467909.88",
+      "target1y": "₩492536.72",
+      "bullCase": "(샘플) 상승 시나리오: ₩349375.0 (확률 30%)",
+      "bearCase": "(샘플) 하락 시나리오: ₩223600.0 (확률 20%)",
       "opinion": "보유",
       "opinionClass": "op-hold",
-      "opinionProb": 55,
-      "opinionSummary": "RSI 58.6 (중립), MA20 대비 위 — 보유 구간 판단"
+      "opinionProb": 50,
+      "opinionSimple": "오를지 내릴지 신호가 엇갈리고 있어서, 지금은 서두르지 않고 지켜보는 게 좋아요.",
+      "opinionSummary": "기술 신호 3/5 상승 (일봉↓, 주봉↑, 월봉↑, MACD↓, 스토캐스틱↑) → 보유 (확신도 50%)."
     },
     {
       "ticker": "012450",
       "name": "한화에어로스페이스",
-      "price": "₩1,224,000",
-      "changeVal": 3.47,
-      "businessModel": "[Mock] 한화에어로스페이스의 핵심 사업 모델 요약.",
-      "industryOutlook": "[Mock] 한화에어로스페이스 속한 산업 중기 전망 긍정적.",
-      "recentNews": "[Mock] 최근 뉴스가 한화에어로스페이스에 미치는 영향 분석.",
-      "competitors": "[Mock] 한화에어로스페이스 경쟁사 비교 및 차별점.",
-      "moat": "[Mock] 한화에어로스페이스 경제적 해자 — 브랜드/기술/규모의 경제.",
-      "aiBenefit": "[Mock] AI 수혜 여부: 간접 수혜.",
-      "recentEarnings": "[Mock] 최근 분기 실적 분석.",
-      "financials": "[Mock] PER Nonex, 재무 건전성 분석.",
-      "valuation": "[Mock] 현재 밸류에이션 적정 여부 판단.",
-      "institutionalFlow": "[Mock] 기관 최근 3개월 매수/매도 동향.",
-      "insiderTrading": "[Mock] 내부자 최근 거래 내역.",
-      "options": "[Mock] 해당없음 (한국주식)",
-      "shortRatio": "[Mock] 공매도 비율 None%.",
-      "earningsDate": "[Mock] 다음 실적 발표 일정.",
-      "events": "[Mock] 주요 이벤트 일정.",
-      "dailyChart": "[Mock] 일봉: MA20 대비 위, RSI 48.0 (중립).",
-      "weeklyChart": "[Mock] 주봉: 중기 상승 추세.",
-      "monthlyChart": "[Mock] 월봉: 장기 추세 분석.",
+      "price": "₩929,000",
+      "changeVal": 6.54,
+      "costBasis": null,
+      "costBasisRaw": null,
+      "pnlPct": null,
+      "priceRaw": 929000.0,
+      "high52wRaw": 1537000.0,
+      "low52wRaw": 806458.625,
+      "high52w": "₩1,537,000",
+      "low52w": "₩806,458",
+      "rsiRaw": 39.4,
+      "supportRaw": [],
+      "resistanceRaw": [
+        1537000.0
+      ],
+      "businessModel": "(샘플) 한화에어로스페이스의 핵심 사업 모델 요약.",
+      "industryOutlook": "(샘플) 한화에어로스페이스 속한 산업 중기 전망 긍정적.",
+      "recentNews": "(샘플) 최근 뉴스가 한화에어로스페이스에 미치는 영향 분석.",
+      "competitors": "(샘플) 한화에어로스페이스 경쟁사 비교 및 차별점.",
+      "moat": "(샘플) 한화에어로스페이스 경제적 해자 — 브랜드/기술/규모의 경제.",
+      "aiBenefit": "(샘플) AI 수혜 여부: 간접 수혜.",
+      "recentEarnings": "(샘플) 최근 분기 실적 분석.",
+      "financials": "(샘플) PER Nonex, 재무 건전성 분석.",
+      "valuation": "(샘플) 현재 밸류에이션 적정 여부 판단.",
+      "institutionalFlow": "(샘플) 기관 최근 3개월 매수/매도 동향.",
+      "insiderTrading": "(샘플) 내부자 최근 거래 내역.",
+      "options": "(샘플) 해당없음 (한국주식)",
+      "shortRatio": "(샘플) 공매도 비율 None%.",
+      "earningsDate": "(샘플) 다음 실적 발표 일정.",
+      "events": "(샘플) 주요 이벤트 일정.",
+      "dailyChart": "현재가 929,000.00 vs 일봉 MA20 1,052,950.00 → 하락 · RSI 39.40(중립) · MACD 하락 · Stoch %K/%D 17.70/8.50(상승)",
+      "weeklyChart": "현재가 929,000.00 vs 주간 MA20(20주선) 1,260,250.00 → 하락 · 거래량(5일/20일) 비율 0.97(보통)",
+      "monthlyChart": "현재가 929,000.00 vs 월간 MA12(12개월선) 1,082,520.69 → 하락",
       "support": "",
       "resistance": "₩1537000.0",
-      "fairValue": "₩1162800.0 ~ ₩1407600.0",
-      "buyZone": "1차 ₩1162800.0, 2차 ₩1101600.0",
-      "stopLoss": "₩1077120.0",
-      "target6m": "₩1651869.02",
-      "target1y": "₩1738809.5",
-      "bullCase": "[Mock] 상승 시나리오: ₩1530000.0 (확률 30%)",
-      "bearCase": "[Mock] 하락 시나리오: ₩979200.0 (확률 20%)",
-      "opinion": "보유",
-      "opinionClass": "op-hold",
-      "opinionProb": 55,
-      "opinionSummary": "RSI 48.0 (중립), MA20 대비 위 — 보유 구간 판단"
+      "fairValue": "₩882550.0 ~ ₩1068350.0",
+      "buyZone": "1차 ₩882550.0, 2차 ₩836100.0",
+      "stopLoss": "₩817520.0",
+      "target6m": "₩1621402.15",
+      "target1y": "₩1706739.1",
+      "bullCase": "(샘플) 상승 시나리오: ₩1161250.0 (확률 30%)",
+      "bearCase": "(샘플) 하락 시나리오: ₩743200.0 (확률 20%)",
+      "opinion": "매도",
+      "opinionClass": "op-sell",
+      "opinionProb": 75,
+      "opinionSimple": "전체적으로 좋지 않은 흐름이라 매도 쪽으로 보여요.",
+      "opinionSummary": "기술 신호 1/5 상승 (일봉↓, 주봉↓, 월봉↓, MACD↓, 스토캐스틱↑) → 매도 (확신도 75%)."
     },
     {
       "ticker": "005380",
       "name": "현대차",
-      "price": "₩618,000",
-      "changeVal": -3.44,
-      "businessModel": "[Mock] 현대차의 핵심 사업 모델 요약.",
-      "industryOutlook": "[Mock] 현대차 속한 산업 중기 전망 긍정적.",
-      "recentNews": "[Mock] 최근 뉴스가 현대차에 미치는 영향 분석.",
-      "competitors": "[Mock] 현대차 경쟁사 비교 및 차별점.",
-      "moat": "[Mock] 현대차 경제적 해자 — 브랜드/기술/규모의 경제.",
-      "aiBenefit": "[Mock] AI 수혜 여부: 간접 수혜.",
-      "recentEarnings": "[Mock] 최근 분기 실적 분석.",
-      "financials": "[Mock] PER Nonex, 재무 건전성 분석.",
-      "valuation": "[Mock] 현재 밸류에이션 적정 여부 판단.",
-      "institutionalFlow": "[Mock] 기관 최근 3개월 매수/매도 동향.",
-      "insiderTrading": "[Mock] 내부자 최근 거래 내역.",
-      "options": "[Mock] 해당없음 (한국주식)",
-      "shortRatio": "[Mock] 공매도 비율 None%.",
-      "earningsDate": "[Mock] 다음 실적 발표 일정.",
-      "events": "[Mock] 주요 이벤트 일정.",
-      "dailyChart": "[Mock] 일봉: MA20 대비 아래, RSI 40.1 (중립).",
-      "weeklyChart": "[Mock] 주봉: 중기 하락 추세.",
-      "monthlyChart": "[Mock] 월봉: 장기 추세 분석.",
-      "support": "₩443864.56",
-      "resistance": "",
-      "fairValue": "₩587100.0 ~ ₩710700.0",
-      "buyZone": "1차 ₩443864.56, 2차 ₩556200.0",
-      "stopLoss": "₩543840.0",
-      "target6m": "₩696301.45",
-      "target1y": "₩732948.9",
-      "bullCase": "[Mock] 상승 시나리오: ₩772500.0 (확률 30%)",
-      "bearCase": "[Mock] 하락 시나리오: ₩494400.0 (확률 20%)",
-      "opinion": "매수",
-      "opinionClass": "op-buy",
-      "opinionProb": 70,
-      "opinionSummary": "RSI 40.1 (중립), MA20 대비 아래 — 매수 구간 판단"
+      "price": "₩434,000",
+      "changeVal": 2.24,
+      "costBasis": null,
+      "costBasisRaw": null,
+      "pnlPct": null,
+      "priceRaw": 434000.0,
+      "high52wRaw": 750000.0,
+      "low52wRaw": 200578.8594,
+      "high52w": "₩750,000",
+      "low52w": "₩200,578",
+      "rsiRaw": 31.4,
+      "supportRaw": [],
+      "resistanceRaw": [
+        750000.0
+      ],
+      "businessModel": "(샘플) 현대차의 핵심 사업 모델 요약.",
+      "industryOutlook": "(샘플) 현대차 속한 산업 중기 전망 긍정적.",
+      "recentNews": "(샘플) 최근 뉴스가 현대차에 미치는 영향 분석.",
+      "competitors": "(샘플) 현대차 경쟁사 비교 및 차별점.",
+      "moat": "(샘플) 현대차 경제적 해자 — 브랜드/기술/규모의 경제.",
+      "aiBenefit": "(샘플) AI 수혜 여부: 간접 수혜.",
+      "recentEarnings": "(샘플) 최근 분기 실적 분석.",
+      "financials": "(샘플) PER Nonex, 재무 건전성 분석.",
+      "valuation": "(샘플) 현재 밸류에이션 적정 여부 판단.",
+      "institutionalFlow": "(샘플) 기관 최근 3개월 매수/매도 동향.",
+      "insiderTrading": "(샘플) 내부자 최근 거래 내역.",
+      "options": "(샘플) 해당없음 (한국주식)",
+      "shortRatio": "(샘플) 공매도 비율 None%.",
+      "earningsDate": "(샘플) 다음 실적 발표 일정.",
+      "events": "(샘플) 주요 이벤트 일정.",
+      "dailyChart": "현재가 434,000.00 vs 일봉 MA20 495,075.00 → 하락 · RSI 31.40(중립) · MACD 하락 · Stoch %K/%D 27.80/19.00(상승)",
+      "weeklyChart": "현재가 434,000.00 vs 주간 MA20(20주선) 553,764.93 → 하락 · 거래량(5일/20일) 비율 0.84(감소)",
+      "monthlyChart": "현재가 434,000.00 vs 월간 MA12(12개월선) 421,521.31 → 상승",
+      "support": "",
+      "resistance": "₩750000.0",
+      "fairValue": "₩412300.0 ~ ₩499100.0",
+      "buyZone": "1차 ₩412300.0, 2차 ₩390600.0",
+      "stopLoss": "₩381920.0",
+      "target6m": "₩698140.18",
+      "target1y": "₩734884.4",
+      "bullCase": "(샘플) 상승 시나리오: ₩542500.0 (확률 30%)",
+      "bearCase": "(샘플) 하락 시나리오: ₩347200.0 (확률 20%)",
+      "opinion": "보유",
+      "opinionClass": "op-hold",
+      "opinionProb": 50,
+      "opinionSimple": "오를지 내릴지 신호가 엇갈리고 있어서, 지금은 서두르지 않고 지켜보는 게 좋아요.",
+      "opinionSummary": "기술 신호 2/5 상승 (일봉↓, 주봉↓, 월봉↑, MACD↓, 스토캐스틱↑) → 보유 (확신도 50%)."
     },
     {
       "ticker": "034020",
       "name": "두산에너빌리티",
-      "price": "₩103,200",
-      "changeVal": -0.1,
-      "businessModel": "[Mock] 두산에너빌리티의 핵심 사업 모델 요약.",
-      "industryOutlook": "[Mock] 두산에너빌리티 속한 산업 중기 전망 긍정적.",
-      "recentNews": "[Mock] 최근 뉴스가 두산에너빌리티에 미치는 영향 분석.",
-      "competitors": "[Mock] 두산에너빌리티 경쟁사 비교 및 차별점.",
-      "moat": "[Mock] 두산에너빌리티 경제적 해자 — 브랜드/기술/규모의 경제.",
-      "aiBenefit": "[Mock] AI 수혜 여부: 간접 수혜.",
-      "recentEarnings": "[Mock] 최근 분기 실적 분석.",
-      "financials": "[Mock] PER Nonex, 재무 건전성 분석.",
-      "valuation": "[Mock] 현재 밸류에이션 적정 여부 판단.",
-      "institutionalFlow": "[Mock] 기관 최근 3개월 매수/매도 동향.",
-      "insiderTrading": "[Mock] 내부자 최근 거래 내역.",
-      "options": "[Mock] 해당없음 (한국주식)",
-      "shortRatio": "[Mock] 공매도 비율 None%.",
-      "earningsDate": "[Mock] 다음 실적 발표 일정.",
-      "events": "[Mock] 주요 이벤트 일정.",
-      "dailyChart": "[Mock] 일봉: MA20 대비 위, RSI 44.7 (중립).",
-      "weeklyChart": "[Mock] 주봉: 중기 상승 추세.",
-      "monthlyChart": "[Mock] 월봉: 장기 추세 분석.",
+      "price": "₩73,000",
+      "changeVal": 2.96,
+      "costBasis": null,
+      "costBasisRaw": null,
+      "pnlPct": null,
+      "priceRaw": 73000.0,
+      "high52wRaw": 136400.0,
+      "low52wRaw": 57400.0,
+      "high52w": "₩136,400",
+      "low52w": "₩57,400",
+      "rsiRaw": 34.1,
+      "supportRaw": [],
+      "resistanceRaw": [
+        136400.0
+      ],
+      "businessModel": "(샘플) 두산에너빌리티의 핵심 사업 모델 요약.",
+      "industryOutlook": "(샘플) 두산에너빌리티 속한 산업 중기 전망 긍정적.",
+      "recentNews": "(샘플) 최근 뉴스가 두산에너빌리티에 미치는 영향 분석.",
+      "competitors": "(샘플) 두산에너빌리티 경쟁사 비교 및 차별점.",
+      "moat": "(샘플) 두산에너빌리티 경제적 해자 — 브랜드/기술/규모의 경제.",
+      "aiBenefit": "(샘플) AI 수혜 여부: 간접 수혜.",
+      "recentEarnings": "(샘플) 최근 분기 실적 분석.",
+      "financials": "(샘플) PER Nonex, 재무 건전성 분석.",
+      "valuation": "(샘플) 현재 밸류에이션 적정 여부 판단.",
+      "institutionalFlow": "(샘플) 기관 최근 3개월 매수/매도 동향.",
+      "insiderTrading": "(샘플) 내부자 최근 거래 내역.",
+      "options": "(샘플) 해당없음 (한국주식)",
+      "shortRatio": "(샘플) 공매도 비율 None%.",
+      "earningsDate": "(샘플) 다음 실적 발표 일정.",
+      "events": "(샘플) 주요 이벤트 일정.",
+      "dailyChart": "현재가 73,000.00 vs 일봉 MA20 84,270.00 → 하락 · RSI 34.10(중립) · MACD 하락 · Stoch %K/%D 21.20/13.10(상승)",
+      "weeklyChart": "현재가 73,000.00 vs 주간 MA20(20주선) 101,855.00 → 하락 · 거래량(5일/20일) 비율 0.95(보통)",
+      "monthlyChart": "현재가 73,000.00 vs 월간 MA12(12개월선) 87,166.67 → 하락",
       "support": "",
       "resistance": "₩136400.0",
-      "fairValue": "₩98040.0 ~ ₩118680.0",
-      "buyZone": "1차 ₩98040.0, 2차 ₩92880.0",
-      "stopLoss": "₩90816.0",
-      "target6m": "₩131940.25",
-      "target1y": "₩138884.47",
-      "bullCase": "[Mock] 상승 시나리오: ₩129000.0 (확률 30%)",
-      "bearCase": "[Mock] 하락 시나리오: ₩82560.0 (확률 20%)",
-      "opinion": "매수",
-      "opinionClass": "op-buy",
-      "opinionProb": 70,
-      "opinionSummary": "RSI 44.7 (중립), MA20 대비 위 — 매수 구간 판단"
+      "fairValue": "₩69350.0 ~ ₩83950.0",
+      "buyZone": "1차 ₩69350.0, 2차 ₩65700.0",
+      "stopLoss": "₩64240.0",
+      "target6m": "₩133454.77",
+      "target1y": "₩140478.7",
+      "bullCase": "(샘플) 상승 시나리오: ₩91250.0 (확률 30%)",
+      "bearCase": "(샘플) 하락 시나리오: ₩58400.0 (확률 20%)",
+      "opinion": "매도",
+      "opinionClass": "op-sell",
+      "opinionProb": 75,
+      "opinionSimple": "전체적으로 좋지 않은 흐름이라 매도 쪽으로 보여요.",
+      "opinionSummary": "기술 신호 1/5 상승 (일봉↓, 주봉↓, 월봉↓, MACD↓, 스토캐스틱↑) → 매도 (확신도 75%)."
     }
   ],
   "holdings": [
     {
       "ticker": "412570",
       "name": "Tiger 2차전지 TOP10 레버리지",
-      "price": "₩1,824",
-      "changeVal": -0.16,
-      "businessModel": "[Mock] Tiger 2차전지 TOP10 레버리지의 핵심 사업 모델 요약.",
-      "industryOutlook": "[Mock] Tiger 2차전지 TOP10 레버리지 속한 산업 중기 전망 긍정적.",
-      "recentNews": "[Mock] 최근 뉴스가 Tiger 2차전지 TOP10 레버리지에 미치는 영향 분석.",
-      "competitors": "[Mock] Tiger 2차전지 TOP10 레버리지 경쟁사 비교 및 차별점.",
-      "moat": "[Mock] Tiger 2차전지 TOP10 레버리지 경제적 해자 — 브랜드/기술/규모의 경제.",
-      "aiBenefit": "[Mock] AI 수혜 여부: 간접 수혜.",
-      "recentEarnings": "[Mock] 최근 분기 실적 분석.",
-      "financials": "[Mock] PER Nonex, 재무 건전성 분석.",
-      "valuation": "[Mock] 현재 밸류에이션 적정 여부 판단.",
-      "institutionalFlow": "[Mock] 기관 최근 3개월 매수/매도 동향.",
-      "insiderTrading": "[Mock] 내부자 최근 거래 내역.",
-      "options": "[Mock] 해당없음 (한국주식)",
-      "shortRatio": "[Mock] 공매도 비율 None%.",
-      "earningsDate": "[Mock] 다음 실적 발표 일정.",
-      "events": "[Mock] 주요 이벤트 일정.",
-      "dailyChart": "[Mock] 일봉: MA20 대비 아래, RSI 41.1 (중립).",
-      "weeklyChart": "[Mock] 주봉: 중기 하락 추세.",
-      "monthlyChart": "[Mock] 월봉: 장기 추세 분석.",
+      "price": "₩1,074",
+      "changeVal": -4.96,
+      "costBasis": "₩1,020",
+      "costBasisRaw": 1020.3,
+      "pnlPct": 5.26,
+      "priceRaw": 1074.0,
+      "high52wRaw": 3150.0,
+      "low52wRaw": 971.0,
+      "high52w": "₩3,150",
+      "low52w": "₩971",
+      "rsiRaw": 47.7,
+      "supportRaw": [],
+      "resistanceRaw": [
+        3150.0
+      ],
+      "businessModel": "(샘플) Tiger 2차전지 TOP10 레버리지의 핵심 사업 모델 요약.",
+      "industryOutlook": "(샘플) Tiger 2차전지 TOP10 레버리지 속한 산업 중기 전망 긍정적.",
+      "recentNews": "(샘플) 최근 뉴스가 Tiger 2차전지 TOP10 레버리지에 미치는 영향 분석.",
+      "competitors": "(샘플) Tiger 2차전지 TOP10 레버리지 경쟁사 비교 및 차별점.",
+      "moat": "(샘플) Tiger 2차전지 TOP10 레버리지 경제적 해자 — 브랜드/기술/규모의 경제.",
+      "aiBenefit": "(샘플) AI 수혜 여부: 간접 수혜.",
+      "recentEarnings": "(샘플) 최근 분기 실적 분석.",
+      "financials": "(샘플) PER Nonex, 재무 건전성 분석.",
+      "valuation": "(샘플) 현재 밸류에이션 적정 여부 판단.",
+      "institutionalFlow": "(샘플) 기관 최근 3개월 매수/매도 동향.",
+      "insiderTrading": "(샘플) 내부자 최근 거래 내역.",
+      "options": "(샘플) 해당없음 (한국주식)",
+      "shortRatio": "(샘플) 공매도 비율 None%.",
+      "earningsDate": "(샘플) 다음 실적 발표 일정.",
+      "events": "(샘플) 주요 이벤트 일정.",
+      "dailyChart": "현재가 1,074.00 vs 일봉 MA20 1,221.95 → 하락 · RSI 47.70(중립) · MACD 상승 · Stoch %K/%D 28.20/28.80(하락)",
+      "weeklyChart": "현재가 1,074.00 vs 주간 MA20(20주선) 1,856.35 → 하락 · 거래량(5일/20일) 비율 0.58(감소)",
+      "monthlyChart": "현재가 1,074.00 vs 월간 MA12(12개월선) 1,619.76 → 하락",
       "support": "",
       "resistance": "₩3150.0",
-      "fairValue": "₩1732.8 ~ ₩2097.6",
-      "buyZone": "1차 ₩1732.8, 2차 ₩1641.6",
-      "stopLoss": "₩1605.12",
-      "target6m": "₩1992.72",
-      "target1y": "₩2097.6",
-      "bullCase": "[Mock] 상승 시나리오: ₩2280.0 (확률 30%)",
-      "bearCase": "[Mock] 하락 시나리오: ₩1459.2 (확률 20%)",
-      "opinion": "매수",
-      "opinionClass": "op-buy",
+      "fairValue": "₩1020.3 ~ ₩1235.1",
+      "buyZone": "1차 ₩1020.3, 2차 ₩966.6",
+      "stopLoss": "₩945.12",
+      "target6m": "₩1173.34",
+      "target1y": "₩1235.1",
+      "bullCase": "(샘플) 상승 시나리오: ₩1342.5 (확률 30%)",
+      "bearCase": "(샘플) 하락 시나리오: ₩859.2 (확률 20%)",
+      "opinion": "매도",
+      "opinionClass": "op-sell",
       "opinionProb": 70,
-      "opinionSummary": "RSI 41.1 (중립), MA20 대비 아래 — 매수 구간 판단"
+      "opinionSimple": "전체적으로 좋지 않은 흐름이라 매도 쪽으로 보여요. 다만 거래량이 적어서 힘은 약한 편이에요.",
+      "opinionSummary": "기술 신호 1/5 상승 (일봉↓, 주봉↓, 월봉↓, MACD↑, 스토캐스틱↓) → 매도 (확신도 70%). 다만 거래량이 평균보다 줄어 추세 힘은 약한 편."
     },
     {
       "ticker": "365340",
       "name": "성일하이텍",
-      "price": "₩52,300",
-      "changeVal": -2.06,
-      "businessModel": "[Mock] 성일하이텍의 핵심 사업 모델 요약.",
-      "industryOutlook": "[Mock] 성일하이텍 속한 산업 중기 전망 긍정적.",
-      "recentNews": "[Mock] 최근 뉴스가 성일하이텍에 미치는 영향 분석.",
-      "competitors": "[Mock] 성일하이텍 경쟁사 비교 및 차별점.",
-      "moat": "[Mock] 성일하이텍 경제적 해자 — 브랜드/기술/규모의 경제.",
-      "aiBenefit": "[Mock] AI 수혜 여부: 간접 수혜.",
-      "recentEarnings": "[Mock] 최근 분기 실적 분석.",
-      "financials": "[Mock] PER Nonex, 재무 건전성 분석.",
-      "valuation": "[Mock] 현재 밸류에이션 적정 여부 판단.",
-      "institutionalFlow": "[Mock] 기관 최근 3개월 매수/매도 동향.",
-      "insiderTrading": "[Mock] 내부자 최근 거래 내역.",
-      "options": "[Mock] 해당없음 (한국주식)",
-      "shortRatio": "[Mock] 공매도 비율 None%.",
-      "earningsDate": "[Mock] 다음 실적 발표 일정.",
-      "events": "[Mock] 주요 이벤트 일정.",
-      "dailyChart": "[Mock] 일봉: MA20 대비 아래, RSI 25.9 (과매도 저점 탐색).",
-      "weeklyChart": "[Mock] 주봉: 중기 하락 추세.",
-      "monthlyChart": "[Mock] 월봉: 장기 추세 분석.",
+      "price": "₩32,950",
+      "changeVal": 4.77,
+      "costBasis": "₩31,302",
+      "costBasisRaw": 31302.5,
+      "pnlPct": 5.26,
+      "priceRaw": 32950.0,
+      "high52wRaw": 84500.0,
+      "low52wRaw": 31450.0,
+      "high52w": "₩84,500",
+      "low52w": "₩31,450",
+      "rsiRaw": 29.7,
+      "supportRaw": [],
+      "resistanceRaw": [
+        84500.0
+      ],
+      "businessModel": "(샘플) 성일하이텍의 핵심 사업 모델 요약.",
+      "industryOutlook": "(샘플) 성일하이텍 속한 산업 중기 전망 긍정적.",
+      "recentNews": "(샘플) 최근 뉴스가 성일하이텍에 미치는 영향 분석.",
+      "competitors": "(샘플) 성일하이텍 경쟁사 비교 및 차별점.",
+      "moat": "(샘플) 성일하이텍 경제적 해자 — 브랜드/기술/규모의 경제.",
+      "aiBenefit": "(샘플) AI 수혜 여부: 간접 수혜.",
+      "recentEarnings": "(샘플) 최근 분기 실적 분석.",
+      "financials": "(샘플) PER Nonex, 재무 건전성 분석.",
+      "valuation": "(샘플) 현재 밸류에이션 적정 여부 판단.",
+      "institutionalFlow": "(샘플) 기관 최근 3개월 매수/매도 동향.",
+      "insiderTrading": "(샘플) 내부자 최근 거래 내역.",
+      "options": "(샘플) 해당없음 (한국주식)",
+      "shortRatio": "(샘플) 공매도 비율 None%.",
+      "earningsDate": "(샘플) 다음 실적 발표 일정.",
+      "events": "(샘플) 주요 이벤트 일정.",
+      "dailyChart": "현재가 32,950.00 vs 일봉 MA20 39,507.50 → 하락 · RSI 29.70(과매도) · MACD 하락 · Stoch %K/%D 19.20/9.20(상승)",
+      "weeklyChart": "현재가 32,950.00 vs 주간 MA20(20주선) 58,330.00 → 하락 · 거래량(5일/20일) 비율 1.18(증가)",
+      "monthlyChart": "현재가 32,950.00 vs 월간 MA12(12개월선) 50,704.17 → 하락",
       "support": "",
       "resistance": "₩84500.0",
-      "fairValue": "₩49685.0 ~ ₩60145.0",
-      "buyZone": "1차 ₩49685.0, 2차 ₩47070.0",
-      "stopLoss": "₩46024.0",
-      "target6m": "₩57137.75",
-      "target1y": "₩60145.0",
-      "bullCase": "[Mock] 상승 시나리오: ₩65375.0 (확률 30%)",
-      "bearCase": "[Mock] 하락 시나리오: ₩41840.0 (확률 20%)",
-      "opinion": "매수",
-      "opinionClass": "op-buy",
+      "fairValue": "₩31302.5 ~ ₩37892.5",
+      "buyZone": "1차 ₩31302.5, 2차 ₩29655.0",
+      "stopLoss": "₩28996.0",
+      "target6m": "₩35997.88",
+      "target1y": "₩37892.5",
+      "bullCase": "(샘플) 상승 시나리오: ₩41187.5 (확률 30%)",
+      "bearCase": "(샘플) 하락 시나리오: ₩26360.0 (확률 20%)",
+      "opinion": "매도",
+      "opinionClass": "op-sell",
       "opinionProb": 70,
-      "opinionSummary": "RSI 25.9 (과매도 저점 탐색), MA20 대비 아래 — 매수 구간 판단"
+      "opinionSimple": "전체적으로 좋지 않은 흐름이라 매도 쪽으로 보여요. 다만 너무 많이 떨어져서 곧 반등할 수 있으니 성급한 매도는 주의하세요. 거래량도 늘고 있어서 하락에 힘이 실려 있어요.",
+      "opinionSummary": "기술 신호 1/5 상승 (일봉↓, 주봉↓, 월봉↓, MACD↓, 스토캐스틱↑) → 매도 (확신도 70%). 다만 RSI 과매도 구간이라 기술적 반등 가능성에 유의. 최근 거래량도 평균 대비 늘어 추세에 힘이 실림."
     },
     {
       "ticker": "051910",
       "name": "LG화학",
-      "price": "₩361,000",
-      "changeVal": -1.77,
-      "businessModel": "[Mock] LG화학의 핵심 사업 모델 요약.",
-      "industryOutlook": "[Mock] LG화학 속한 산업 중기 전망 긍정적.",
-      "recentNews": "[Mock] 최근 뉴스가 LG화학에 미치는 영향 분석.",
-      "competitors": "[Mock] LG화학 경쟁사 비교 및 차별점.",
-      "moat": "[Mock] LG화학 경제적 해자 — 브랜드/기술/규모의 경제.",
-      "aiBenefit": "[Mock] AI 수혜 여부: 간접 수혜.",
-      "recentEarnings": "[Mock] 최근 분기 실적 분석.",
-      "financials": "[Mock] PER Nonex, 재무 건전성 분석.",
-      "valuation": "[Mock] 현재 밸류에이션 적정 여부 판단.",
-      "institutionalFlow": "[Mock] 기관 최근 3개월 매수/매도 동향.",
-      "insiderTrading": "[Mock] 내부자 최근 거래 내역.",
-      "options": "[Mock] 해당없음 (한국주식)",
-      "shortRatio": "[Mock] 공매도 비율 None%.",
-      "earningsDate": "[Mock] 다음 실적 발표 일정.",
-      "events": "[Mock] 주요 이벤트 일정.",
-      "dailyChart": "[Mock] 일봉: MA20 대비 위, RSI 59.4 (중립).",
-      "weeklyChart": "[Mock] 주봉: 중기 상승 추세.",
-      "monthlyChart": "[Mock] 월봉: 장기 추세 분석.",
-      "support": "₩288146.97",
+      "price": "₩264,500",
+      "changeVal": 3.73,
+      "costBasis": "₩251,275",
+      "costBasisRaw": 251275.0,
+      "pnlPct": 5.26,
+      "priceRaw": 264500.0,
+      "high52wRaw": 429500.0,
+      "low52wRaw": 251500.0,
+      "high52w": "₩429,500",
+      "low52w": "₩251,500",
+      "rsiRaw": 42.6,
+      "supportRaw": [],
+      "resistanceRaw": [
+        429500.0
+      ],
+      "businessModel": "(샘플) LG화학의 핵심 사업 모델 요약.",
+      "industryOutlook": "(샘플) LG화학 속한 산업 중기 전망 긍정적.",
+      "recentNews": "(샘플) 최근 뉴스가 LG화학에 미치는 영향 분석.",
+      "competitors": "(샘플) LG화학 경쟁사 비교 및 차별점.",
+      "moat": "(샘플) LG화학 경제적 해자 — 브랜드/기술/규모의 경제.",
+      "aiBenefit": "(샘플) AI 수혜 여부: 간접 수혜.",
+      "recentEarnings": "(샘플) 최근 분기 실적 분석.",
+      "financials": "(샘플) PER Nonex, 재무 건전성 분석.",
+      "valuation": "(샘플) 현재 밸류에이션 적정 여부 판단.",
+      "institutionalFlow": "(샘플) 기관 최근 3개월 매수/매도 동향.",
+      "insiderTrading": "(샘플) 내부자 최근 거래 내역.",
+      "options": "(샘플) 해당없음 (한국주식)",
+      "shortRatio": "(샘플) 공매도 비율 None%.",
+      "earningsDate": "(샘플) 다음 실적 발표 일정.",
+      "events": "(샘플) 주요 이벤트 일정.",
+      "dailyChart": "현재가 264,500.00 vs 일봉 MA20 283,625.00 → 하락 · RSI 42.60(중립) · MACD 하락 · Stoch %K/%D 26.40/19.00(상승)",
+      "weeklyChart": "현재가 264,500.00 vs 주간 MA20(20주선) 334,126.60 → 하락 · 거래량(5일/20일) 비율 0.84(감소)",
+      "monthlyChart": "현재가 264,500.00 vs 월간 MA12(12개월선) 331,686.76 → 하락",
+      "support": "",
       "resistance": "₩429500.0",
-      "fairValue": "₩342950.0 ~ ₩415150.0",
-      "buyZone": "1차 ₩288146.97, 2차 ₩324900.0",
-      "stopLoss": "₩317680.0",
-      "target6m": "₩424498.0",
-      "target1y": "₩446840.0",
-      "bullCase": "[Mock] 상승 시나리오: ₩451250.0 (확률 30%)",
-      "bearCase": "[Mock] 하락 시나리오: ₩288800.0 (확률 20%)",
-      "opinion": "보유",
-      "opinionClass": "op-hold",
-      "opinionProb": 55,
-      "opinionSummary": "RSI 59.4 (중립), MA20 대비 위 — 보유 구간 판단"
+      "fairValue": "₩251275.0 ~ ₩304175.0",
+      "buyZone": "1차 ₩251275.0, 2차 ₩238050.0",
+      "stopLoss": "₩232760.0",
+      "target6m": "₩410248.0",
+      "target1y": "₩431840.0",
+      "bullCase": "(샘플) 상승 시나리오: ₩330625.0 (확률 30%)",
+      "bearCase": "(샘플) 하락 시나리오: ₩211600.0 (확률 20%)",
+      "opinion": "매도",
+      "opinionClass": "op-sell",
+      "opinionProb": 70,
+      "opinionSimple": "전체적으로 좋지 않은 흐름이라 매도 쪽으로 보여요. 다만 거래량이 적어서 힘은 약한 편이에요.",
+      "opinionSummary": "기술 신호 1/5 상승 (일봉↓, 주봉↓, 월봉↓, MACD↓, 스토캐스틱↑) → 매도 (확신도 70%). 다만 거래량이 평균보다 줄어 추세 힘은 약한 편."
     },
     {
       "ticker": "006400",
       "name": "삼성SDI",
-      "price": "₩550,000",
-      "changeVal": 0.18,
-      "businessModel": "[Mock] 삼성SDI의 핵심 사업 모델 요약.",
-      "industryOutlook": "[Mock] 삼성SDI 속한 산업 중기 전망 긍정적.",
-      "recentNews": "[Mock] 최근 뉴스가 삼성SDI에 미치는 영향 분석.",
-      "competitors": "[Mock] 삼성SDI 경쟁사 비교 및 차별점.",
-      "moat": "[Mock] 삼성SDI 경제적 해자 — 브랜드/기술/규모의 경제.",
-      "aiBenefit": "[Mock] AI 수혜 여부: 간접 수혜.",
-      "recentEarnings": "[Mock] 최근 분기 실적 분석.",
-      "financials": "[Mock] PER Nonex, 재무 건전성 분석.",
-      "valuation": "[Mock] 현재 밸류에이션 적정 여부 판단.",
-      "institutionalFlow": "[Mock] 기관 최근 3개월 매수/매도 동향.",
-      "insiderTrading": "[Mock] 내부자 최근 거래 내역.",
-      "options": "[Mock] 해당없음 (한국주식)",
-      "shortRatio": "[Mock] 공매도 비율 None%.",
-      "earningsDate": "[Mock] 다음 실적 발표 일정.",
-      "events": "[Mock] 주요 이벤트 일정.",
-      "dailyChart": "[Mock] 일봉: MA20 대비 아래, RSI 38.4 (중립).",
-      "weeklyChart": "[Mock] 주봉: 중기 하락 추세.",
-      "monthlyChart": "[Mock] 월봉: 장기 추세 분석.",
+      "price": "₩454,000",
+      "changeVal": 6.2,
+      "costBasis": "₩431,300",
+      "costBasisRaw": 431300.0,
+      "pnlPct": 5.26,
+      "priceRaw": 454000.0,
+      "high52wRaw": 712000.0,
+      "low52wRaw": 176100.0,
+      "high52w": "₩712,000",
+      "low52w": "₩176,100",
+      "rsiRaw": 45.2,
+      "supportRaw": [],
+      "resistanceRaw": [
+        712000.0
+      ],
+      "businessModel": "(샘플) 삼성SDI의 핵심 사업 모델 요약.",
+      "industryOutlook": "(샘플) 삼성SDI 속한 산업 중기 전망 긍정적.",
+      "recentNews": "(샘플) 최근 뉴스가 삼성SDI에 미치는 영향 분석.",
+      "competitors": "(샘플) 삼성SDI 경쟁사 비교 및 차별점.",
+      "moat": "(샘플) 삼성SDI 경제적 해자 — 브랜드/기술/규모의 경제.",
+      "aiBenefit": "(샘플) AI 수혜 여부: 간접 수혜.",
+      "recentEarnings": "(샘플) 최근 분기 실적 분석.",
+      "financials": "(샘플) PER Nonex, 재무 건전성 분석.",
+      "valuation": "(샘플) 현재 밸류에이션 적정 여부 판단.",
+      "institutionalFlow": "(샘플) 기관 최근 3개월 매수/매도 동향.",
+      "insiderTrading": "(샘플) 내부자 최근 거래 내역.",
+      "options": "(샘플) 해당없음 (한국주식)",
+      "shortRatio": "(샘플) 공매도 비율 None%.",
+      "earningsDate": "(샘플) 다음 실적 발표 일정.",
+      "events": "(샘플) 주요 이벤트 일정.",
+      "dailyChart": "현재가 454,000.00 vs 일봉 MA20 469,875.00 → 하락 · RSI 45.20(중립) · MACD 상승 · Stoch %K/%D 51.60/40.70(상승)",
+      "weeklyChart": "현재가 454,000.00 vs 주간 MA20(20주선) 523,175.00 → 하락 · 거래량(5일/20일) 비율 1.08(보통)",
+      "monthlyChart": "현재가 454,000.00 vs 월간 MA12(12개월선) 407,583.33 → 상승",
       "support": "",
       "resistance": "₩712000.0",
-      "fairValue": "₩522500.0 ~ ₩632500.0",
-      "buyZone": "1차 ₩522500.0, 2차 ₩495000.0",
-      "stopLoss": "₩484000.0",
-      "target6m": "₩711810.49",
-      "target1y": "₩749274.2",
-      "bullCase": "[Mock] 상승 시나리오: ₩687500.0 (확률 30%)",
-      "bearCase": "[Mock] 하락 시나리오: ₩440000.0 (확률 20%)",
-      "opinion": "매수",
-      "opinionClass": "op-buy",
-      "opinionProb": 70,
-      "opinionSummary": "RSI 38.4 (중립), MA20 대비 아래 — 매수 구간 판단"
+      "fairValue": "₩431300.0 ~ ₩522100.0",
+      "buyZone": "1차 ₩431300.0, 2차 ₩408600.0",
+      "stopLoss": "₩399520.0",
+      "target6m": "₩684781.43",
+      "target1y": "₩720822.56",
+      "bullCase": "(샘플) 상승 시나리오: ₩567500.0 (확률 30%)",
+      "bearCase": "(샘플) 하락 시나리오: ₩363200.0 (확률 20%)",
+      "opinion": "보유",
+      "opinionClass": "op-hold",
+      "opinionProb": 50,
+      "opinionSimple": "오를지 내릴지 신호가 엇갈리고 있어서, 지금은 서두르지 않고 지켜보는 게 좋아요.",
+      "opinionSummary": "기술 신호 3/5 상승 (일봉↓, 주봉↓, 월봉↑, MACD↑, 스토캐스틱↑) → 보유 (확신도 50%)."
     },
     {
       "ticker": "005490",
       "name": "POSCO홀딩스",
-      "price": "₩384,500",
-      "changeVal": -1.41,
-      "businessModel": "[Mock] POSCO홀딩스의 핵심 사업 모델 요약.",
-      "industryOutlook": "[Mock] POSCO홀딩스 속한 산업 중기 전망 긍정적.",
-      "recentNews": "[Mock] 최근 뉴스가 POSCO홀딩스에 미치는 영향 분석.",
-      "competitors": "[Mock] POSCO홀딩스 경쟁사 비교 및 차별점.",
-      "moat": "[Mock] POSCO홀딩스 경제적 해자 — 브랜드/기술/규모의 경제.",
-      "aiBenefit": "[Mock] AI 수혜 여부: 간접 수혜.",
-      "recentEarnings": "[Mock] 최근 분기 실적 분석.",
-      "financials": "[Mock] PER Nonex, 재무 건전성 분석.",
-      "valuation": "[Mock] 현재 밸류에이션 적정 여부 판단.",
-      "institutionalFlow": "[Mock] 기관 최근 3개월 매수/매도 동향.",
-      "insiderTrading": "[Mock] 내부자 최근 거래 내역.",
-      "options": "[Mock] 해당없음 (한국주식)",
-      "shortRatio": "[Mock] 공매도 비율 None%.",
-      "earningsDate": "[Mock] 다음 실적 발표 일정.",
-      "events": "[Mock] 주요 이벤트 일정.",
-      "dailyChart": "[Mock] 일봉: MA20 대비 아래, RSI 35.8 (중립).",
-      "weeklyChart": "[Mock] 주봉: 중기 하락 추세.",
-      "monthlyChart": "[Mock] 월봉: 장기 추세 분석.",
+      "price": "₩314,500",
+      "changeVal": 3.62,
+      "costBasis": "₩298,775",
+      "costBasisRaw": 298775.0,
+      "pnlPct": 5.26,
+      "priceRaw": 314500.0,
+      "high52wRaw": 532608.9375,
+      "low52wRaw": 258063.8125,
+      "high52w": "₩532,608",
+      "low52w": "₩258,063",
+      "rsiRaw": 46.8,
+      "supportRaw": [],
+      "resistanceRaw": [
+        532608.94
+      ],
+      "businessModel": "(샘플) POSCO홀딩스의 핵심 사업 모델 요약.",
+      "industryOutlook": "(샘플) POSCO홀딩스 속한 산업 중기 전망 긍정적.",
+      "recentNews": "(샘플) 최근 뉴스가 POSCO홀딩스에 미치는 영향 분석.",
+      "competitors": "(샘플) POSCO홀딩스 경쟁사 비교 및 차별점.",
+      "moat": "(샘플) POSCO홀딩스 경제적 해자 — 브랜드/기술/규모의 경제.",
+      "aiBenefit": "(샘플) AI 수혜 여부: 간접 수혜.",
+      "recentEarnings": "(샘플) 최근 분기 실적 분석.",
+      "financials": "(샘플) PER Nonex, 재무 건전성 분석.",
+      "valuation": "(샘플) 현재 밸류에이션 적정 여부 판단.",
+      "institutionalFlow": "(샘플) 기관 최근 3개월 매수/매도 동향.",
+      "insiderTrading": "(샘플) 내부자 최근 거래 내역.",
+      "options": "(샘플) 해당없음 (한국주식)",
+      "shortRatio": "(샘플) 공매도 비율 None%.",
+      "earningsDate": "(샘플) 다음 실적 발표 일정.",
+      "events": "(샘플) 주요 이벤트 일정.",
+      "dailyChart": "현재가 314,500.00 vs 일봉 MA20 321,575.00 → 하락 · RSI 46.80(중립) · MACD 상승 · Stoch %K/%D 52.90/39.20(상승)",
+      "weeklyChart": "현재가 314,500.00 vs 주간 MA20(20주선) 378,678.49 → 하락 · 거래량(5일/20일) 비율 0.86(보통)",
+      "monthlyChart": "현재가 314,500.00 vs 월간 MA12(12개월선) 338,712.30 → 하락",
       "support": "",
       "resistance": "₩532608.94",
-      "fairValue": "₩365275.0 ~ ₩442175.0",
-      "buyZone": "1차 ₩365275.0, 2차 ₩346050.0",
-      "stopLoss": "₩338360.0",
-      "target6m": "₩495852.5",
-      "target1y": "₩521950.0",
-      "bullCase": "[Mock] 상승 시나리오: ₩480625.0 (확률 30%)",
-      "bearCase": "[Mock] 하락 시나리오: ₩307600.0 (확률 20%)",
-      "opinion": "매수",
-      "opinionClass": "op-buy",
-      "opinionProb": 70,
-      "opinionSummary": "RSI 35.8 (중립), MA20 대비 아래 — 매수 구간 판단"
+      "fairValue": "₩298775.0 ~ ₩361675.0",
+      "buyZone": "1차 ₩298775.0, 2차 ₩283050.0",
+      "stopLoss": "₩276760.0",
+      "target6m": "₩460560.0",
+      "target1y": "₩484800.0",
+      "bullCase": "(샘플) 상승 시나리오: ₩393125.0 (확률 30%)",
+      "bearCase": "(샘플) 하락 시나리오: ₩251600.0 (확률 20%)",
+      "opinion": "보유",
+      "opinionClass": "op-hold",
+      "opinionProb": 50,
+      "opinionSimple": "오를지 내릴지 신호가 엇갈리고 있어서, 지금은 서두르지 않고 지켜보는 게 좋아요.",
+      "opinionSummary": "기술 신호 2/5 상승 (일봉↓, 주봉↓, 월봉↓, MACD↑, 스토캐스틱↑) → 보유 (확신도 50%)."
     }
   ]
 };
@@ -1518,6 +2134,7 @@
     renderStocks('holdings', [
       {
         ticker: '412570', name: 'Tiger 2차전지 TOP10 레버리지', price: '₩8,450', changeVal: -2.3,
+        costBasis: '₩8,027', pnlPct: 5.27,
         businessModel: '2차전지 상위 10개 종목 2배 레버리지 ETF',
         industryOutlook: '2차전지 업황 바닥 통과 중, 2025 하반기 반등 전망',
         recentNews: 'LG에너지솔루션 수주 잔고 증가, 전기차 보조금 확대',

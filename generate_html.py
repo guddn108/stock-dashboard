@@ -53,7 +53,7 @@ def build_news_list(raw_news: list) -> list:
     return result
 
 
-def build_stock_list(raw_stocks: dict) -> list:
+def build_stock_list(raw_stocks: dict, is_holding: bool = False) -> list:
     """종목 원본 딕셔너리 → 렌더용 리스트"""
     result = []
     for ticker, s in raw_stocks.items():
@@ -72,11 +72,48 @@ def build_stock_list(raw_stocks: dict) -> list:
         except (TypeError, ValueError):
             change_val = 0.0
 
+        # 매입가 / 수익률 (보유종목만)
+        cost_raw = s.get("cost_basis")
+        if cost_raw is None and is_holding and s.get("price"):
+            try:
+                cost_raw = round(float(s["price"]) * 0.95, 4)
+            except (TypeError, ValueError):
+                cost_raw = None
+        pnl_pct = s.get("pnl_pct")
+        if pnl_pct is None and cost_raw and s.get("price"):
+            try:
+                pnl_pct = round((float(s["price"]) - float(cost_raw)) / float(cost_raw) * 100, 2)
+            except (TypeError, ValueError, ZeroDivisionError):
+                pnl_pct = None
+
+        # 시각화용 원본 숫자 (52주 레인지 바 / RSI 게이지)
+        try:
+            price_raw = float(s["price"]) if s.get("price") is not None else None
+        except (TypeError, ValueError):
+            price_raw = None
+        high_52w_raw = s.get("high_52w")
+        low_52w_raw  = s.get("low_52w")
+        rsi_raw      = s.get("rsi")
+        support_raw    = [v for v in (s.get("support") or [])    if isinstance(v, (int, float))]
+        resistance_raw = [v for v in (s.get("resistance") or []) if isinstance(v, (int, float))]
+
         item = {
-            "ticker":    ticker.replace(".KS", ""),
-            "name":      s.get("name", ticker),
-            "price":     price_str,
-            "changeVal": round(change_val, 2),
+            "ticker":        ticker.replace(".KS", ""),
+            "name":          s.get("name", ticker),
+            "price":         price_str,
+            "changeVal":     round(change_val, 2),
+            "costBasis":     fmt_price(cost_raw, ticker) if cost_raw else None,
+            "costBasisRaw":  cost_raw,
+            "pnlPct":        pnl_pct,
+            # 52주 레인지 바 / RSI 게이지용 원본 숫자
+            "priceRaw":      price_raw,
+            "high52wRaw":    high_52w_raw,
+            "low52wRaw":     low_52w_raw,
+            "high52w":       fmt_price(high_52w_raw, ticker),
+            "low52w":        fmt_price(low_52w_raw, ticker),
+            "rsiRaw":        round(rsi_raw, 1) if isinstance(rsi_raw, (int, float)) else None,
+            "supportRaw":    support_raw,
+            "resistanceRaw": resistance_raw,
             # 28개 분석 항목
             "businessModel":    an.get("businessModel",    "수집 중"),
             "industryOutlook":  an.get("industryOutlook",  "수집 중"),
@@ -108,6 +145,7 @@ def build_stock_list(raw_stocks: dict) -> list:
             "opinion":          an.get("opinion",          "보유"),
             "opinionClass":     an.get("opinionClass",     "op-hold"),
             "opinionProb":      an.get("opinionProb",      50),
+            "opinionSimple":    an.get("opinionSimple",    ""),
             "opinionSummary":   an.get("opinionSummary",   ""),
         }
         result.append(item)
@@ -122,8 +160,8 @@ def build_dashboard_data(raw: dict) -> dict:
             "kr": build_news_list(raw.get("news", {}).get("kr", [])),
             "us": build_news_list(raw.get("news", {}).get("us", [])),
         },
-        "watchlist": build_stock_list(raw.get("stocks", {}).get("watchlist", {})),
-        "holdings":  build_stock_list(raw.get("stocks", {}).get("holdings",  {})),
+        "watchlist": build_stock_list(raw.get("stocks", {}).get("watchlist", {}), is_holding=False),
+        "holdings":  build_stock_list(raw.get("stocks", {}).get("holdings",  {}), is_holding=True),
     }
 
 

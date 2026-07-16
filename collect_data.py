@@ -24,15 +24,15 @@ import yfinance as yf
 # ══════════════════════════════════════════
 
 WATCHLIST = {
-    "MSFT":      "Microsoft",
-    "NVDA":      "Nvidia",
-    "GOOGL":     "Alphabet",
-    "AVGO":      "Broadcom",
+    "MSFT":      "마이크로소프트",
+    "NVDA":      "엔비디아",
+    "GOOGL":     "알파벳(구글)",
+    "AVGO":      "브로드컴",
     "TSM":       "TSMC",
-    "TSLA":      "Tesla",
+    "TSLA":      "테슬라",
     # SpaceX 비상장 제외 — 뉴스 분석 시 언급만
-    "IVV":       "iShares S&P 500 ETF",
-    "SCHD":      "Schwab Dividend ETF",
+    "IVV":       "아이셰어즈 S&P500 ETF",
+    "SCHD":      "슈왑 미국 배당주 ETF",
     "000660.KS": "SK하이닉스",
     "005930.KS": "삼성전자",
     "012450.KS": "한화에어로스페이스",
@@ -46,6 +46,15 @@ HOLDINGS = {
     "051910.KS": "LG화학",
     "006400.KS": "삼성SDI",
     "005490.KS": "POSCO홀딩스",
+}
+
+# 보유종목 매입가 — 직접 수정 가능. None이면 현재가의 95%로 임시 설정
+COST_BASIS = {
+    "412570.KS": None,
+    "365340.KS": None,
+    "051910.KS": None,
+    "006400.KS": None,
+    "005490.KS": None,
 }
 
 # ══════════════════════════════════════════
@@ -74,6 +83,18 @@ def calc_macd(prices: pd.Series):
         "signal": round(float(signal.iloc[-1]), 4),
         "hist":   round(float(hist.iloc[-1]), 4),
     }
+
+
+def calc_stochastic(high: pd.Series, low: pd.Series, close: pd.Series, k_period: int = 14, d_period: int = 3) -> dict:
+    """스토캐스틱 %K/%D — RSI/MACD와 별개로 모멘텀을 보는 오실레이터"""
+    lowest_low   = low.rolling(k_period).min()
+    highest_high = high.rolling(k_period).max()
+    denom = (highest_high - lowest_low).replace(0, np.nan)
+    k_line = 100 * (close - lowest_low) / denom
+    d_line = k_line.rolling(d_period).mean()
+    if k_line.dropna().empty or d_line.dropna().empty:
+        return {"k": None, "d": None}
+    return {"k": round(float(k_line.iloc[-1]), 1), "d": round(float(d_line.iloc[-1]), 1)}
 
 
 def calc_moving_averages(prices: pd.Series) -> dict:
@@ -145,15 +166,18 @@ def fetch_stock(ticker: str, name: str) -> dict:
         high_52w = round(float(close.tail(252).max()), 4)
         low_52w  = round(float(close.tail(252).min()), 4)
 
-        # 거래량 (5일 평균)
-        vol_avg5 = round(float(hist["Volume"].tail(5).mean()), 0) if "Volume" in hist else None
+        # 거래량 (5일 평균 / 20일 평균 — 비율로 추세 강도 확인용)
+        vol_avg5  = round(float(hist["Volume"].tail(5).mean()), 0)  if "Volume" in hist else None
+        vol_avg20 = round(float(hist["Volume"].tail(20).mean()), 0) if "Volume" in hist else None
+        volume_ratio = round(vol_avg5 / vol_avg20, 3) if vol_avg5 and vol_avg20 else None
 
         # 기술적 지표
-        rsi       = calc_rsi(close)
-        macd_data = calc_macd(close)
-        ma_data   = calc_moving_averages(close)
-        sr_data   = calc_support_resistance(close)
-        chg       = calc_change(current_price, prev_close)
+        rsi        = calc_rsi(close)
+        macd_data  = calc_macd(close)
+        ma_data    = calc_moving_averages(close)
+        sr_data    = calc_support_resistance(close)
+        chg        = calc_change(current_price, prev_close)
+        stochastic = calc_stochastic(hist["High"].dropna(), hist["Low"].dropna(), close)
 
         # 재무 정보 (info)
         info = {}
@@ -275,8 +299,11 @@ def fetch_stock(ticker: str, name: str) -> dict:
             "high_52w":        high_52w,
             "low_52w":         low_52w,
             "volume_avg5":     vol_avg5,
+            "volume_avg20":    vol_avg20,
+            "volume_ratio":    volume_ratio,
             "rsi":             rsi,
             "macd":            macd_data,
+            "stochastic":      stochastic,
             "moving_averages": ma_data,
             "support":         sr_data["support"],
             "resistance":      sr_data["resistance"],
@@ -308,7 +335,14 @@ def fetch_all_stocks() -> dict:
 
     print("\n보유종목:")
     for ticker, name in HOLDINGS.items():
-        result["holdings"][ticker] = fetch_stock(ticker, name)
+        stock = fetch_stock(ticker, name)
+        if not stock.get("error") and stock.get("price"):
+            cb = COST_BASIS.get(ticker)
+            if cb is None:
+                cb = round(stock["price"] * 0.95, 4)
+            stock["cost_basis"] = cb
+            stock["pnl_pct"] = round((stock["price"] - cb) / cb * 100, 2)
+        result["holdings"][ticker] = stock
         time.sleep(0.5)
 
     return result
