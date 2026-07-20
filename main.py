@@ -5,9 +5,11 @@ main.py — 전체 파이프라인 실행
   3. generate_html.py: data.json → index.html 주입
 
 실행:
-  python main.py          # 전체 파이프라인
-  python main.py --mock   # Mock 모드 강제 (API 키 무시)
-  python main.py --step 2 # 2단계(분석)만 재실행
+  python main.py             # 전체 파이프라인
+  python main.py --mock      # Mock 모드 강제 (API 키 무시)
+  python main.py --step 2    # 2단계(분석)만 재실행
+  python main.py --only news   # 뉴스만 수집+분석 (기존 종목 데이터 유지)
+  python main.py --only stocks # 종목만 수집+분석 (기존 뉴스 데이터 유지)
 """
 
 import json
@@ -25,6 +27,7 @@ sys.stderr.reconfigure(encoding="utf-8")
 args      = sys.argv[1:]
 MOCK_ONLY = "--mock"  in args
 START_STEP = 1
+ONLY = None  # None | "news" | "stocks"
 
 if "--step" in args:
     idx = args.index("--step")
@@ -32,6 +35,11 @@ if "--step" in args:
         START_STEP = int(args[idx + 1])
     except (IndexError, ValueError):
         START_STEP = 1
+
+if "--only" in args:
+    idx = args.index("--only")
+    if idx + 1 < len(args) and args[idx + 1] in ("news", "stocks"):
+        ONLY = args[idx + 1]
 
 if MOCK_ONLY:
     os.environ["GEMINI_API_KEY"] = ""
@@ -58,6 +66,12 @@ def load() -> dict:
         return json.load(f)
 
 
+def load_or_empty() -> dict:
+    if os.path.exists(DATA_PATH):
+        return load()
+    return {"generated_at": None, "stocks": {"watchlist": {}, "holdings": {}}, "news": {"kr": [], "us": []}}
+
+
 # ══════════════════════════════════════════
 # 파이프라인
 # ══════════════════════════════════════════
@@ -66,10 +80,21 @@ def main():
     start_time = time.time()
     print(f"\n[START] 투자 대시보드 업데이트 시작")
     print(f"   모드: {'Mock' if MOCK_ONLY or not os.environ.get('GEMINI_API_KEY') else 'Gemini API'}")
-    print(f"   시작 단계: STEP {START_STEP}")
+    print(f"   시작 단계: STEP {START_STEP}" + (f" · 대상: {ONLY}" if ONLY else ""))
+
+    sections = ("news",) if ONLY == "news" else ("stocks",) if ONLY == "stocks" else ("news", "stocks")
 
     # ── STEP 1: 데이터 수집
-    if START_STEP <= 1:
+    if ONLY:
+        step(1, f"데이터 수집 ({ONLY}만)")
+        import collect_data
+        data = load_or_empty()
+        if ONLY == "news":
+            data["news"] = collect_data.fetch_all_news()
+        else:
+            data["stocks"] = collect_data.fetch_all_stocks()
+        save(data)
+    elif START_STEP <= 1:
         step(1, "데이터 수집 (yfinance + Google News RSS)")
         import collect_data
         data = collect_data.run()
@@ -82,7 +107,7 @@ def main():
     if START_STEP <= 2:
         step(2, "AI 분석")
         import analyze
-        data = analyze.run(data)
+        data = analyze.run(data, sections=sections)
         save(data)
     else:
         print(f"\n[STEP 2 건너뜀]")

@@ -1,4 +1,4 @@
-name: Dashboard Update
+name: News Update
 
 on:
   push:
@@ -7,8 +7,8 @@ on:
       - 'index.html'   # 봇 커밋이 다시 트리거 안 되도록
       - 'data/**'
   schedule:
-    # UTC 06:30 = KST 15:30 (한국 장 마감) — 월~금
-    - cron: '30 6 * * 1-5'
+    # UTC 16:00 = KST 01:00 (매일)
+    - cron: '0 16 * * *'
   workflow_dispatch: # GitHub에서 수동 실행 버튼
 
 jobs:
@@ -29,15 +29,15 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run dashboard update
+      - name: Run news update
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-        run: python main.py
+        run: python main.py --only news
 
       - name: Commit & Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add index.html data/data.json
-          git diff --staged --quiet || git commit -m "auto: dashboard update $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git diff --staged --quiet || git commit -m "auto: news update $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push

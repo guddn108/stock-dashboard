@@ -55,6 +55,7 @@ def call_groq(prompt: str) -> str:
             req = urllib.request.Request(url, data=body, headers={
                 "Content-Type":  "application/json",
                 "Authorization": f"Bearer {GROQ_API_KEY}",
+                "User-Agent":    "Mozilla/5.0",
             })
             with urllib.request.urlopen(req, timeout=60) as resp:
                 result = json.loads(resp.read())
@@ -466,38 +467,40 @@ def _mock_stock_analysis(ticker: str, name: str, data: dict) -> dict:
 # 전체 분석 실행
 # ══════════════════════════════════════════
 
-def run(data: dict) -> dict:
-    """data.json 전체를 분석하여 결과 반환"""
-    print(f"\n[AI 분석 시작] 모드: {'Mock' if USE_MOCK else f'Groq ({MODEL})'}")
+def run(data: dict, sections=("news", "stocks")) -> dict:
+    """data.json을 분석하여 결과 반환. sections로 뉴스/종목 중 일부만 분석 가능"""
+    print(f"\n[AI 분석 시작] 모드: {'Mock' if USE_MOCK else f'Groq ({MODEL})'} · 대상: {sections}")
 
     # ── 뉴스 분석
-    print("\n뉴스 분석 중...")
-    for region in ("kr", "us"):
-        articles = data.get("news", {}).get(region, [])
-        for i, article in enumerate(articles):
-            print(f"  {region.upper()} 뉴스 {i+1}/{len(articles)}: {article['title'][:40]}...")
-            article["analysis"] = analyze_news(article["title"], article.get("summary", ""))
-            if not USE_MOCK:
-                time.sleep(4)
+    if "news" in sections:
+        print("\n뉴스 분석 중...")
+        for region in ("kr", "us"):
+            articles = data.get("news", {}).get(region, [])
+            for i, article in enumerate(articles):
+                print(f"  {region.upper()} 뉴스 {i+1}/{len(articles)}: {article['title'][:40]}...")
+                article["analysis"] = analyze_news(article["title"], article.get("summary", ""))
+                if not USE_MOCK:
+                    time.sleep(4)
 
     # ── 종목 분석
-    print("\n종목 분석 중...")
-    for group in ("watchlist", "holdings"):
-        stocks = data.get("stocks", {}).get(group, {})
-        total  = len(stocks)
-        for idx, (ticker, stock_data) in enumerate(stocks.items(), 1):
-            name = stock_data.get("name", ticker)
-            if stock_data.get("error"):
-                print(f"  [{idx}/{total}] {ticker} 건너뜀 (데이터 오류)")
-                continue
-            print(f"  [{idx}/{total}] {ticker} ({name}) 분석 중...")
-            try:
-                stock_data["analysis"] = analyze_stock(ticker, name, stock_data)
-            except Exception as e:
-                print(f"  ✗ {ticker} 분석 실패: {e}")
-                stock_data["analysis"] = STOCK_FALLBACK.copy()
-            if not USE_MOCK:
-                time.sleep(4)
+    if "stocks" in sections:
+        print("\n종목 분석 중...")
+        for group in ("watchlist", "holdings"):
+            stocks = data.get("stocks", {}).get(group, {})
+            total  = len(stocks)
+            for idx, (ticker, stock_data) in enumerate(stocks.items(), 1):
+                name = stock_data.get("name", ticker)
+                if stock_data.get("error"):
+                    print(f"  [{idx}/{total}] {ticker} 건너뜀 (데이터 오류)")
+                    continue
+                print(f"  [{idx}/{total}] {ticker} ({name}) 분석 중...")
+                try:
+                    stock_data["analysis"] = analyze_stock(ticker, name, stock_data)
+                except Exception as e:
+                    print(f"  ✗ {ticker} 분석 실패: {e}")
+                    stock_data["analysis"] = STOCK_FALLBACK.copy()
+                if not USE_MOCK:
+                    time.sleep(4)
 
     print("\n✅ 분석 완료")
     return data
