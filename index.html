@@ -77,6 +77,36 @@
     }
     .section-title:first-child { margin-top: 0; }
 
+    /* ── 뉴스 음성 읽어주기 바 ── */
+    .tts-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #f6f8fa;
+      border: 1px solid #d0d7de;
+      border-radius: 10px;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+    .tts-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: none;
+      background: #0969da;
+      color: #fff;
+      font-size: 16px;
+      line-height: 1;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .tts-btn.playing { background: #cf222e; }
+    .tts-status { font-size: 13px; color: #656d76; }
+    .news-card.tts-active { border-color: #0969da; box-shadow: 0 0 0 2px rgba(9,105,218,0.25); }
+
     /* ── 뉴스 카드 (탭1) ── */
     .news-card {
       background: #f6f8fa;
@@ -526,6 +556,11 @@
   <!-- ══════════════ 탭1: 뉴스 분석 ══════════════ -->
   <div id="tab1" class="tab-content active">
 
+    <div class="tts-bar">
+      <button class="tts-btn" id="tts-btn" onclick="toggleNewsTTS()">🔊</button>
+      <span class="tts-status" id="tts-status">뉴스 10개 음성으로 듣기</span>
+    </div>
+
     <div class="section-title">🇰🇷 한국 뉴스</div>
     <div id="news-kr"><!-- inject_news_kr --></div>
 
@@ -566,6 +601,7 @@
   <script>
     // ── 탭 전환 ──
     function switchTab(tabId, btn) {
+      if (tabId !== 'tab1' && ttsPlaying) stopNewsTTS();
       document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
       document.getElementById(tabId).classList.add('active');
@@ -800,8 +836,80 @@
       }).join('');
     }
 
-    function renderNewsKr(articles) { renderNews('news-kr', articles, 'badge-kr', '한국'); }
-    function renderNewsUs(articles)  { renderNews('news-us', articles, 'badge-us', '미국'); }
+    function renderNewsKr(articles) { NEWS_KR = articles; renderNews('news-kr', articles, 'badge-kr', '한국'); }
+    function renderNewsUs(articles)  { NEWS_US = articles; renderNews('news-us', articles, 'badge-us', '미국'); }
+
+    // ── 뉴스 음성 읽어주기 ──
+    let NEWS_KR = [], NEWS_US = [];
+    let ttsQueue = [], ttsIdx = 0, ttsPlaying = false;
+
+    function buildNewsNarration(article, orderNum, countryLabel) {
+      const d = article.analysis || {};
+      const parts = [`${orderNum}번째, ${countryLabel} 뉴스입니다.`, article.title + '.'];
+      if (d.summary3) parts.push(d.summary3);
+      if (d.why) parts.push('이 뉴스가 화두가 된 이유는, ' + d.why);
+      if (d.topBeneficiary) parts.push('결론적으로, ' + d.topBeneficiary);
+      return parts.join(' ');
+    }
+
+    function buildTtsQueue() {
+      const list = [];
+      NEWS_KR.forEach((a, i) => list.push({ card: 'news-kr', idx: i, text: buildNewsNarration(a, i + 1, '한국') }));
+      NEWS_US.forEach((a, i) => list.push({ card: 'news-us', idx: i, text: buildNewsNarration(a, i + 1, '미국') }));
+      return list;
+    }
+
+    function setTtsButtonState(playing) {
+      const btn = document.getElementById('tts-btn');
+      btn.textContent = playing ? '⏹' : '🔊';
+      btn.classList.toggle('playing', playing);
+    }
+
+    function clearTtsHighlight() {
+      document.querySelectorAll('.news-card.tts-active').forEach(el => el.classList.remove('tts-active'));
+    }
+
+    function highlightTtsCard(item) {
+      clearTtsHighlight();
+      const container = document.getElementById(item.card);
+      const card = container.children[item.idx];
+      if (card) {
+        card.classList.add('tts-active');
+        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+
+    function speakNext() {
+      if (ttsIdx >= ttsQueue.length) { stopNewsTTS(); return; }
+      const item = ttsQueue[ttsIdx];
+      highlightTtsCard(item);
+      document.getElementById('tts-status').textContent = `${ttsIdx + 1}/${ttsQueue.length} 읽는 중...`;
+      const utter = new SpeechSynthesisUtterance(item.text);
+      utter.lang = 'ko-KR';
+      utter.rate = 1.0;
+      utter.onend = () => { if (!ttsPlaying) return; ttsIdx++; speakNext(); };
+      utter.onerror = () => { if (!ttsPlaying) return; ttsIdx++; speakNext(); };
+      speechSynthesis.speak(utter);
+    }
+
+    function toggleNewsTTS() {
+      if (ttsPlaying) { stopNewsTTS(); return; }
+      ttsQueue = buildTtsQueue();
+      if (!ttsQueue.length) return;
+      ttsIdx = 0;
+      ttsPlaying = true;
+      setTtsButtonState(true);
+      speechSynthesis.cancel();
+      speakNext();
+    }
+
+    function stopNewsTTS() {
+      ttsPlaying = false;
+      speechSynthesis.cancel();
+      setTtsButtonState(false);
+      clearTtsHighlight();
+      document.getElementById('tts-status').textContent = '뉴스 10개 음성으로 듣기';
+    }
 
     function renderStocks(containerId, stocks) {
       const container = document.getElementById(containerId);
