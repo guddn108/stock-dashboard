@@ -841,22 +841,40 @@
 
     // ── 뉴스 음성 읽어주기 ──
     let NEWS_KR = [], NEWS_US = [];
-    let ttsQueue = [], ttsIdx = 0, ttsPlaying = false;
+    let ttsQueue = [], ttsIdx = 0, ttsPlaying = false, ttsKeepAliveTimer = null;
+    let ttsArticleCount = 0, ttsTotalArticles = 0;
 
-    function buildNewsNarration(article, orderNum, countryLabel) {
+    function pushIfMeaningful(parts, prefix, value) {
+      if (value && value !== '없음') parts.push(prefix + value);
+    }
+
+    // 기사 하나를 언어별 세그먼트로 분리 — 제목은 원문 언어(영어뉴스는 en-US), 나머지 분석은 항상 한국어라 ko-KR.
+    function buildNewsSegments(article, orderNum, countryLabel, titleLang, card, idx) {
       const d = article.analysis || {};
-      const parts = [`${orderNum}번째, ${countryLabel} 뉴스입니다.`, article.title + '.'];
-      if (d.summary3) parts.push(d.summary3);
-      if (d.why) parts.push('이 뉴스가 화두가 된 이유는, ' + d.why);
-      if (d.topBeneficiary) parts.push('결론적으로, ' + d.topBeneficiary);
-      return parts.join(' ');
+      const segs = [];
+      segs.push({ card, idx, lang: 'ko-KR', text: `${orderNum}번째, ${countryLabel} 뉴스입니다.`, newItem: true });
+      segs.push({ card, idx, lang: titleLang, text: article.title + '.' });
+      const koParts = [];
+      if (d.summary3) koParts.push(d.summary3);
+      pushIfMeaningful(koParts, '이 뉴스가 화두가 된 이유는, ', d.why);
+      pushIfMeaningful(koParts, '자금 흐름을 보면, ', d.moneyFlow);
+      pushIfMeaningful(koParts, '직접적인 수혜가 예상되는 곳은, ', d.directBenefit);
+      pushIfMeaningful(koParts, '간접적으로는, ', d.indirectBenefit);
+      pushIfMeaningful(koParts, '반대로 직접적인 피해가 예상되는 곳은, ', d.directDamage);
+      pushIfMeaningful(koParts, '간접적인 피해는, ', d.indirectDamage);
+      pushIfMeaningful(koParts, '관련 국내 종목으로는, ', d.krStocks);
+      pushIfMeaningful(koParts, '관련 미국 종목으로는, ', d.usStocks);
+      pushIfMeaningful(koParts, '결론적으로, ', d.topBeneficiary);
+      pushIfMeaningful(koParts, '참고로, ', d.hiddenPoint);
+      if (koParts.length) segs.push({ card, idx, lang: 'ko-KR', text: koParts.join(' ') });
+      return segs;
     }
 
     function buildTtsQueue() {
-      const list = [];
-      NEWS_KR.forEach((a, i) => list.push({ card: 'news-kr', idx: i, text: buildNewsNarration(a, i + 1, '한국') }));
-      NEWS_US.forEach((a, i) => list.push({ card: 'news-us', idx: i, text: buildNewsNarration(a, i + 1, '미국') }));
-      return list;
+      const segs = [];
+      NEWS_KR.forEach((a, i) => segs.push(...buildNewsSegments(a, i + 1, '한국', 'ko-KR', 'news-kr', i)));
+      NEWS_US.forEach((a, i) => segs.push(...buildNewsSegments(a, i + 1, '미국', 'en-US', 'news-us', i)));
+      return segs;
     }
 
     function setTtsButtonState(playing) {
@@ -881,12 +899,16 @@
 
     function speakNext() {
       if (ttsIdx >= ttsQueue.length) { stopNewsTTS(); return; }
-      const item = ttsQueue[ttsIdx];
-      highlightTtsCard(item);
-      document.getElementById('tts-status').textContent = `${ttsIdx + 1}/${ttsQueue.length} 읽는 중...`;
-      const utter = new SpeechSynthesisUtterance(item.text);
-      utter.lang = 'ko-KR';
-      utter.rate = 1.0;
+      const seg = ttsQueue[ttsIdx];
+      if (seg.newItem) {
+        ttsArticleCount++;
+        highlightTtsCard(seg);
+      }
+      document.getElementById('tts-status').textContent = `${ttsArticleCount}/${ttsTotalArticles} 읽는 중...`;
+      const utter = new SpeechSynthesisUtterance(seg.text);
+      utter.lang = seg.lang;
+      utter.rate = 0.95;
+      utter.pitch = 0.9;
       utter.onend = () => { if (!ttsPlaying) return; ttsIdx++; speakNext(); };
       utter.onerror = () => { if (!ttsPlaying) return; ttsIdx++; speakNext(); };
       speechSynthesis.speak(utter);
@@ -897,15 +919,22 @@
       ttsQueue = buildTtsQueue();
       if (!ttsQueue.length) return;
       ttsIdx = 0;
+      ttsArticleCount = 0;
+      ttsTotalArticles = NEWS_KR.length + NEWS_US.length;
       ttsPlaying = true;
       setTtsButtonState(true);
       speechSynthesis.cancel();
       speakNext();
+      // 크롬 15초 이상 발화 시 자동 끊김 버그 우회: 주기적으로 pause/resume
+      ttsKeepAliveTimer = setInterval(() => {
+        if (speechSynthesis.speaking) { speechSynthesis.pause(); speechSynthesis.resume(); }
+      }, 10000);
     }
 
     function stopNewsTTS() {
       ttsPlaying = false;
       speechSynthesis.cancel();
+      if (ttsKeepAliveTimer) { clearInterval(ttsKeepAliveTimer); ttsKeepAliveTimer = null; }
       setTtsButtonState(false);
       clearTtsHighlight();
       document.getElementById('tts-status').textContent = '뉴스 10개 음성으로 듣기';
