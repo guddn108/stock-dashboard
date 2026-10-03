@@ -2030,27 +2030,6 @@
   "news": {
     "kr": [
       {
-        "title": "[인문자의 한국 증권시장 이야기] 한국 증시의 허와 실 - 아주경제",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBZanNnYXhNS2IxdUFzTE9Vejd4QWdzUGRDRlZqSExQNHc1OVRpNURGaWhyVGVRWWNaZEtUZDNQMGhDTzVTYlV2Q2NvUHVndVlFX0ZEMUxqbHRWd9IBWEFVX3lxTE1NNXg3dnRXTkVQWUhoQWg1UUlaaTU3cGJXRHdUUThYNF9WeGZCSklhRmNNQnRsYjNsX2tmdUxYRDJWM1ZXWGNBSGVnaXI4clBZalVkZTZPNEQ?oc=5",
-        "published": "Sun, 20 Sep 2026 07:00:00 GMT",
-        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBZanNnYXhNS2IxdUFzTE9Vejd4QWdzUGRDRlZqSExQNHc1OVRpNURGaWhyVGVRWWNaZEtUZDNQMGhDTzVTYlV2Q2NvUHVndVlFX0ZEMUxqbHRWd9IBWEFVX3lxTE1NNXg3dnRXTkVQWU",
-        "source": "아주경제",
-        "analysis": {
-          "simpleSummary": "(분석 준비 중)",
-          "summary3": "(분석 준비 중)",
-          "why": "(분석 준비 중)",
-          "moneyFlow": "(분석 준비 중)",
-          "directBenefit": "(분석 준비 중)",
-          "indirectBenefit": "(분석 준비 중)",
-          "directDamage": "(분석 준비 중)",
-          "indirectDamage": "(분석 준비 중)",
-          "usStocks": "(분석 준비 중)",
-          "krStocks": "(분석 준비 중)",
-          "topBeneficiary": "(분석 준비 중)",
-          "hiddenPoint": "(분석 준비 중)"
-        }
-      },
-      {
         "title": "염승환·김익환의 대한민국 주식투자 지도 - 김익환 한국경제신문 기자 외 - 한국기자협회",
         "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBwZk9TdnNFTFhkTHVzd2U0MVBCSjBUMlpUSGUxYXdJM2pYQWd5SF9QN0hwZ25RNjVrVnRLcmJXM3FZLTNQZUduX2pZbm9NeXl4OTdrTkdoNDZhelYyT1NfVmNn?oc=5",
         "published": "Tue, 14 Jul 2026 07:00:00 GMT",
@@ -2072,11 +2051,11 @@
         }
       },
       {
-        "title": "[2026년 7월 월간 주요 경제지표 변화] 7월 코스피 22% 급락…美 금리 상승에 국내 증시 직격탄 - 기호일보",
-        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5lRTV5cEZPNVFTU2tYUFk1T1R1WTB0RDgxQ2RvNGRLdjZvdjJDekZTSDZTWG9VSzloNk9TRDk0bzl2MU5tNHlUWFYwOGxMd0tENVlRWWh2c1RBSTl4ejE5TlJIS21jSzEtLURiVWxiOA?oc=5",
-        "published": "Sat, 01 Aug 2026 07:00:00 GMT",
-        "summary": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE5lRTV5cEZPNVFTU2tYUFk1T1R1WTB0RDgxQ2RvNGRLdjZvdjJDekZTSDZTWG9VSzloNk9TRDk0bzl2MU5tNHlUWFYwOGxMd0tENVlRWWh2c1RBSTl4ejE5TlJIS21jSzEtLURiVWxiOA",
-        "source": "기호일보",
+        "title": "[인문자의 한국 증권시장 이야기] 한국 증시의 허와 실 - 아주경제",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBZanNnYXhNS2IxdUFzTE9Vejd4QWdzUGRDRlZqSExQNHc1OVRpNURGaWhyVGVRWWNaZEtUZDNQMGhDTzVTYlV2Q2NvUHVndVlFX0ZEMUxqbHRWd9IBWEFVX3lxTE1NNXg3dnRXTkVQWUhoQWg1UUlaaTU3cGJXRHdUUThYNF9WeGZCSklhRmNNQnRsYjNsX2tmdUxYRDJWM1ZXWGNBSGVnaXI4clBZalVkZTZPNEQ?oc=5",
+        "published": "Sun, 20 Sep 2026 07:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBZanNnYXhNS2IxdUFzTE9Vejd4QWdzUGRDRlZqSExQNHc1OVRpNURGaWhyVGVRWWNaZEtUZDNQMGhDTzVTYlV2Q2NvUHVndVlFX0ZEMUxqbHRWd9IBWEFVX3lxTE1NNXg3dnRXTkVQWU",
+        "source": "아주경제",
         "analysis": {
           "simpleSummary": "(분석 준비 중)",
           "summary3": "(분석 준비 중)",
@@ -2093,11 +2072,32 @@
         }
       },
       {
-        "title": "“세계에서 가장 미친 증시”…외신이 본 한국 주식은 ‘공포의 놀이기구’ - weekly.chosun.com",
+        "title": "[2026년 7월 월간 주요 경제지표 변화] 7월 코스피 22% 급락…美 금리 상승에 국내 증시 직격탄 - kihoilbo.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5lRTV5cEZPNVFTU2tYUFk1T1R1WTB0RDgxQ2RvNGRLdjZvdjJDekZTSDZTWG9VSzloNk9TRDk0bzl2MU5tNHlUWFYwOGxMd0tENVlRWWh2c1RBSTl4ejE5TlJIS21jSzEtLURiVWxiOA?oc=5",
+        "published": "Sat, 01 Aug 2026 07:00:00 GMT",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE5lRTV5cEZPNVFTU2tYUFk1T1R1WTB0RDgxQ2RvNGRLdjZvdjJDekZTSDZTWG9VSzloNk9TRDk0bzl2MU5tNHlUWFYwOGxMd0tENVlRWWh2c1RBSTl4ejE5TlJIS21jSzEtLURiVWxiOA",
+        "source": "kihoilbo.co.kr",
+        "analysis": {
+          "simpleSummary": "(분석 준비 중)",
+          "summary3": "(분석 준비 중)",
+          "why": "(분석 준비 중)",
+          "moneyFlow": "(분석 준비 중)",
+          "directBenefit": "(분석 준비 중)",
+          "indirectBenefit": "(분석 준비 중)",
+          "directDamage": "(분석 준비 중)",
+          "indirectDamage": "(분석 준비 중)",
+          "usStocks": "(분석 준비 중)",
+          "krStocks": "(분석 준비 중)",
+          "topBeneficiary": "(분석 준비 중)",
+          "hiddenPoint": "(분석 준비 중)"
+        }
+      },
+      {
+        "title": "“세계에서 가장 미친 증시”…외신이 본 한국 주식은 ‘공포의 놀이기구’ - 주간조선",
         "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBqdmtjOEJheTB5QWdMM1VmNkNpc0pZczhoVlFrM0xJU1Z0T2RhTWVHbHFjbkRtc3EwaEJtZzd4Vk1wU2pEX1AyRzQzemZGN01qRGxjNGJucXo5c21fRmZaS1gwQjBkNG1EUkHSAW5BVV95cUxNMXp5ZGxCNWd1Q3l1ZUwyUnBSN2dXdHdnY3ppN2NndFZvQ1V5VjBRX2FZWlNBV0dQcmNQNi1MNTVBTzZZRFBraE1LZy1uTENFck5ESzQza3ZBbVpzWDlDdWN6OHF0c2dGdnRqV2h1dw?oc=5",
         "published": "Wed, 26 Aug 2026 07:00:00 GMT",
         "summary": "<a href=\"https://news.google.com/rss/articles/CBMiakFVX3lxTFBqdmtjOEJheTB5QWdMM1VmNkNpc0pZczhoVlFrM0xJU1Z0T2RhTWVHbHFjbkRtc3EwaEJtZzd4Vk1wU2pEX1AyRzQzemZGN01qRGxjNGJucXo5c21fRmZaS1gwQjBkNG1EUkHSAW5BVV",
-        "source": "weekly.chosun.com",
+        "source": "주간조선",
         "analysis": {
           "simpleSummary": "(분석 준비 중)",
           "summary3": "(분석 준비 중)",
