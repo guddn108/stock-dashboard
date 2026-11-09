@@ -5,43 +5,43 @@
       "MSFT": {
         "ticker": "MSFT",
         "name": "마이크로소프트",
-        "price": 530.9307,
-        "prev_close": 535.93,
-        "change": -4.9993,
-        "change_pct": -0.93,
+        "price": 543.77,
+        "prev_close": 530.61,
+        "change": 13.16,
+        "change_pct": 2.48,
         "high_52w": 555.8,
         "low_52w": 352.167,
-        "volume_avg5": 30301724.0,
-        "volume_avg20": 24428926.0,
-        "volume_ratio": 1.24,
-        "rsi": 49.0,
+        "volume_avg5": 29793268.0,
+        "volume_avg20": 25123232.0,
+        "volume_ratio": 1.186,
+        "rsi": 54.3,
         "macd": {
-          "macd": 4.4086,
-          "signal": 4.9795,
-          "hist": -0.5709
+          "macd": 5.1233,
+          "signal": 5.0041,
+          "hist": 0.1192
         },
         "stochastic": {
-          "k": 47.9,
-          "d": 66.3
+          "k": 71.6,
+          "d": 58.7
         },
         "moving_averages": {
-          "ma5": 530.1541,
-          "ma20": 531.4235,
-          "ma60": 511.9249,
-          "ma120": 462.68,
-          "ma200": 438.8478
+          "ma5": 537.42,
+          "ma20": 531.5385,
+          "ma60": 512.7412,
+          "ma120": 463.7443,
+          "ma200": 439.25
         },
         "support": [],
         "resistance": [],
-        "weekly_ma20": 476.9441,
-        "monthly_ma12": 452.7253,
+        "weekly_ma20": 485.5031,
+        "monthly_ma12": 453.7953,
         "financials": {
-          "market_cap": 3942794919936,
-          "pe_ratio": 27.710373,
-          "forward_pe": 21.95804,
-          "pb_ratio": 8.380778,
+          "market_cap": 4038364495872,
+          "pe_ratio": 28.382046,
+          "forward_pe": 22.475077,
+          "pb_ratio": 8.5839205,
           "eps": 19.16,
-          "dividend_yield": 0.73,
+          "dividend_yield": 0.74,
           "revenue": 346444988416,
           "net_income": 142630993920,
           "operating_margin": 0.49757,
@@ -50,8 +50,8 @@
           "current_ratio": 1.225,
           "roe": 0.34221,
           "short_ratio": 2.94,
-          "analyst_target": 633.1266,
-          "analyst_rating": 1.38596,
+          "analyst_target": 636.12427,
+          "analyst_rating": 1.37931,
           "earnings_date": "1793217600",
           "sector": "Technology",
           "industry": "Software - Infrastructure",
@@ -95,20 +95,20 @@
           }
         ],
         "options": {
-          "call_volume": 8624,
-          "put_volume": 11301,
-          "call_put_ratio": 0.76,
-          "expiry": "2026-11-06"
+          "call_volume": 66265,
+          "put_volume": 37424,
+          "call_put_ratio": 1.77,
+          "expiry": "2026-11-09"
         },
         "earnings_dates": [],
         "recent_news_titles": [
-          "Magnificent Seven Lost $1 Trillion in Tech Rout. Here's How Much Each Plunged.",
-          "Not One Analyst Rates Amazon a Sell. Is Wall Street Right?",
-          "What Will Decide Apple Stock As Memory Costs Rise?",
-          "What Just Happened To Snowflake Stock?",
-          "Analyst Calls Tech Stock Sell-Off 'Golden Buying Opportunity'"
+          "Trump Urges Senate to Make Data Centers “Pay for Their Own Electricity.” Power Builders Stand to Gain",
+          "I’m Betting That The Post-Midterm Flight to Quality Will Kick Microsoft Into Gear",
+          "Microsoft Borrows at “10 Percentage Points Below CoreWeave.” Now It’s Backing Away From Neoclouds",
+          "A $1 Billion Fund Dumps These 2 Stocks",
+          "Risk-On: S&P 500 Surges Out of the Gate, Adds $1 Trillion in Market Value"
         ],
-        "collected_at": "2026-11-06T14:51:36.851525",
+        "collected_at": "2026-11-09T17:17:11.031520",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -125,9 +125,9 @@
           "shortRatio": "(분석 준비 중)",
           "earningsDate": "(분석 준비 중)",
           "events": "(분석 준비 중)",
-          "dailyChart": "현재가 530.93 vs 일봉 MA20 531.42 → 하락 · RSI 49.00(중립) · MACD 하락 · Stoch %K/%D 47.90/66.30(하락)",
-          "weeklyChart": "현재가 530.93 vs 주간 MA20(20주선) 476.94 → 상승 · 거래량(5일/20일) 비율 1.24(증가)",
-          "monthlyChart": "현재가 530.93 vs 월간 MA12(12개월선) 452.73 → 상승",
+          "dailyChart": "현재가 543.77 vs 일봉 MA20 531.54 → 상승 · RSI 54.30(중립) · MACD 상승 · Stoch %K/%D 71.60/58.70(상승)",
+          "weeklyChart": "현재가 543.77 vs 주간 MA20(20주선) 485.50 → 상승 · 거래량(5일/20일) 비율 1.19(증가)",
+          "monthlyChart": "현재가 543.77 vs 월간 MA12(12개월선) 453.80 → 상승",
           "support": "(분석 준비 중)",
           "resistance": "(분석 준비 중)",
           "fairValue": "(분석 준비 중)",
@@ -137,55 +137,55 @@
           "target1y": "(분석 준비 중)",
           "bullCase": "(분석 준비 중)",
           "bearCase": "(분석 준비 중)",
-          "opinion": "보유",
-          "opinionClass": "op-hold",
-          "opinionProb": 50,
-          "opinionSimple": "오를지 내릴지 신호가 엇갈리고 있어서, 지금은 서두르지 않고 지켜보는 게 좋아요.",
-          "opinionSummary": "기술 신호 2/5 상승 (일봉↓, 주봉↑, 월봉↑, MACD↓, 스토캐스틱↓) → 보유 (확신도 50%)."
+          "opinion": "매수",
+          "opinionClass": "op-buy",
+          "opinionProb": 90,
+          "opinionSimple": "여러 지표가 대부분 좋은 방향을 가리키고 있어서 지금은 사기 좋은 흐름이에요. 거래량도 늘고 있어서 힘이 실려 있어요.",
+          "opinionSummary": "기술 신호 5/5 상승 (일봉↑, 주봉↑, 월봉↑, MACD↑, 스토캐스틱↑) → 매수 (확신도 90%). 최근 거래량도 평균 대비 늘어 추세에 힘이 실림."
         }
       },
       "NVDA": {
         "ticker": "NVDA",
         "name": "엔비디아",
-        "price": 194.64,
-        "prev_close": 181.6,
-        "change": 13.04,
-        "change_pct": 7.18,
+        "price": 177.585,
+        "prev_close": 186.64,
+        "change": -9.055,
+        "change_pct": -4.85,
         "high_52w": 239.24,
         "low_52w": 164.7933,
-        "volume_avg5": 140887355.0,
-        "volume_avg20": 110591254.0,
-        "volume_ratio": 1.274,
-        "rsi": 36.4,
+        "volume_avg5": 202291834.0,
+        "volume_avg20": 128371469.0,
+        "volume_ratio": 1.576,
+        "rsi": 26.6,
         "macd": {
-          "macd": -7.5899,
-          "signal": -4.8996,
-          "hist": -2.6903
+          "macd": -9.6531,
+          "signal": -5.9524,
+          "hist": -3.7007
         },
         "stochastic": {
-          "k": 32.4,
-          "d": 11.6
+          "k": 14.1,
+          "d": 9.1
         },
         "moving_averages": {
-          "ma5": 197.024,
-          "ma20": 211.947,
-          "ma60": 219.5406,
-          "ma120": 213.7517,
-          "ma200": 204.431
+          "ma5": 190.529,
+          "ma20": 209.1103,
+          "ma60": 218.6186,
+          "ma120": 213.3307,
+          "ma200": 204.3427
         },
         "support": [],
         "resistance": [
           239.24
         ],
-        "weekly_ma20": 213.5553,
-        "monthly_ma12": 198.8238,
+        "weekly_ma20": 212.4188,
+        "monthly_ma12": 197.4026,
         "financials": {
-          "market_cap": 4701662216192,
-          "pe_ratio": 24.615677,
-          "forward_pe": 12.234677,
-          "pb_ratio": 20.532534,
+          "market_cap": 4288144998400,
+          "pe_ratio": 22.450697,
+          "forward_pe": 11.1531,
+          "pb_ratio": 18.72667,
           "eps": 7.91,
-          "dividend_yield": 0.55,
+          "dividend_yield": 0.54,
           "revenue": 302970011648,
           "net_income": 192880001024,
           "operating_margin": 0.66236997,
@@ -194,7 +194,7 @@
           "current_ratio": 4.589,
           "roe": 1.17211,
           "short_ratio": 2.84,
-          "analyst_target": 327.1431,
+          "analyst_target": 326.91754,
           "analyst_rating": 1.29032,
           "earnings_date": "1794949200",
           "sector": "Technology",
@@ -239,20 +239,20 @@
           }
         ],
         "options": {
-          "call_volume": 140279,
-          "put_volume": 58920,
-          "call_put_ratio": 2.38,
-          "expiry": "2026-11-06"
+          "call_volume": 848178,
+          "put_volume": 804068,
+          "call_put_ratio": 1.05,
+          "expiry": "2026-11-09"
         },
         "earnings_dates": [],
         "recent_news_titles": [
-          "Nvidia, AMD, and Micron stocks lead chip sector higher following worst sell-off since 2020",
-          "Stocks lost $2 trillion. The market is wrong about AI",
-          "Stock market today: Nasdaq rebound after brutal sell-off, Dow and S&P 500 wobble as US adds 165K jobs",
-          "Magnificent Seven Lost $1 Trillion in Tech Rout. Here's How Much Each Plunged.",
-          "’Blue tsunami’ batters AI stocks: Is this a rare buy the dip setup?"
+          "Nvidia live updates: Nvidia stock falls 5% as board investigates CEO's affair with alleged Chinese spy",
+          "Nvidia vs. AMD: Why Lisa Su's company is a great alternative for investors",
+          "Analysts say Nvidia CEO unlikely to be ousted over affair, but raise questions about company's future",
+          "Nvidia stock sinks 5% as chipmaker investigates CEO Jensen Huang's relationship with alleged Chinese spy",
+          "Is Jensen Huang's scandal the best threat to the AI trade?"
         ],
-        "collected_at": "2026-11-06T14:51:38.038585",
+        "collected_at": "2026-11-09T17:17:12.262259",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -269,9 +269,9 @@
           "shortRatio": "(분석 준비 중)",
           "earningsDate": "(분석 준비 중)",
           "events": "(분석 준비 중)",
-          "dailyChart": "현재가 194.64 vs 일봉 MA20 211.95 → 하락 · RSI 36.40(중립) · MACD 하락 · Stoch %K/%D 32.40/11.60(상승)",
-          "weeklyChart": "현재가 194.64 vs 주간 MA20(20주선) 213.56 → 하락 · 거래량(5일/20일) 비율 1.27(증가)",
-          "monthlyChart": "현재가 194.64 vs 월간 MA12(12개월선) 198.82 → 하락",
+          "dailyChart": "현재가 177.59 vs 일봉 MA20 209.11 → 하락 · RSI 26.60(과매도) · MACD 하락 · Stoch %K/%D 14.10/9.10(상승)",
+          "weeklyChart": "현재가 177.59 vs 주간 MA20(20주선) 212.42 → 하락 · 거래량(5일/20일) 비율 1.58(증가)",
+          "monthlyChart": "현재가 177.59 vs 월간 MA12(12개월선) 197.40 → 하락",
           "support": "(분석 준비 중)",
           "resistance": "(분석 준비 중)",
           "fairValue": "(분석 준비 중)",
@@ -283,52 +283,52 @@
           "bearCase": "(분석 준비 중)",
           "opinion": "매도",
           "opinionClass": "op-sell",
-          "opinionProb": 80,
-          "opinionSimple": "여러 지표가 대부분 안 좋은 방향을 가리키고 있어서 지금은 조심하는 게 좋아요. 거래량도 늘고 있어서 하락에 힘이 실려 있어요.",
-          "opinionSummary": "기술 신호 1/5 상승 (일봉↓, 주봉↓, 월봉↓, MACD↓, 스토캐스틱↑) → 매도 (확신도 80%). 최근 거래량도 평균 대비 늘어 추세에 힘이 실림."
+          "opinionProb": 70,
+          "opinionSimple": "전체적으로 좋지 않은 흐름이라 매도 쪽으로 보여요. 다만 너무 많이 떨어져서 곧 반등할 수 있으니 성급한 매도는 주의하세요. 거래량도 늘고 있어서 하락에 힘이 실려 있어요.",
+          "opinionSummary": "기술 신호 1/5 상승 (일봉↓, 주봉↓, 월봉↓, MACD↓, 스토캐스틱↑) → 매도 (확신도 70%). 다만 RSI 과매도 구간이라 기술적 반등 가능성에 유의. 최근 거래량도 평균 대비 늘어 추세에 힘이 실림."
         }
       },
       "GOOGL": {
         "ticker": "GOOGL",
         "name": "알파벳(구글)",
-        "price": 287.85,
-        "prev_close": 282.57,
-        "change": 5.28,
-        "change_pct": 1.87,
+        "price": 291.7,
+        "prev_close": 284.78,
+        "change": 6.92,
+        "change_pct": 2.43,
         "high_52w": 402.1212,
         "low_52w": 273.1612,
-        "volume_avg5": 39148412.0,
-        "volume_avg20": 37489518.0,
-        "volume_ratio": 1.044,
-        "rsi": 22.6,
+        "volume_avg5": 38622498.0,
+        "volume_avg20": 38829835.0,
+        "volume_ratio": 0.995,
+        "rsi": 26.4,
         "macd": {
-          "macd": -16.3255,
-          "signal": -12.7273,
-          "hist": -3.5982
+          "macd": -15.8539,
+          "signal": -13.3918,
+          "hist": -2.4621
         },
         "stochastic": {
-          "k": 16.1,
-          "d": 13.5
+          "k": 24.5,
+          "d": 14.7
         },
         "moving_averages": {
-          "ma5": 283.674,
-          "ma20": 317.595,
-          "ma60": 334.8024,
-          "ma120": 346.7731,
-          "ma200": 339.2318
+          "ma5": 285.602,
+          "ma20": 314.3905,
+          "ma60": 333.8516,
+          "ma120": 345.9519,
+          "ma200": 339.0385
         },
         "support": [],
         "resistance": [
           354.97,
           377.41
         ],
-        "weekly_ma20": 338.0286,
-        "monthly_ma12": 331.3525,
+        "weekly_ma20": 335.6014,
+        "monthly_ma12": 331.6734,
         "financials": {
-          "market_cap": 3538520637440,
-          "pe_ratio": 15.030027,
-          "forward_pe": 18.577301,
-          "pb_ratio": 5.365265,
+          "market_cap": 3586159804416,
+          "pe_ratio": 15.232377,
+          "forward_pe": 18.898474,
+          "pb_ratio": 5.437498,
           "eps": 19.15,
           "dividend_yield": 0.31,
           "revenue": 471097999360,
@@ -365,20 +365,20 @@
         ],
         "insider": [],
         "options": {
-          "call_volume": 30316,
-          "put_volume": 9949,
-          "call_put_ratio": 3.05,
-          "expiry": "2026-11-06"
+          "call_volume": 103958,
+          "put_volume": 34785,
+          "call_put_ratio": 2.99,
+          "expiry": "2026-11-09"
         },
         "earnings_dates": [],
         "recent_news_titles": [
-          "Magnificent Seven Lost $1 Trillion in Tech Rout. Here's How Much Each Plunged.",
-          "What Will Decide Apple Stock As Memory Costs Rise?",
-          "What Just Happened To Snowflake Stock?",
-          "Wedbush Revises Best Ideas List After October Underperformance",
-          "Analyst Calls Tech Stock Sell-Off 'Golden Buying Opportunity'"
+          "Google Hands AMD Major Win in AI Chip Race",
+          "EU drafts curbs targeting addictive social media features and AI chatbots - report",
+          "JPMorgan Just Removed Alphabet From Its Analyst Focus List",
+          "Nvidia Gets the Spotlight, but This AI Stock Could Steal the Show in 2027",
+          "Barrick Mining Moves on Earnings; Google's New AI Chips | Stock Movers"
         ],
-        "collected_at": "2026-11-06T14:51:39.187700",
+        "collected_at": "2026-11-09T17:17:13.465189",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -395,9 +395,9 @@
           "shortRatio": "(분석 준비 중)",
           "earningsDate": "(분석 준비 중)",
           "events": "(분석 준비 중)",
-          "dailyChart": "현재가 287.85 vs 일봉 MA20 317.60 → 하락 · RSI 22.60(과매도) · MACD 하락 · Stoch %K/%D 16.10/13.50(상승)",
-          "weeklyChart": "현재가 287.85 vs 주간 MA20(20주선) 338.03 → 하락 · 거래량(5일/20일) 비율 1.04(보통)",
-          "monthlyChart": "현재가 287.85 vs 월간 MA12(12개월선) 331.35 → 하락",
+          "dailyChart": "현재가 291.70 vs 일봉 MA20 314.39 → 하락 · RSI 26.40(과매도) · MACD 하락 · Stoch %K/%D 24.50/14.70(상승)",
+          "weeklyChart": "현재가 291.70 vs 주간 MA20(20주선) 335.60 → 하락 · 거래량(5일/20일) 비율 0.99(보통)",
+          "monthlyChart": "현재가 291.70 vs 월간 MA12(12개월선) 331.67 → 하락",
           "support": "(분석 준비 중)",
           "resistance": "(분석 준비 중)",
           "fairValue": "(분석 준비 중)",
@@ -417,44 +417,44 @@
       "AVGO": {
         "ticker": "AVGO",
         "name": "브로드컴",
-        "price": 304.965,
-        "prev_close": 291.53,
-        "change": 13.435,
-        "change_pct": 4.61,
+        "price": 320.53,
+        "prev_close": 293.69,
+        "change": 26.84,
+        "change_pct": 9.14,
         "high_52w": 479.9351,
         "low_52w": 291.53,
-        "volume_avg5": 24076796.0,
-        "volume_avg20": 22524799.0,
-        "volume_ratio": 1.069,
-        "rsi": 39.7,
+        "volume_avg5": 28496712.0,
+        "volume_avg20": 23829283.0,
+        "volume_ratio": 1.196,
+        "rsi": 45.6,
         "macd": {
-          "macd": -11.0192,
-          "signal": -8.0739,
-          "hist": -2.9453
+          "macd": -11.171,
+          "signal": -8.8372,
+          "hist": -2.3338
         },
         "stochastic": {
-          "k": 23.8,
-          "d": 14.9
+          "k": 49.1,
+          "d": 19.2
         },
         "moving_averages": {
-          "ma5": 315.267,
-          "ma20": 332.6887,
-          "ma60": 351.5346,
-          "ma120": 374.6668,
-          "ma200": 366.1575
+          "ma5": 312.672,
+          "ma20": 330.415,
+          "ma60": 350.1509,
+          "ma120": 373.83,
+          "ma200": 366.1123
         },
         "support": [],
         "resistance": [
           376.51,
           426.98
         ],
-        "weekly_ma20": 362.2507,
-        "monthly_ma12": 356.5624,
+        "weekly_ma20": 359.4956,
+        "monthly_ma12": 357.8595,
         "financials": {
-          "market_cap": 1455790096384,
-          "pe_ratio": 38.948277,
-          "forward_pe": 15.6672945,
-          "pb_ratio": 14.604204,
+          "market_cap": 1530067681280,
+          "pe_ratio": 40.935505,
+          "forward_pe": 16.466675,
+          "pb_ratio": 15.349343,
           "eps": 7.83,
           "dividend_yield": 0.89,
           "revenue": 89103998976,
@@ -465,7 +465,7 @@
           "current_ratio": 2.504,
           "roe": 0.44245,
           "short_ratio": 2.31,
-          "analyst_target": 526.80835,
+          "analyst_target": 533.4238,
           "analyst_rating": 1.23529,
           "earnings_date": "1796850000",
           "sector": "Technology",
@@ -503,27 +503,27 @@
             "value": 10033225
           },
           {
-            "name": "DELLY GAYLA J",
+            "name": "BRAZEAL MARK DAVID",
             "transaction": "",
-            "shares": 1890,
-            "value": 728368
+            "shares": 25000,
+            "value": 9479700
           }
         ],
         "options": {
-          "call_volume": 4514,
-          "put_volume": 9245,
-          "call_put_ratio": 0.49,
-          "expiry": "2026-11-06"
+          "call_volume": 56425,
+          "put_volume": 40919,
+          "call_put_ratio": 1.38,
+          "expiry": "2026-11-09"
         },
         "earnings_dates": [],
         "recent_news_titles": [
-          "Nvidia Stock, Other AI Names Rebound After Sell-Off",
-          "AMD’s Data Center Sales Nearly Doubled and the Stock Is Jumping. Where Does the Price Target Go Now?",
-          "What's Going To Happen With NVIDIA Stock Soon?",
-          "Wall Street set to stabilise after multi-trillion dollar tech plunge",
-          "AMD Jumps 8%, Intel and NVIDIA Climb 5% as Chip Stocks Rebound From Worst Sell-Off Since 2020"
+          "What's Moving Markets Today?",
+          "Broadcom makes surprising move in battle for AI software",
+          "Nvidia Gets the Spotlight, but This AI Stock Could Steal the Show in 2027",
+          "AMD Soars 12% on “Undeniable” Data Center Success per Oppenheimer Upgrade",
+          "Broadcom Faltered for a Year, Dropping Nearly 20%: This Wall Street Analyst Team Says 140% Gains Materialize Within 12 Months"
         ],
-        "collected_at": "2026-11-06T14:51:40.460977",
+        "collected_at": "2026-11-09T17:17:14.723233",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -540,9 +540,9 @@
           "shortRatio": "(분석 준비 중)",
           "earningsDate": "(분석 준비 중)",
           "events": "(분석 준비 중)",
-          "dailyChart": "현재가 304.96 vs 일봉 MA20 332.69 → 하락 · RSI 39.70(중립) · MACD 하락 · Stoch %K/%D 23.80/14.90(상승)",
-          "weeklyChart": "현재가 304.96 vs 주간 MA20(20주선) 362.25 → 하락 · 거래량(5일/20일) 비율 1.07(보통)",
-          "monthlyChart": "현재가 304.96 vs 월간 MA12(12개월선) 356.56 → 하락",
+          "dailyChart": "현재가 320.53 vs 일봉 MA20 330.42 → 하락 · RSI 45.60(중립) · MACD 하락 · Stoch %K/%D 49.10/19.20(상승)",
+          "weeklyChart": "현재가 320.53 vs 주간 MA20(20주선) 359.50 → 하락 · 거래량(5일/20일) 비율 1.20(증가)",
+          "monthlyChart": "현재가 320.53 vs 월간 MA12(12개월선) 357.86 → 하락",
           "support": "(분석 준비 중)",
           "resistance": "(분석 준비 중)",
           "fairValue": "(분석 준비 중)",
@@ -554,53 +554,53 @@
           "bearCase": "(분석 준비 중)",
           "opinion": "매도",
           "opinionClass": "op-sell",
-          "opinionProb": 75,
-          "opinionSimple": "전체적으로 좋지 않은 흐름이라 매도 쪽으로 보여요.",
-          "opinionSummary": "기술 신호 1/5 상승 (일봉↓, 주봉↓, 월봉↓, MACD↓, 스토캐스틱↑) → 매도 (확신도 75%)."
+          "opinionProb": 80,
+          "opinionSimple": "여러 지표가 대부분 안 좋은 방향을 가리키고 있어서 지금은 조심하는 게 좋아요. 거래량도 늘고 있어서 하락에 힘이 실려 있어요.",
+          "opinionSummary": "기술 신호 1/5 상승 (일봉↓, 주봉↓, 월봉↓, MACD↓, 스토캐스틱↑) → 매도 (확신도 80%). 최근 거래량도 평균 대비 늘어 추세에 힘이 실림."
         }
       },
       "TSM": {
         "ticker": "TSM",
         "name": "TSMC",
-        "price": 380.085,
-        "prev_close": 353.1,
-        "change": 26.985,
-        "change_pct": 7.64,
+        "price": 391.17,
+        "prev_close": 375.44,
+        "change": 15.73,
+        "change_pct": 4.19,
         "high_52w": 485.8,
         "low_52w": 272.1794,
-        "volume_avg5": 17056247.0,
-        "volume_avg20": 13786232.0,
-        "volume_ratio": 1.237,
-        "rsi": 39.1,
+        "volume_avg5": 19701640.0,
+        "volume_avg20": 14663765.0,
+        "volume_ratio": 1.344,
+        "rsi": 41.1,
         "macd": {
-          "macd": -15.0499,
-          "signal": -9.0446,
-          "hist": -6.0053
+          "macd": -15.1481,
+          "signal": -10.3246,
+          "hist": -4.8235
         },
         "stochastic": {
-          "k": 32.2,
-          "d": 14.2
+          "k": 44.6,
+          "d": 24.6
         },
         "moving_averages": {
-          "ma5": 386.473,
-          "ma20": 416.6717,
-          "ma60": 429.2049,
-          "ma120": 425.8632,
-          "ma200": 400.0524
+          "ma5": 384.052,
+          "ma20": 413.7805,
+          "ma60": 428.5602,
+          "ma120": 425.8289,
+          "ma200": 400.3237
         },
         "support": [],
         "resistance": [
           485.8
         ],
-        "weekly_ma20": 423.3425,
-        "monthly_ma12": 390.327,
+        "weekly_ma20": 421.109,
+        "monthly_ma12": 391.2507,
         "financials": {
-          "market_cap": 1971300859904,
-          "pe_ratio": 24.632856,
-          "forward_pe": 16.253166,
-          "pb_ratio": 72.53641,
+          "market_cap": 2028793102336,
+          "pe_ratio": 25.351265,
+          "forward_pe": 16.727182,
+          "pb_ratio": 74.6519,
           "eps": 15.43,
-          "dividend_yield": 1.07,
+          "dividend_yield": 1.0,
           "revenue": 4944817029120,
           "net_income": 2527570952192,
           "operating_margin": 0.58655,
@@ -610,7 +610,7 @@
           "roe": 0.41854998,
           "short_ratio": 2.79,
           "analyst_target": 586.693,
-          "analyst_rating": 1.38095,
+          "analyst_rating": 1.33333,
           "earnings_date": "1792067400",
           "sector": "Technology",
           "industry": "Semiconductors",
@@ -654,20 +654,20 @@
           }
         ],
         "options": {
-          "call_volume": 8498,
-          "put_volume": 7926,
-          "call_put_ratio": 1.07,
-          "expiry": "2026-11-06"
+          "call_volume": 16842,
+          "put_volume": 11689,
+          "call_put_ratio": 1.44,
+          "expiry": "2026-11-13"
         },
         "earnings_dates": [],
         "recent_news_titles": [
-          "Market Chatter: TSMC Mulls Expanding Into Advanced Memory Chip Production",
-          "Wall Street’s AI Crash Just Hit Asia: Korea Halted, Japan in a Bear Market",
-          "Stocks lost $2 trillion. The market is wrong about AI",
-          "South Korea, Taiwan Intervene to Prop Up Plunging Stocks",
-          "Asia’s Chip Stocks Crashed Overnight, With SK Hynix Down 11.7% And Taiwan Off More Than 8%. Now Nasdaq Futures Are Pointing Higher"
+          "Prediction: Synopsys Could Be a Bigger AI Winner Than Investors Expect",
+          "Nvidia slides as CEO Huang faces board scrutiny over affair with alleged spy",
+          "Taiwan Semiconductor Wants to Enter Into Advanced Memory Production",
+          "Nvidia stock sinks 5% as chipmaker investigates CEO Jensen Huang's relationship with alleged Chinese spy",
+          "Micron Stock Gets Some Relief as This Big Threat Got Kicked Into the Long Grass"
         ],
-        "collected_at": "2026-11-06T14:51:41.612621",
+        "collected_at": "2026-11-09T17:17:16.275264",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -684,9 +684,9 @@
           "shortRatio": "(분석 준비 중)",
           "earningsDate": "(분석 준비 중)",
           "events": "(분석 준비 중)",
-          "dailyChart": "현재가 380.08 vs 일봉 MA20 416.67 → 하락 · RSI 39.10(중립) · MACD 하락 · Stoch %K/%D 32.20/14.20(상승)",
-          "weeklyChart": "현재가 380.08 vs 주간 MA20(20주선) 423.34 → 하락 · 거래량(5일/20일) 비율 1.24(증가)",
-          "monthlyChart": "현재가 380.08 vs 월간 MA12(12개월선) 390.33 → 하락",
+          "dailyChart": "현재가 391.17 vs 일봉 MA20 413.78 → 하락 · RSI 41.10(중립) · MACD 하락 · Stoch %K/%D 44.60/24.60(상승)",
+          "weeklyChart": "현재가 391.17 vs 주간 MA20(20주선) 421.11 → 하락 · 거래량(5일/20일) 비율 1.34(증가)",
+          "monthlyChart": "현재가 391.17 vs 월간 MA12(12개월선) 391.25 → 하락",
           "support": "(분석 준비 중)",
           "resistance": "(분석 준비 중)",
           "fairValue": "(분석 준비 중)",
@@ -706,43 +706,43 @@
       "TSLA": {
         "ticker": "TSLA",
         "name": "테슬라",
-        "price": 355.715,
-        "prev_close": 343.69,
-        "change": 12.025,
-        "change_pct": 3.5,
+        "price": 377.905,
+        "prev_close": 358.22,
+        "change": 19.685,
+        "change_pct": 5.5,
         "high_52w": 489.88,
         "low_52w": 298.32,
-        "volume_avg5": 40674162.0,
-        "volume_avg20": 38330686.0,
-        "volume_ratio": 1.061,
-        "rsi": 45.9,
+        "volume_avg5": 41421594.0,
+        "volume_avg20": 39662384.0,
+        "volume_ratio": 1.044,
+        "rsi": 51.2,
         "macd": {
-          "macd": 1.2644,
-          "signal": 5.6489,
-          "hist": -4.3844
+          "macd": 1.1926,
+          "signal": 4.7896,
+          "hist": -3.597
         },
         "stochastic": {
-          "k": 23.1,
-          "d": 28.5
+          "k": 52.3,
+          "d": 28.6
         },
         "moving_averages": {
-          "ma5": 377.383,
-          "ma20": 380.2972,
-          "ma60": 368.0289,
-          "ma120": 374.7844,
-          "ma200": 383.8526
+          "ma5": 372.701,
+          "ma20": 380.4162,
+          "ma60": 368.6646,
+          "ma120": 374.5869,
+          "ma200": 383.5093
         },
         "support": [
           352.84
         ],
         "resistance": [],
-        "weekly_ma20": 363.0057,
-        "monthly_ma12": 390.1588,
+        "weekly_ma20": 363.0407,
+        "monthly_ma12": 392.0079,
         "financials": {
-          "market_cap": 1406054563840,
-          "pe_ratio": 390.8954,
-          "forward_pe": 164.74228,
-          "pb_ratio": 15.747955,
+          "market_cap": 1493767028736,
+          "pe_ratio": 415.2802,
+          "forward_pe": 175.01923,
+          "pb_ratio": 16.730345,
           "eps": 0.91,
           "dividend_yield": 0.0,
           "revenue": 103569997824,
@@ -754,7 +754,7 @@
           "roe": 0.03844,
           "short_ratio": 2.04,
           "analyst_target": 413.10126,
-          "analyst_rating": 2.29545,
+          "analyst_rating": 2.27273,
           "earnings_date": "1792612800",
           "sector": "Consumer Cyclical",
           "industry": "Auto Manufacturers",
@@ -779,20 +779,20 @@
         ],
         "insider": [],
         "options": {
-          "call_volume": 46849,
-          "put_volume": 59529,
-          "call_put_ratio": 0.79,
-          "expiry": "2026-11-06"
+          "call_volume": 418800,
+          "put_volume": 311943,
+          "call_put_ratio": 1.34,
+          "expiry": "2026-11-09"
         },
         "earnings_dates": [],
         "recent_news_titles": [
-          "How Elon Musk's SpaceX, Tesla lost $420B in market value this week",
-          "Magnificent Seven Lost $1 Trillion in Tech Rout. Here's How Much Each Plunged.",
-          "Musk's futuristic Cybertruck rolls toward exit",
-          "Tesla To End Cybertruck Production; Shares Inch Up After Election Rout",
-          "Musk says Tesla will end Cybertruck production next year"
+          "Musk says Tesla on the hook for Cybertruck deposits after cancellation",
+          "Tesla planning to return deposits for many Cybertruck buyers",
+          "Nvidia slides as CEO Huang faces board scrutiny over affair with alleged spy",
+          "Elon Musk delivers bad news to waiting Cybertruck buyers",
+          "Tesla Will Have to Refund Cybertruck Deposits, Musk Says"
         ],
-        "collected_at": "2026-11-06T14:51:42.829531",
+        "collected_at": "2026-11-09T17:17:17.686546",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -809,9 +809,9 @@
           "shortRatio": "(분석 준비 중)",
           "earningsDate": "(분석 준비 중)",
           "events": "(분석 준비 중)",
-          "dailyChart": "현재가 355.71 vs 일봉 MA20 380.30 → 하락 · RSI 45.90(중립) · MACD 하락 · Stoch %K/%D 23.10/28.50(하락)",
-          "weeklyChart": "현재가 355.71 vs 주간 MA20(20주선) 363.01 → 하락 · 거래량(5일/20일) 비율 1.06(보통)",
-          "monthlyChart": "현재가 355.71 vs 월간 MA12(12개월선) 390.16 → 하락",
+          "dailyChart": "현재가 377.90 vs 일봉 MA20 380.42 → 하락 · RSI 51.20(중립) · MACD 하락 · Stoch %K/%D 52.30/28.60(상승)",
+          "weeklyChart": "현재가 377.90 vs 주간 MA20(20주선) 363.04 → 상승 · 거래량(5일/20일) 비율 1.04(보통)",
+          "monthlyChart": "현재가 377.90 vs 월간 MA12(12개월선) 392.01 → 하락",
           "support": "(분석 준비 중)",
           "resistance": "(분석 준비 중)",
           "fairValue": "(분석 준비 중)",
@@ -821,54 +821,56 @@
           "target1y": "(분석 준비 중)",
           "bullCase": "(분석 준비 중)",
           "bearCase": "(분석 준비 중)",
-          "opinion": "매도",
-          "opinionClass": "op-sell",
-          "opinionProb": 85,
-          "opinionSimple": "여러 지표가 대부분 안 좋은 방향을 가리키고 있어서 지금은 조심하는 게 좋아요.",
-          "opinionSummary": "기술 신호 0/5 상승 (일봉↓, 주봉↓, 월봉↓, MACD↓, 스토캐스틱↓) → 매도 (확신도 85%)."
+          "opinion": "보유",
+          "opinionClass": "op-hold",
+          "opinionProb": 50,
+          "opinionSimple": "오를지 내릴지 신호가 엇갈리고 있어서, 지금은 서두르지 않고 지켜보는 게 좋아요.",
+          "opinionSummary": "기술 신호 2/5 상승 (일봉↓, 주봉↑, 월봉↓, MACD↓, 스토캐스틱↑) → 보유 (확신도 50%)."
         }
       },
       "IVV": {
         "ticker": "IVV",
         "name": "아이셰어즈 S&P500 ETF",
-        "price": 744.71,
-        "prev_close": 736.21,
-        "change": 8.5,
-        "change_pct": 1.15,
+        "price": 755.7,
+        "prev_close": 738.68,
+        "change": 17.02,
+        "change_pct": 2.3,
         "high_52w": 782.54,
         "low_52w": 631.4044,
-        "volume_avg5": 6434118.0,
-        "volume_avg20": 4975389.0,
-        "volume_ratio": 1.293,
-        "rsi": 38.5,
+        "volume_avg5": 6709489.0,
+        "volume_avg20": 5214362.0,
+        "volume_ratio": 1.287,
+        "rsi": 43.0,
         "macd": {
-          "macd": -5.4862,
-          "signal": -2.3865,
-          "hist": -3.0998
+          "macd": -5.7592,
+          "signal": -3.138,
+          "hist": -2.6212
         },
         "stochastic": {
-          "k": 21.0,
-          "d": 29.9
+          "k": 47.1,
+          "d": 18.1
         },
         "moving_averages": {
-          "ma5": 752.866,
-          "ma20": 767.082,
-          "ma60": 768.7881,
-          "ma120": 758.9782,
-          "ma200": 730.7205
+          "ma5": 751.728,
+          "ma20": 765.4935,
+          "ma60": 768.3194,
+          "ma120": 759.1163,
+          "ma200": 731.036
         },
-        "support": [],
+        "support": [
+          755.63
+        ],
         "resistance": [
           779.22,
           782.54
         ],
-        "weekly_ma20": 760.9694,
-        "monthly_ma12": 725.7515,
+        "weekly_ma20": 762.0496,
+        "monthly_ma12": 726.6673,
         "financials": {
           "market_cap": null,
-          "pe_ratio": 23.256119,
+          "pe_ratio": 23.93564,
           "forward_pe": null,
-          "pb_ratio": 1.7283347,
+          "pb_ratio": 1.7538404,
           "eps": null,
           "dividend_yield": 1.11,
           "revenue": null,
@@ -889,20 +891,20 @@
         "institutional": [],
         "insider": [],
         "options": {
-          "call_volume": 80,
-          "put_volume": 62,
-          "call_put_ratio": 1.29,
-          "expiry": "2026-11-06"
+          "call_volume": 103,
+          "put_volume": 30,
+          "call_put_ratio": 3.43,
+          "expiry": "2026-11-13"
         },
         "earnings_dates": [],
         "recent_news_titles": [
+          "What iShares Core S&P 500 ETF (IVV) Bought: Apple Leads on Nov. 5",
+          "Exchange-Traded Funds Higher as US Equities Advance After Midday",
           "iShares Core S&P 500 (IVV) Buys $394.7 Million More Oracle on Nov. 4",
           "ETFs Are Buying Sherwin-Williams (SHW) on Wednesday",
-          "54 ETFs Add to Walmart (WMT) on Wednesday",
-          "American Express (AXP) Sees $41.8 Million in Net ETF Buying on Nov. 4",
-          "53 ETFs Add to Advanced Micro Devices (AMD) on Nov. 4"
+          "54 ETFs Add to Walmart (WMT) on Wednesday"
         ],
-        "collected_at": "2026-11-06T14:51:44.406784",
+        "collected_at": "2026-11-09T17:17:19.358657",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -919,9 +921,9 @@
           "shortRatio": "(분석 준비 중)",
           "earningsDate": "(분석 준비 중)",
           "events": "(분석 준비 중)",
-          "dailyChart": "현재가 744.71 vs 일봉 MA20 767.08 → 하락 · RSI 38.50(중립) · MACD 하락 · Stoch %K/%D 21.00/29.90(하락)",
-          "weeklyChart": "현재가 744.71 vs 주간 MA20(20주선) 760.97 → 하락 · 거래량(5일/20일) 비율 1.29(증가)",
-          "monthlyChart": "현재가 744.71 vs 월간 MA12(12개월선) 725.75 → 상승",
+          "dailyChart": "현재가 755.70 vs 일봉 MA20 765.49 → 하락 · RSI 43.00(중립) · MACD 하락 · Stoch %K/%D 47.10/18.10(상승)",
+          "weeklyChart": "현재가 755.70 vs 주간 MA20(20주선) 762.05 → 하락 · 거래량(5일/20일) 비율 1.29(증가)",
+          "monthlyChart": "현재가 755.70 vs 월간 MA12(12개월선) 726.67 → 상승",
           "support": "(분석 준비 중)",
           "resistance": "(분석 준비 중)",
           "fairValue": "(분석 준비 중)",
@@ -931,51 +933,51 @@
           "target1y": "(분석 준비 중)",
           "bullCase": "(분석 준비 중)",
           "bearCase": "(분석 준비 중)",
-          "opinion": "매도",
-          "opinionClass": "op-sell",
-          "opinionProb": 80,
-          "opinionSimple": "여러 지표가 대부분 안 좋은 방향을 가리키고 있어서 지금은 조심하는 게 좋아요. 거래량도 늘고 있어서 하락에 힘이 실려 있어요.",
-          "opinionSummary": "기술 신호 1/5 상승 (일봉↓, 주봉↓, 월봉↑, MACD↓, 스토캐스틱↓) → 매도 (확신도 80%). 최근 거래량도 평균 대비 늘어 추세에 힘이 실림."
+          "opinion": "보유",
+          "opinionClass": "op-hold",
+          "opinionProb": 50,
+          "opinionSimple": "오를지 내릴지 신호가 엇갈리고 있어서, 지금은 서두르지 않고 지켜보는 게 좋아요.",
+          "opinionSummary": "기술 신호 2/5 상승 (일봉↓, 주봉↓, 월봉↑, MACD↓, 스토캐스틱↑) → 보유 (확신도 50%)."
         }
       },
       "SCHD": {
         "ticker": "SCHD",
         "name": "슈왑 미국 배당주 ETF",
-        "price": 35.16,
-        "prev_close": 35.42,
-        "change": -0.26,
-        "change_pct": -0.73,
+        "price": 35.651,
+        "prev_close": 35.17,
+        "change": 0.481,
+        "change_pct": 1.37,
         "high_52w": 36.21,
-        "low_52w": 25.6213,
-        "volume_avg5": 24596631.0,
-        "volume_avg20": 23713128.0,
-        "volume_ratio": 1.037,
-        "rsi": 60.3,
+        "low_52w": 25.7179,
+        "volume_avg5": 26672568.0,
+        "volume_avg20": 24735852.0,
+        "volume_ratio": 1.078,
+        "rsi": 60.7,
         "macd": {
-          "macd": 0.5323,
-          "signal": 0.5185,
-          "hist": 0.0138
+          "macd": 0.5206,
+          "signal": 0.519,
+          "hist": 0.0016
         },
         "stochastic": {
-          "k": 38.4,
-          "d": 65.1
+          "k": 60.4,
+          "d": 52.1
         },
         "moving_averages": {
-          "ma5": 35.648,
-          "ma20": 34.9095,
-          "ma60": 34.1796,
-          "ma120": 33.2719,
-          "ma200": 32.1223
+          "ma5": 35.6002,
+          "ma20": 35.0295,
+          "ma60": 34.2031,
+          "ma120": 33.3058,
+          "ma200": 32.1584
         },
         "support": [
           32.53
         ],
         "resistance": [],
-        "weekly_ma20": 33.6824,
-        "monthly_ma12": 31.9484,
+        "weekly_ma20": 33.8736,
+        "monthly_ma12": 31.9893,
         "financials": {
           "market_cap": null,
-          "pe_ratio": 18.912083,
+          "pe_ratio": 19.176186,
           "forward_pe": null,
           "pb_ratio": null,
           "eps": null,
@@ -998,20 +1000,20 @@
         "institutional": [],
         "insider": [],
         "options": {
-          "call_volume": 773,
-          "put_volume": 2125,
-          "call_put_ratio": 0.36,
-          "expiry": "2026-11-06"
+          "call_volume": 547,
+          "put_volume": 262,
+          "call_put_ratio": 2.09,
+          "expiry": "2026-11-13"
         },
         "earnings_dates": [],
         "recent_news_titles": [
-          "New Dividend Growth ETF Enters the Market",
-          "A 71-Year-Old Gets $1200 A Month In Dividends From SCHD.  He Could Double His Investment Income By Swapping SCHD For Verizon. There’s Just One Problem",
-          "Dividend Equity ETF (SCHD) Touches New 52-Week High",
-          "SCHD Gets the Attention, but This Shareholder Yield ETF Measures Something Bigger",
-          "History Says This ETF Is a Fantastic Buy-and-Hold Investment -- and It Could Turn $100 per Month Into $359,492"
+          "Benjamin Graham Had a 20-Year Rule for Retirement Income. It Just Won the AI Sell-Off",
+          "These 6 Dividend ETFs Take Different Routes to Income",
+          "3 Dividend ETFs That Could Generate Thousands of Dollars in Passive Income",
+          "SCHD Just Hit a Record High Following Midterm Election Results. I'd Still Rather Buy This Dividend King for Passive Income.",
+          "Want $500 a Month in Dividends? Here's How Much You'd Need to Invest to Get There."
         ],
-        "collected_at": "2026-11-06T14:51:46.271107",
+        "collected_at": "2026-11-09T17:17:21.046201",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1028,9 +1030,9 @@
           "shortRatio": "(분석 준비 중)",
           "earningsDate": "(분석 준비 중)",
           "events": "(분석 준비 중)",
-          "dailyChart": "현재가 35.16 vs 일봉 MA20 34.91 → 상승 · RSI 60.30(중립) · MACD 상승 · Stoch %K/%D 38.40/65.10(하락)",
-          "weeklyChart": "현재가 35.16 vs 주간 MA20(20주선) 33.68 → 상승 · 거래량(5일/20일) 비율 1.04(보통)",
-          "monthlyChart": "현재가 35.16 vs 월간 MA12(12개월선) 31.95 → 상승",
+          "dailyChart": "현재가 35.65 vs 일봉 MA20 35.03 → 상승 · RSI 60.70(중립) · MACD 상승 · Stoch %K/%D 60.40/52.10(상승)",
+          "weeklyChart": "현재가 35.65 vs 주간 MA20(20주선) 33.87 → 상승 · 거래량(5일/20일) 비율 1.08(보통)",
+          "monthlyChart": "현재가 35.65 vs 월간 MA12(12개월선) 31.99 → 상승",
           "support": "(분석 준비 중)",
           "resistance": "(분석 준비 중)",
           "fairValue": "(분석 준비 중)",
@@ -1042,9 +1044,9 @@
           "bearCase": "(분석 준비 중)",
           "opinion": "매수",
           "opinionClass": "op-buy",
-          "opinionProb": 75,
-          "opinionSimple": "전체적으로 나쁘지 않은 흐름이라 매수 쪽으로 보여요.",
-          "opinionSummary": "기술 신호 4/5 상승 (일봉↑, 주봉↑, 월봉↑, MACD↑, 스토캐스틱↓) → 매수 (확신도 75%)."
+          "opinionProb": 85,
+          "opinionSimple": "여러 지표가 대부분 좋은 방향을 가리키고 있어서 지금은 사기 좋은 흐름이에요.",
+          "opinionSummary": "기술 신호 5/5 상승 (일봉↑, 주봉↑, 월봉↑, MACD↑, 스토캐스틱↑) → 매수 (확신도 85%)."
         }
       },
       "000660.KS": {
@@ -1055,14 +1057,14 @@
         "change": -132000.0,
         "change_pct": -10.44,
         "high_52w": 2918367.25,
-        "low_52w": 517474.5625,
-        "volume_avg5": 4335562.0,
-        "volume_avg20": 4056560.0,
-        "volume_ratio": 1.069,
+        "low_52w": 517474.5938,
+        "volume_avg5": 4692723.0,
+        "volume_avg20": 4119894.0,
+        "volume_ratio": 1.139,
         "rsi": 42.8,
         "macd": {
-          "macd": -84642.6363,
-          "signal": -81441.2122,
+          "macd": -84642.6364,
+          "signal": -81441.2124,
           "hist": -3201.4241
         },
         "stochastic": {
@@ -1074,21 +1076,21 @@
           "ma20": 1350200.0,
           "ma60": 1589791.0229,
           "ma120": 1840441.9542,
-          "ma200": 1507125.4891
+          "ma200": 1507125.4875
         },
         "support": [],
         "resistance": [
           1868000.0
         ],
-        "weekly_ma20": 1742111.4625,
-        "monthly_ma12": 1450738.7812,
+        "weekly_ma20": NaN,
+        "monthly_ma12": 1450738.7708,
         "financials": {
-          "market_cap": 798256179183616,
+          "market_cap": 801076898955264,
           "pe_ratio": null,
-          "forward_pe": 2.1384792,
+          "forward_pe": 2.123895,
           "pb_ratio": null,
           "eps": null,
-          "dividend_yield": 0.24,
+          "dividend_yield": 0.27,
           "revenue": 269336677711872,
           "net_income": 189262280523776,
           "operating_margin": 0.79657,
@@ -1097,7 +1099,7 @@
           "current_ratio": 26.882,
           "roe": 0.92542,
           "short_ratio": null,
-          "analyst_target": 3157408.8,
+          "analyst_target": 3126639.5,
           "analyst_rating": 1.34146,
           "earnings_date": "1793080800",
           "sector": "Technology",
@@ -1109,13 +1111,13 @@
         "options": {},
         "earnings_dates": [],
         "recent_news_titles": [
-          "Nvidia, AMD, and Micron stocks lead chip sector higher following worst sell-off since 2020",
-          "Wall Street’s AI Crash Just Hit Asia: Korea Halted, Japan in a Bear Market",
-          "Why Micron’s Stock Valuation Now Looks Ridiculous",
-          "South Korea, Taiwan Intervene to Prop Up Plunging Stocks",
-          "Asia’s Chip Stocks Crashed Overnight, With SK Hynix Down 11.7% And Taiwan Off More Than 8%. Now Nasdaq Futures Are Pointing Higher"
+          "Nvidia slides as CEO Huang faces board scrutiny over affair with alleged spy",
+          "Micron's 26 SCAs: Can Take-or-Pay Deals Boost Earnings Stability?",
+          "Nvidia stock falls as Jensen Huang faces unexpected probe",
+          "Kospi Firmly in Bear Market as Chip Pain Deepens",
+          "TSMC, SK Hynix, Samsung: Asian Chip Stocks Rise Even As Nvidia CEO Jensen Huang’s Controversy Tests Investor Confidence"
         ],
-        "collected_at": "2026-11-06T14:51:47.309948",
+        "collected_at": "2026-11-09T17:17:22.273860",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1133,8 +1135,8 @@
           "earningsDate": "(분석 준비 중)",
           "events": "(분석 준비 중)",
           "dailyChart": "현재가 1,132,000.00 vs 일봉 MA20 1,350,200.00 → 하락 · RSI 42.80(중립) · MACD 하락 · Stoch %K/%D 8.60/28.40(하락)",
-          "weeklyChart": "현재가 1,132,000.00 vs 주간 MA20(20주선) 1,742,111.46 → 하락 · 거래량(5일/20일) 비율 1.07(보통)",
-          "monthlyChart": "현재가 1,132,000.00 vs 월간 MA12(12개월선) 1,450,738.78 → 하락",
+          "weeklyChart": "현재가 1,132,000.00 vs 주간 MA20(20주선) nan → 하락 · 거래량(5일/20일) 비율 1.14(보통)",
+          "monthlyChart": "현재가 1,132,000.00 vs 월간 MA12(12개월선) 1,450,738.77 → 하락",
           "support": "(분석 준비 중)",
           "resistance": "(분석 준비 중)",
           "fairValue": "(분석 준비 중)",
@@ -1159,10 +1161,10 @@
         "change": -12800.0,
         "change_pct": -6.35,
         "high_52w": 355930.2188,
-        "low_52w": 92440.25,
-        "volume_avg5": 22070480.0,
-        "volume_avg20": 19814162.0,
-        "volume_ratio": 1.114,
+        "low_52w": 92440.2578,
+        "volume_avg5": 23134063.0,
+        "volume_avg20": 19818359.0,
+        "volume_ratio": 1.167,
         "rsi": 37.9,
         "macd": {
           "macd": -11187.9401,
@@ -1178,22 +1180,22 @@
           "ma20": 220685.0,
           "ma60": 246363.6242,
           "ma120": 267010.2371,
-          "ma200": 235363.4927
+          "ma200": 235363.4929
         },
         "support": [],
         "resistance": [
           276703.03,
           280634.88
         ],
-        "weekly_ma20": 256198.3445,
-        "monthly_ma12": 225243.3008,
+        "weekly_ma20": NaN,
+        "monthly_ma12": 225243.3014,
         "financials": {
-          "market_cap": 1228800746586112,
+          "market_cap": 1236615036928000,
           "pe_ratio": null,
-          "forward_pe": 2.4830945,
+          "forward_pe": 2.455911,
           "pb_ratio": null,
           "eps": null,
-          "dividend_yield": 9.13,
+          "dividend_yield": 9.75,
           "revenue": 594479375450112,
           "net_income": 212962144944128,
           "operating_margin": 0.55044,
@@ -1202,8 +1204,8 @@
           "current_ratio": 9.575,
           "roe": 0.41577998,
           "short_ratio": null,
-          "analyst_target": 478771.44,
-          "analyst_rating": 1.34286,
+          "analyst_target": 475628.56,
+          "analyst_rating": 1.33333,
           "earnings_date": "1793167200",
           "sector": "Technology",
           "industry": "Consumer Electronics",
@@ -1230,13 +1232,13 @@
         "options": {},
         "earnings_dates": [],
         "recent_news_titles": [
-          "Nvidia, AMD, and Micron stocks lead chip sector higher following worst sell-off since 2020",
-          "Wall Street’s AI Crash Just Hit Asia: Korea Halted, Japan in a Bear Market",
-          "Why Micron’s Stock Valuation Now Looks Ridiculous",
-          "Stocks lost $2 trillion. The market is wrong about AI",
-          "South Korea, Taiwan Intervene to Prop Up Plunging Stocks"
+          "Nvidia slides as CEO Huang faces board scrutiny over affair with alleged spy",
+          "Elon Musk Sets Massive 2032 Chipmaking Target for Tesla, SpaceX",
+          "Nvidia stock falls as Jensen Huang faces unexpected probe",
+          "Kospi Firmly in Bear Market as Chip Pain Deepens",
+          "TSMC, SK Hynix, Samsung: Asian Chip Stocks Rise Even As Nvidia CEO Jensen Huang’s Controversy Tests Investor Confidence"
         ],
-        "collected_at": "2026-11-06T14:51:49.044521",
+        "collected_at": "2026-11-09T17:17:23.403751",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1254,7 +1256,7 @@
           "earningsDate": "(분석 준비 중)",
           "events": "(분석 준비 중)",
           "dailyChart": "현재가 188,700.00 vs 일봉 MA20 220,685.00 → 하락 · RSI 37.90(중립) · MACD 하락 · Stoch %K/%D 13.60/16.30(하락)",
-          "weeklyChart": "현재가 188,700.00 vs 주간 MA20(20주선) 256,198.34 → 하락 · 거래량(5일/20일) 비율 1.11(보통)",
+          "weeklyChart": "현재가 188,700.00 vs 주간 MA20(20주선) nan → 하락 · 거래량(5일/20일) 비율 1.17(증가)",
           "monthlyChart": "현재가 188,700.00 vs 월간 MA12(12개월선) 225,243.30 → 하락",
           "support": "(분석 준비 중)",
           "resistance": "(분석 준비 중)",
@@ -1267,9 +1269,9 @@
           "bearCase": "(분석 준비 중)",
           "opinion": "매도",
           "opinionClass": "op-sell",
-          "opinionProb": 85,
-          "opinionSimple": "여러 지표가 대부분 안 좋은 방향을 가리키고 있어서 지금은 조심하는 게 좋아요.",
-          "opinionSummary": "기술 신호 0/5 상승 (일봉↓, 주봉↓, 월봉↓, MACD↓, 스토캐스틱↓) → 매도 (확신도 85%)."
+          "opinionProb": 90,
+          "opinionSimple": "여러 지표가 대부분 안 좋은 방향을 가리키고 있어서 지금은 조심하는 게 좋아요. 거래량도 늘고 있어서 하락에 힘이 실려 있어요.",
+          "opinionSummary": "기술 신호 0/5 상승 (일봉↓, 주봉↓, 월봉↓, MACD↓, 스토캐스틱↓) → 매도 (확신도 90%). 최근 거래량도 평균 대비 늘어 추세에 힘이 실림."
         }
       },
       "012450.KS": {
@@ -1281,9 +1283,9 @@
         "change_pct": -2.94,
         "high_52w": 1537000.0,
         "low_52w": 660000.0,
-        "volume_avg5": 199234.0,
-        "volume_avg20": 191548.0,
-        "volume_ratio": 1.04,
+        "volume_avg5": 180230.0,
+        "volume_avg20": 188193.0,
+        "volume_ratio": 0.958,
         "rsi": 20.6,
         "macd": {
           "macd": -74480.5013,
@@ -1305,15 +1307,15 @@
         "resistance": [
           1185000.0
         ],
-        "weekly_ma20": 986250.0,
+        "weekly_ma20": NaN,
         "monthly_ma12": 1054333.3333,
         "financials": {
-          "market_cap": 33956200185856,
+          "market_cap": 32875774738432,
           "pe_ratio": null,
-          "forward_pe": 12.275618,
+          "forward_pe": 11.94459,
           "pb_ratio": null,
           "eps": null,
-          "dividend_yield": 1.03,
+          "dividend_yield": 1.06,
           "revenue": 29951608750080,
           "net_income": 2062343995392,
           "operating_margin": 0.14694001,
@@ -1322,7 +1324,7 @@
           "current_ratio": 1.078,
           "roe": 0.20808001,
           "short_ratio": null,
-          "analyst_target": 1517142.9,
+          "analyst_target": 1306190.5,
           "analyst_rating": 1.40909,
           "earnings_date": "1793253600",
           "sector": "Industrials",
@@ -1340,7 +1342,7 @@
           "Here’s Why Venture Global (VG) Is One of the Best Multibagger Stocks to Buy in 2026",
           "Venture Global Q1 Earnings Call Highlights"
         ],
-        "collected_at": "2026-11-06T14:51:50.453871",
+        "collected_at": "2026-11-09T17:17:24.829763",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1358,7 +1360,7 @@
           "earningsDate": "(분석 준비 중)",
           "events": "(분석 준비 중)",
           "dailyChart": "현재가 660,000.00 vs 일봉 MA20 785,100.00 → 하락 · RSI 20.60(과매도) · MACD 하락 · Stoch %K/%D 19.30/18.70(상승)",
-          "weeklyChart": "현재가 660,000.00 vs 주간 MA20(20주선) 986,250.00 → 하락 · 거래량(5일/20일) 비율 1.04(보통)",
+          "weeklyChart": "현재가 660,000.00 vs 주간 MA20(20주선) nan → 하락 · 거래량(5일/20일) 비율 0.96(보통)",
           "monthlyChart": "현재가 660,000.00 vs 월간 MA12(12개월선) 1,054,333.33 → 하락",
           "support": "(분석 준비 중)",
           "resistance": "(분석 준비 중)",
@@ -1384,10 +1386,10 @@
         "change": -14000.0,
         "change_pct": -4.77,
         "high_52w": 745288.9375,
-        "low_52w": 250871.6719,
-        "volume_avg5": 641454.0,
-        "volume_avg20": 610730.0,
-        "volume_ratio": 1.05,
+        "low_52w": 250871.6875,
+        "volume_avg5": 664478.0,
+        "volume_avg20": 601463.0,
+        "volume_ratio": 1.105,
         "rsi": 27.8,
         "macd": {
           "macd": -17424.3101,
@@ -1403,21 +1405,21 @@
           "ma20": 298425.0,
           "ma60": 354833.1542,
           "ma120": 443534.4659,
-          "ma200": 469311.5997
+          "ma200": 469311.5992
         },
         "support": [],
         "resistance": [
           450154.5
         ],
-        "weekly_ma20": 380347.7656,
-        "monthly_ma12": 443764.0026,
+        "weekly_ma20": NaN,
+        "monthly_ma12": 443764.0078,
         "financials": {
-          "market_cap": 73544344010752,
+          "market_cap": 71439315107840,
           "pe_ratio": null,
-          "forward_pe": 6.6080875,
+          "forward_pe": 6.418947,
           "pb_ratio": null,
           "eps": null,
-          "dividend_yield": 3.41,
+          "dividend_yield": 3.58,
           "revenue": 187102465622016,
           "net_income": 7588987011072,
           "operating_margin": 0.05934,
@@ -1427,7 +1429,7 @@
           "roe": null,
           "short_ratio": null,
           "analyst_target": 529681.56,
-          "analyst_rating": 1.65625,
+          "analyst_rating": 1.64516,
           "earnings_date": "1793253600",
           "sector": "Consumer Cyclical",
           "industry": "Auto Manufacturers",
@@ -1438,13 +1440,13 @@
         "options": {},
         "earnings_dates": [],
         "recent_news_titles": [
+          "POSCO Partners With Hyundai Motor Group to Advance Vietnam Business",
+          "Kia to build new EV plant in Gwangju",
+          "America Has Become the Last Place to Make Money for the World’s Automakers",
           "NDR Auto Components Ltd (BOM:543214) (Q2 2027) Earnings Call Highlights: Record Rs 1,190 Crore ...",
-          "Trump Just Gave Automakers a Major Fuel-Economy Break — GM, Toyota and Volkswagen Are Siding With Him, But California Is Fighting Back in Court",
-          "Hyundai to acquire stake in Posco Future M’s Vietnam battery anode plant",
-          "Automakers back Trump administration's rollback of US fuel economy rules",
-          "Gary Black: Tesla’s US EV Share Fell “From 80% in 2020 to 52% Today”"
+          "Trump Just Gave Automakers a Major Fuel-Economy Break — GM, Toyota and Volkswagen Are Siding With Him, But California Is Fighting Back in Court"
         ],
-        "collected_at": "2026-11-06T14:51:51.770794",
+        "collected_at": "2026-11-09T17:17:26.089669",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1462,8 +1464,8 @@
           "earningsDate": "(분석 준비 중)",
           "events": "(분석 준비 중)",
           "dailyChart": "현재가 279,500.00 vs 일봉 MA20 298,425.00 → 하락 · RSI 27.80(과매도) · MACD 상승 · Stoch %K/%D 20.50/30.00(하락)",
-          "weeklyChart": "현재가 279,500.00 vs 주간 MA20(20주선) 380,347.77 → 하락 · 거래량(5일/20일) 비율 1.05(보통)",
-          "monthlyChart": "현재가 279,500.00 vs 월간 MA12(12개월선) 443,764.00 → 하락",
+          "weeklyChart": "현재가 279,500.00 vs 주간 MA20(20주선) nan → 하락 · 거래량(5일/20일) 비율 1.10(보통)",
+          "monthlyChart": "현재가 279,500.00 vs 월간 MA12(12개월선) 443,764.01 → 하락",
           "support": "(분석 준비 중)",
           "resistance": "(분석 준비 중)",
           "fairValue": "(분석 준비 중)",
@@ -1489,9 +1491,9 @@
         "change_pct": -9.33,
         "high_52w": 136400.0,
         "low_52w": 44700.0,
-        "volume_avg5": 3255289.0,
-        "volume_avg20": 2767053.0,
-        "volume_ratio": 1.176,
+        "volume_avg5": 3463086.0,
+        "volume_avg20": 2813224.0,
+        "volume_ratio": 1.231,
         "rsi": 17.5,
         "macd": {
           "macd": -7265.3603,
@@ -1513,12 +1515,12 @@
         "resistance": [
           91700.0
         ],
-        "weekly_ma20": 74735.0,
+        "weekly_ma20": NaN,
         "monthly_ma12": 84516.6667,
         "financials": {
-          "market_cap": 28569235357696,
+          "market_cap": 27706406207488,
           "pe_ratio": null,
-          "forward_pe": 47.014996,
+          "forward_pe": 45.595078,
           "pb_ratio": null,
           "eps": null,
           "dividend_yield": 0.0,
@@ -1542,13 +1544,13 @@
         "options": {},
         "earnings_dates": [],
         "recent_news_titles": [
-          "X Energy (XE) Stock Still Looks Expensive Despite Its 69% Slump",
-          "NuScale Power (SMR) Stock Looks Undervalued As Book Value Sets The Tone",
-          "NuScale Power Advances SMR Manufacturing With Doosan Deal",
-          "Is NuScale Power (SMR) Undervalued Following Its Doosan Manufacturing Deal?",
-          "What NuScale Power (SMR)'s Reactor Parts Deal Means For Shareholders"
+          "What NuScale Power (SMR) Said on Its Q3 Earnings Call",
+          "Not Oklo. Not X-Energy. This SMR Stock Just Signed a Contract to Start Building Reactor Components.",
+          "NuScale Rebounds 14% on Narrower-Than-Expected Q3 Loss as CEO Says “We Are Manufacturing”",
+          "NuScale Power Corporation Q3 2026 Earnings Call Summary",
+          "X Energy (XE) Stock Still Looks Expensive Despite Its 69% Slump"
         ],
-        "collected_at": "2026-11-06T14:51:53.155893",
+        "collected_at": "2026-11-09T17:17:27.359450",
         "analysis": {
           "businessModel": "(분석 준비 중)",
           "industryOutlook": "(분석 준비 중)",
@@ -1566,7 +1568,7 @@
           "earningsDate": "(분석 준비 중)",
           "events": "(분석 준비 중)",
           "dailyChart": "현재가 44,700.00 vs 일봉 MA20 59,845.00 → 하락 · RSI 17.50(과매도) · MACD 하락 · Stoch %K/%D 4.60/8.30(하락)",
-          "weeklyChart": "현재가 44,700.00 vs 주간 MA20(20주선) 74,735.00 → 하락 · 거래량(5일/20일) 비율 1.18(증가)",
+          "weeklyChart": "현재가 44,700.00 vs 주간 MA20(20주선) nan → 하락 · 거래량(5일/20일) 비율 1.23(증가)",
           "monthlyChart": "현재가 44,700.00 vs 월간 MA12(12개월선) 84,516.67 → 하락",
           "support": "(분석 준비 중)",
           "resistance": "(분석 준비 중)",
@@ -1589,40 +1591,38 @@
       "412570.KS": {
         "ticker": "412570.KS",
         "name": "Tiger 2차전지 TOP10 레버리지",
-        "price": 841.0,
-        "prev_close": 942.0,
+        "price": 740.0,
+        "prev_close": 841.0,
         "change": -101.0,
-        "change_pct": -10.72,
+        "change_pct": -12.01,
         "high_52w": 3150.0,
-        "low_52w": 805.0,
-        "volume_avg5": 15861680.0,
-        "volume_avg20": 13022539.0,
-        "volume_ratio": 1.218,
-        "rsi": 25.3,
+        "low_52w": 740.0,
+        "volume_avg5": 17095292.0,
+        "volume_avg20": 13221906.0,
+        "volume_ratio": 1.293,
+        "rsi": 25.9,
         "macd": {
-          "macd": -81.3425,
-          "signal": -58.591,
-          "hist": -22.7514
+          "macd": -96.3428,
+          "signal": -66.1414,
+          "hist": -30.2014
         },
         "stochastic": {
-          "k": 6.5,
-          "d": 21.3
+          "k": 1.0,
+          "d": 10.2
         },
         "moving_averages": {
-          "ma5": 943.4,
-          "ma20": 1101.8,
-          "ma60": 1187.55,
-          "ma120": 1350.3167,
-          "ma200": 1552.14
+          "ma5": 885.4,
+          "ma20": 1075.3,
+          "ma60": 1179.6,
+          "ma120": 1335.65,
+          "ma200": 1548.685
         },
-        "support": [
-          805.0
-        ],
+        "support": [],
         "resistance": [
           1404.0
         ],
-        "weekly_ma20": 1141.85,
-        "monthly_ma12": 1536.3333,
+        "weekly_ma20": 1122.4,
+        "monthly_ma12": 1527.9167,
         "financials": {
           "market_cap": null,
           "pe_ratio": null,
@@ -1650,8 +1650,8 @@
         "options": {},
         "earnings_dates": [],
         "recent_news_titles": [],
-        "collected_at": "2026-11-06T14:51:54.640776",
-        "cost_basis": 798.95,
+        "collected_at": "2026-11-09T17:17:28.852566",
+        "cost_basis": 703.0,
         "pnl_pct": 5.26,
         "analysis": {
           "businessModel": "(분석 준비 중)",
@@ -1669,9 +1669,9 @@
           "shortRatio": "(분석 준비 중)",
           "earningsDate": "(분석 준비 중)",
           "events": "(분석 준비 중)",
-          "dailyChart": "현재가 841.00 vs 일봉 MA20 1,101.80 → 하락 · RSI 25.30(과매도) · MACD 하락 · Stoch %K/%D 6.50/21.30(하락)",
-          "weeklyChart": "현재가 841.00 vs 주간 MA20(20주선) 1,141.85 → 하락 · 거래량(5일/20일) 비율 1.22(증가)",
-          "monthlyChart": "현재가 841.00 vs 월간 MA12(12개월선) 1,536.33 → 하락",
+          "dailyChart": "현재가 740.00 vs 일봉 MA20 1,075.30 → 하락 · RSI 25.90(과매도) · MACD 하락 · Stoch %K/%D 1.00/10.20(하락)",
+          "weeklyChart": "현재가 740.00 vs 주간 MA20(20주선) 1,122.40 → 하락 · 거래량(5일/20일) 비율 1.29(증가)",
+          "monthlyChart": "현재가 740.00 vs 월간 MA12(12개월선) 1,527.92 → 하락",
           "support": "(분석 준비 중)",
           "resistance": "(분석 준비 중)",
           "fairValue": "(분석 준비 중)",
@@ -1691,31 +1691,31 @@
       "365340.KS": {
         "ticker": "365340.KS",
         "name": "성일하이텍",
-        "price": 27100.0,
-        "prev_close": 28950.0,
-        "change": -1850.0,
-        "change_pct": -6.39,
+        "price": 25800.0,
+        "prev_close": 27100.0,
+        "change": -1300.0,
+        "change_pct": -4.8,
         "high_52w": 84500.0,
         "low_52w": 24750.0,
-        "volume_avg5": 27402.0,
-        "volume_avg20": 31535.0,
-        "volume_ratio": 0.869,
-        "rsi": 36.9,
+        "volume_avg5": 28762.0,
+        "volume_avg20": 31730.0,
+        "volume_ratio": 0.906,
+        "rsi": 28.7,
         "macd": {
-          "macd": -2079.9895,
-          "signal": -1815.6162,
-          "hist": -264.3733
+          "macd": -2182.901,
+          "signal": -1889.0732,
+          "hist": -293.8278
         },
         "stochastic": {
-          "k": 15.9,
-          "d": 21.0
+          "k": 9.4,
+          "d": 21.2
         },
         "moving_averages": {
-          "ma5": 27620.0,
-          "ma20": 30955.0,
-          "ma60": 34325.0,
-          "ma120": 39792.9167,
-          "ma200": 49236.5
+          "ma5": 27240.0,
+          "ma20": 30377.5,
+          "ma60": 34195.8333,
+          "ma120": 39417.9167,
+          "ma200": 49147.0
         },
         "support": [
           24750.0
@@ -1724,8 +1724,8 @@
           38550.0,
           39100.0
         ],
-        "weekly_ma20": 33872.5,
-        "monthly_ma12": 48037.5,
+        "weekly_ma20": 33807.5,
+        "monthly_ma12": 47929.1667,
         "financials": {
           "market_cap": null,
           "pe_ratio": null,
@@ -1753,8 +1753,8 @@
         "options": {},
         "earnings_dates": [],
         "recent_news_titles": [],
-        "collected_at": "2026-11-06T14:51:56.534195",
-        "cost_basis": 25745.0,
+        "collected_at": "2026-11-09T17:17:31.343736",
+        "cost_basis": 24510.0,
         "pnl_pct": 5.26,
         "analysis": {
           "businessModel": "(분석 준비 중)",
@@ -1772,9 +1772,9 @@
           "shortRatio": "(분석 준비 중)",
           "earningsDate": "(분석 준비 중)",
           "events": "(분석 준비 중)",
-          "dailyChart": "현재가 27,100.00 vs 일봉 MA20 30,955.00 → 하락 · RSI 36.90(중립) · MACD 하락 · Stoch %K/%D 15.90/21.00(하락)",
-          "weeklyChart": "현재가 27,100.00 vs 주간 MA20(20주선) 33,872.50 → 하락 · 거래량(5일/20일) 비율 0.87(보통)",
-          "monthlyChart": "현재가 27,100.00 vs 월간 MA12(12개월선) 48,037.50 → 하락",
+          "dailyChart": "현재가 25,800.00 vs 일봉 MA20 30,377.50 → 하락 · RSI 28.70(과매도) · MACD 하락 · Stoch %K/%D 9.40/21.20(하락)",
+          "weeklyChart": "현재가 25,800.00 vs 주간 MA20(20주선) 33,807.50 → 하락 · 거래량(5일/20일) 비율 0.91(보통)",
+          "monthlyChart": "현재가 25,800.00 vs 월간 MA12(12개월선) 47,929.17 → 하락",
           "support": "(분석 준비 중)",
           "resistance": "(분석 준비 중)",
           "fairValue": "(분석 준비 중)",
@@ -1786,9 +1786,9 @@
           "bearCase": "(분석 준비 중)",
           "opinion": "매도",
           "opinionClass": "op-sell",
-          "opinionProb": 85,
-          "opinionSimple": "여러 지표가 대부분 안 좋은 방향을 가리키고 있어서 지금은 조심하는 게 좋아요.",
-          "opinionSummary": "기술 신호 0/5 상승 (일봉↓, 주봉↓, 월봉↓, MACD↓, 스토캐스틱↓) → 매도 (확신도 85%)."
+          "opinionProb": 75,
+          "opinionSimple": "전체적으로 좋지 않은 흐름이라 매도 쪽으로 보여요. 다만 너무 많이 떨어져서 곧 반등할 수 있으니 성급한 매도는 주의하세요.",
+          "opinionSummary": "기술 신호 0/5 상승 (일봉↓, 주봉↓, 월봉↓, MACD↓, 스토캐스틱↓) → 매도 (확신도 75%). 다만 RSI 과매도 구간이라 기술적 반등 가능성에 유의."
         }
       },
       "051910.KS": {
@@ -1800,13 +1800,13 @@
         "change_pct": -5.69,
         "high_52w": 429500.0,
         "low_52w": 225000.0,
-        "volume_avg5": 230204.0,
-        "volume_avg20": 256862.0,
-        "volume_ratio": 0.896,
+        "volume_avg5": 241389.0,
+        "volume_avg20": 248884.0,
+        "volume_ratio": 0.97,
         "rsi": 29.0,
         "macd": {
-          "macd": -6778.9906,
-          "signal": -7237.7984,
+          "macd": -6778.9907,
+          "signal": -7237.7985,
           "hist": 458.8078
         },
         "stochastic": {
@@ -1825,24 +1825,24 @@
           286500.0,
           287000.0
         ],
-        "weekly_ma20": 262675.0,
+        "weekly_ma20": NaN,
         "monthly_ma12": 304435.0339,
         "financials": {
-          "market_cap": 18159824273408,
+          "market_cap": 17220522475520,
           "pe_ratio": null,
-          "forward_pe": 11.035862,
+          "forward_pe": 10.990821,
           "pb_ratio": null,
           "eps": null,
-          "dividend_yield": 0.81,
-          "revenue": 47867515371520,
-          "net_income": -2135841046528,
-          "operating_margin": 0.0423,
-          "profit_margin": -0.03159,
-          "debt_to_equity": 82.507,
-          "current_ratio": 1.358,
-          "roe": -0.05705,
+          "dividend_yield": 0.86,
+          "revenue": 52167348060160,
+          "net_income": -2860350963712,
+          "operating_margin": 0.036199998,
+          "profit_margin": 0.0,
+          "debt_to_equity": 81.516,
+          "current_ratio": 1.88,
+          "roe": -0.08304,
           "short_ratio": null,
-          "analyst_target": 384260.88,
+          "analyst_target": 367739.12,
           "analyst_rating": 1.78261,
           "earnings_date": "1793858400",
           "sector": "Basic Materials",
@@ -1860,7 +1860,7 @@
           "Rhythm Pharmaceuticals, Inc. Q3 2026 Earnings Call Summary",
           "Rhythm Pharmaceuticals Q3 Earnings Call Highlights"
         ],
-        "collected_at": "2026-11-06T14:51:57.757594",
+        "collected_at": "2026-11-09T17:17:32.575335",
         "cost_basis": 220400.0,
         "pnl_pct": 5.26,
         "analysis": {
@@ -1880,7 +1880,7 @@
           "earningsDate": "(분석 준비 중)",
           "events": "(분석 준비 중)",
           "dailyChart": "현재가 232,000.00 vs 일봉 MA20 245,400.00 → 하락 · RSI 29.00(과매도) · MACD 상승 · Stoch %K/%D 19.30/36.30(하락)",
-          "weeklyChart": "현재가 232,000.00 vs 주간 MA20(20주선) 262,675.00 → 하락 · 거래량(5일/20일) 비율 0.90(보통)",
+          "weeklyChart": "현재가 232,000.00 vs 주간 MA20(20주선) nan → 하락 · 거래량(5일/20일) 비율 0.97(보통)",
           "monthlyChart": "현재가 232,000.00 vs 월간 MA12(12개월선) 304,435.03 → 하락",
           "support": "(분석 준비 중)",
           "resistance": "(분석 준비 중)",
@@ -1907,13 +1907,13 @@
         "change_pct": -8.06,
         "high_52w": 712000.0,
         "low_52w": 262500.0,
-        "volume_avg5": 900870.0,
-        "volume_avg20": 746378.0,
-        "volume_ratio": 1.207,
+        "volume_avg5": 1063984.0,
+        "volume_avg20": 781179.0,
+        "volume_ratio": 1.362,
         "rsi": 32.6,
         "macd": {
-          "macd": -8989.159,
-          "signal": -3800.5767,
+          "macd": -8989.1589,
+          "signal": -3800.5766,
           "hist": -5188.5823
         },
         "stochastic": {
@@ -1933,12 +1933,12 @@
         "resistance": [
           577000.0
         ],
-        "weekly_ma20": 496225.0,
+        "weekly_ma20": NaN,
         "monthly_ma12": 491958.3333,
         "financials": {
-          "market_cap": 36828618948608,
+          "market_cap": 32657857576960,
           "pe_ratio": null,
-          "forward_pe": 25.942194,
+          "forward_pe": 22.999725,
           "pb_ratio": null,
           "eps": null,
           "dividend_yield": 0.0,
@@ -1968,7 +1968,7 @@
           "What Samsung SDI Bulls Got Right Before A 107% Jump",
           "Posco in US$4.5bn LFP cathode deal with Samsung SDI"
         ],
-        "collected_at": "2026-11-06T14:51:59.093178",
+        "collected_at": "2026-11-09T17:17:33.855491",
         "cost_basis": 444600.0,
         "pnl_pct": 5.26,
         "analysis": {
@@ -1988,7 +1988,7 @@
           "earningsDate": "(분석 준비 중)",
           "events": "(분석 준비 중)",
           "dailyChart": "현재가 468,000.00 vs 일봉 MA20 532,075.00 → 하락 · RSI 32.60(중립) · MACD 하락 · Stoch %K/%D 5.90/34.60(하락)",
-          "weeklyChart": "현재가 468,000.00 vs 주간 MA20(20주선) 496,225.00 → 하락 · 거래량(5일/20일) 비율 1.21(증가)",
+          "weeklyChart": "현재가 468,000.00 vs 주간 MA20(20주선) nan → 하락 · 거래량(5일/20일) 비율 1.36(증가)",
           "monthlyChart": "현재가 468,000.00 vs 월간 MA12(12개월선) 491,958.33 → 하락",
           "support": "(분석 준비 중)",
           "resistance": "(분석 준비 중)",
@@ -2015,12 +2015,12 @@
         "change_pct": -3.11,
         "high_52w": 529295.6875,
         "low_52w": 265000.0,
-        "volume_avg5": 294636.0,
-        "volume_avg20": 251770.0,
-        "volume_ratio": 1.17,
+        "volume_avg5": 294003.0,
+        "volume_avg20": 251804.0,
+        "volume_ratio": 1.168,
         "rsi": 28.0,
         "macd": {
-          "macd": -11192.3402,
+          "macd": -11192.3401,
           "signal": -10530.1662,
           "hist": -662.174
         },
@@ -2032,22 +2032,22 @@
           "ma5": 272800.0,
           "ma20": 285750.0,
           "ma60": 311745.75,
-          "ma120": 332431.9401,
-          "ma200": 348573.4153
+          "ma120": 332431.9404,
+          "ma200": 348573.4166
         },
         "support": [],
         "resistance": [
           342000.0
         ],
-        "weekly_ma20": 310284.8016,
+        "weekly_ma20": NaN,
         "monthly_ma12": 338803.9557,
         "financials": {
-          "market_cap": 20039505805312,
+          "market_cap": 19585780678656,
           "pe_ratio": null,
-          "forward_pe": 9.434457,
+          "forward_pe": 9.312842,
           "pb_ratio": null,
           "eps": null,
-          "dividend_yield": 2.93,
+          "dividend_yield": 3.02,
           "revenue": 71237317427200,
           "net_income": 1347453845504,
           "operating_margin": 0.04257,
@@ -2056,8 +2056,8 @@
           "current_ratio": 1.983,
           "roe": 0.02214,
           "short_ratio": null,
-          "analyst_target": 432500.0,
-          "analyst_rating": 1.55,
+          "analyst_target": 430000.0,
+          "analyst_rating": 1.57143,
           "earnings_date": "1793599200",
           "sector": "Basic Materials",
           "industry": "Steel",
@@ -2068,13 +2068,13 @@
         "options": {},
         "earnings_dates": [],
         "recent_news_titles": [
+          "POSCO Partners With Hyundai Motor Group to Advance Vietnam Business",
+          "Zacks.com featured highlights include DMC Global, HF Sinclair, Cenovus Energy, ZIM Integrated Shipping and POSCO",
           "Pick These 5 Bargain Stocks With Alluring EV-to-EBITDA Ratios",
           "Basic Materials Roundup: Market Talk",
-          "Posco to supply new battery materials to LGES",
-          "Posco: Q3 Earnings Snapshot",
-          "POSCO Holdings Inc (PKX) (Q3 2026) Earnings Call Highlights: Third Straight Quarter of Profit ..."
+          "Posco to supply new battery materials to LGES"
         ],
-        "collected_at": "2026-11-06T14:52:00.243493",
+        "collected_at": "2026-11-09T17:17:35.218063",
         "cost_basis": 251750.0,
         "pnl_pct": 5.26,
         "analysis": {
@@ -2094,7 +2094,7 @@
           "earningsDate": "(분석 준비 중)",
           "events": "(분석 준비 중)",
           "dailyChart": "현재가 265,000.00 vs 일봉 MA20 285,750.00 → 하락 · RSI 28.00(과매도) · MACD 하락 · Stoch %K/%D 16.00/24.10(하락)",
-          "weeklyChart": "현재가 265,000.00 vs 주간 MA20(20주선) 310,284.80 → 하락 · 거래량(5일/20일) 비율 1.17(증가)",
+          "weeklyChart": "현재가 265,000.00 vs 주간 MA20(20주선) nan → 하락 · 거래량(5일/20일) 비율 1.17(증가)",
           "monthlyChart": "현재가 265,000.00 vs 월간 MA12(12개월선) 338,803.96 → 하락",
           "support": "(분석 준비 중)",
           "resistance": "(분석 준비 중)",
